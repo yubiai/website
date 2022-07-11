@@ -1,18 +1,11 @@
-import { Box, Link, Center, Flex, Image } from "@chakra-ui/react";
+import { Link, Center, Flex, Image } from "@chakra-ui/react";
 import Statistics from "../Infos/Stats";
-import { FaTelegramPlane, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaTwitter, FaYoutube } from "react-icons/fa";
+import HeroFather from "./HeroFather";
 
 export default function Hero() {
   return (
-    <>
-      <Box
-        w="full"
-        h={{ base: "full", md: "100vh" }}
-        backgroundImage={"/static/images/bgimage1.png"}
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
-        backgroundSize="cover"
-      >
+    <HeroFather>
         <Center h="87vh" color="white">
           <Image
             w={"300px"}
@@ -31,7 +24,6 @@ export default function Hero() {
           </Link>
         </Flex>
         <Statistics />
-      </Box>
-    </>
+    </HeroFather>
   );
 }

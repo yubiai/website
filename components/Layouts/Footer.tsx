@@ -24,7 +24,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      bg={"white"}
       rounded={"full"}
       w={8}
       h={8}
@@ -47,13 +47,14 @@ const SocialButton = ({
 
 const Footer = () => {
   return (
-    <Box
-      bg={'#191b30'}
-      color={'white'}
-    >
+    <>
       <Container
+        bg={"#191b30"}
+        color={"white"}
+        position="relative"
         as={Stack}
-        maxW={"6xl"}
+        maxW={"8xl"}
+        mt={"1em"}
         py={4}
         spacing={4}
         justify={"center"}
@@ -83,7 +84,9 @@ const Footer = () => {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 Yubiai Marketplace. All rights reserved</Text>
+          <Text color="white">
+            © 2022 Yubiai Marketplace. All rights reserved
+          </Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton
               label={"Twitter"}
@@ -106,7 +109,7 @@ const Footer = () => {
           </Stack>
         </Container>
       </Box>
-    </Box>
+    </>
   );
 };
 

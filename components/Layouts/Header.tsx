@@ -6,6 +6,7 @@ import {
   Button,
   useDisclosure,
   Stack,
+  Container,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import LogoYb from "../Logos/LogoYb";
@@ -66,7 +67,7 @@ export default function withAction() {
 
   return (
     <>
-      <Box px={4}>
+      <Container maxW={"8xl"} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -108,7 +109,7 @@ export default function withAction() {
             </Stack>
           </Box>
         ) : null}
-      </Box>
+      </Container>
     </>
   );
 }
