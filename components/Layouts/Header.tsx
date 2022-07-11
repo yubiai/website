@@ -14,6 +14,10 @@ import { useRouter } from "next/router";
 
 const Links = [
   {
+    label: "Home",
+    href: "/",
+  },
+  {
     label: "Ecosystem",
     href: "/ecosystem",
   },

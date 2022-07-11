@@ -1,35 +1,39 @@
 import {
-    Stack,
-    Flex,
-    Text,
-    VStack,
-    useBreakpointValue,
-  } from '@chakra-ui/react';
-  
-  export default function Hero() {
-    return (
-      <Flex
-        w={'full'}
-        h={'100vh'}
-        backgroundImage={
-          'url(https://i.ibb.co/XD12y8G/Yubiai-Bg.png)'
-        }
-        backgroundSize={'cover'}
-        backgroundPosition={'center center'}>
-        <VStack
-          w={'full'}
-          justify={'flex-start'}
-          bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-          <Stack maxW={'2xl'} align={'flex-start'} mt="1em">
-            <Text
-              color={'white'}
-              fontWeight={700}
-              lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              Website under maintenance
-            </Text>
-          </Stack>
-        </VStack>
-      </Flex>
-    );
-  }
+  Box,
+  Stack,
+  Flex,
+  Text,
+  VStack,
+  useBreakpointValue,
+  Center,
+  Image,
+} from "@chakra-ui/react";
+import Statistics from "../Infos/Stats";
+import LogoYb from "../Logos/LogoYb";
+
+export default function Hero() {
+  return (
+    <>
+      <Box
+        w="full"
+        h={{ base: "full", md: "100vh" }}
+        backgroundImage={"/static/images/bgimage1.png"}
+        backgroundPosition="center"
+        backgroundRepeat="no-repeat"
+        backgroundSize="cover"
+      >
+        <Center h="90vh" color="white">
+          <Image
+            w={"300px"}
+            h={"118px"}
+            alt={"Logo"}
+            src={"/static/images/logoyubiai.png"}
+            fallbackSrc={"/static/images/logoyubiai.png"}
+          />
+        </Center>
+        <Statistics />
+      </Box>
+
+    </>
+  );
+}
