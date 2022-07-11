@@ -19,7 +19,7 @@ const BurnInfo = () => {
 
   return (
     <>
-      <Container maxW={"7xl"} mt={{ base: "5em", md: "0px" }}>
+      <Container maxW={"7xl"} mt={{ base: "5em", md: "0px" }} mb={{ base: "5em", md: "0px" }}>
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}
