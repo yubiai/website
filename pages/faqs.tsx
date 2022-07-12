@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import BuyerFaqCard from "../components/Cards/buyerFaqCard";
 import SellerFaqCard from "../components/Cards/sellerFaqCard";
 import HeroFather from "../components/Layouts/HeroFather";

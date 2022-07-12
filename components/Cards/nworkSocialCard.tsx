@@ -10,17 +10,22 @@ interface itemNwSocial {
 
 const NetworkSocialCard = ({ item }: { item: itemNwSocial }) => {
   return (
-    <Box
-      height="90px"
-      width={{base: 'full', md: '50%'}}
-      mt={"1em"}
-      borderRadius="5px"
-      boxShadow="0 4px 4px 0 rgba(0, 0, 0, 0.25)"
-      backgroundImage="linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
-    >
-      <Flex justifyContent={"space-between"} position="relative">
-        <HStack>
-          <Link href={item.link} isExternal>
+    <Link href={item.link} isExternal>
+      <Box
+        height="full"
+        width="full"
+        mt={"1em"}
+        bg={"#191b30"}
+        borderRadius="5px"
+        boxShadow="0 5px 5px 0 rgba(0, 0, 0, 0.25)"
+        cursor={"pointer"}
+        _hover={{
+          bg: "red",
+          textDecorationLine:"none"
+        }}
+      >
+        <Flex justifyContent={"space-between"} position="relative">
+          <HStack>
             <Image
               w={"50px"}
               h={"50px"}
@@ -29,20 +34,16 @@ const NetworkSocialCard = ({ item }: { item: itemNwSocial }) => {
               src={item.image}
               fallbackSrc={item.image}
             />
-          </Link>
-          <Text color="white" fontSize={"24px"} fontWeight="800">
-            {item.title}
+            <Text color="white" fontSize={"24px"} fontWeight="800">
+              {item.title}
+            </Text>
+          </HStack>
+          <Text color="white" m="0.7em">
+            <ExternalLinkIcon />
           </Text>
-        </HStack>
-        <Text color="white">
-          <Button bg="transparent" _hover={{
-            bg:"gray.600"
-          }}><Link href={item.link} isExternal>
-          <ExternalLinkIcon /></Link></Button>
-        </Text>
-      </Flex>
-
-    </Box>
+        </Flex>
+      </Box>
+    </Link>
   );
 };
 

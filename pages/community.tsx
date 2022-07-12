@@ -1,4 +1,11 @@
-import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import NetworkSocialCard from "../components/Cards/nworkSocialCard";
 import HeroFather from "../components/Layouts/HeroFather";
 
@@ -40,12 +47,12 @@ const Community = () => {
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eoseius non distinctio nisi te"
         }
       >
-        <Box mt="3em" h="300px">
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} mt="3em">
           {listNetworkSocial &&
             listNetworkSocial.map((item, i) => (
               <NetworkSocialCard key={i} item={item} />
             ))}
-        </Box>
+        </SimpleGrid>
       </HeroFather>
     </>
   );
