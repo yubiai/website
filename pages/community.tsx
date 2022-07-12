@@ -33,7 +33,7 @@ const Community = () => {
 
   return (
     <>
-      <HeroFather>
+      <HeroFather title={"Yubiai Landing - Community"}>
         <Container maxW={"7xl"}>
           <Stack
             as={Box}

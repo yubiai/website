@@ -2,7 +2,6 @@ import {
   Box,
   chakra,
   Container,
-  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -12,6 +11,7 @@ import { FaTelegramPlane, FaTwitter, FaYoutube } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import { ReactNode } from "react";
 import LogoYb from "../Logos/LogoYb";
+import Link from "next/link";
 
 const SocialButton = ({
   children,
@@ -31,6 +31,7 @@ const SocialButton = ({
       cursor={"pointer"}
       as={"a"}
       href={href}
+      target="_blank"
       display={"inline-flex"}
       alignItems={"center"}
       justifyContent={"center"}

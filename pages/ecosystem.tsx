@@ -55,7 +55,7 @@ const listEcosystem = {
 const Ecosystem = () => {
   return (
     <>
-      <HeroFather>
+      <HeroFather title={"Yubiai Landing - Ecosystem"}>
         <Container maxW={"7xl"}>
           <Stack
             as={Box}

@@ -10,9 +10,7 @@ const Home: NextPage = () => {
   return (
     <Box>
       <Head>
-        <title>Yubiai Marketplace</title>
-        <meta name="description" content="Yubiai Marketplace" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Yubiai Landing - Home</title>
       </Head>
       <Hero />
       <Info />

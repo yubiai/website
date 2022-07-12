@@ -6,7 +6,7 @@ import HeroFather from "../components/Layouts/HeroFather";
 const Faqs = () => {
   return (
     <>
-      <HeroFather>
+      <HeroFather title={"Yubiai Landing - Faqs"}>
         <Container maxW={"7xl"}>
           <Stack
             as={Box}

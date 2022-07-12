@@ -1,18 +1,26 @@
 import { Box } from "@chakra-ui/react";
+import Head from "next/head";
 import { ReactNode } from "react";
 
-const HeroFather = ({ children }: { children: ReactNode }) => {
+const HeroFather = ({ children, title }: { children: ReactNode, title: String }) => {
   return (
-    <Box
-      w="full"
-      h={{ base: "full", md: "1100px" }}
-      backgroundImage={"/static/images/bgimage1.png"}
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      backgroundSize="cover"
-    >
-      {children}
-    </Box>
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <main>
+        <Box
+          w="full"
+          h={{ base: "full", md: "1100px" }}
+          backgroundImage={"/static/images/bgimage1.png"}
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
+          backgroundSize="cover"
+        >
+          {children}
+        </Box>
+      </main>
+    </>
   );
 };
 

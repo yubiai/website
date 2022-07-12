@@ -29,32 +29,30 @@ const Links = [
   {
     label: "Faqs",
     href: "/faqs",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
+  }
 ];
 
 type LinkProps = {
   label: string;
   href: string;
   pathname: string;
+  onClose: () => void;
 };
 
-const NavLink = ({ label, href, pathname }: LinkProps) => (
+const NavLink = ({ label, href, pathname, onClose }: LinkProps) => (
   <Button
     rounded={"none"}
     color="white"
     bg="transparent"
-    boxShadow= "none"
-    borderBottom={href == pathname ? '3px solid white' : 'none'}
+    boxShadow="none"
+    borderBottom={href == pathname ? "3px solid white" : "none"}
+    onClick={() => onClose()}
     _hover={{
       textDecoration: "none",
-      borderBottom: '3px solid white'
+      borderBottom: "3px solid white",
     }}
   >
-    <Link  href={`${href}`}>{label}</Link>
+    <Link href={`${href}`}>{label}</Link>
   </Button>
 );
 
@@ -62,7 +60,7 @@ export default function withAction() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { isOpen, onOpen, onClose } = useDisclosure();
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const router = useRouter()
+  const router = useRouter();
   const pathname = router.pathname;
 
   return (
@@ -89,13 +87,21 @@ export default function withAction() {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link, i) => (
-                <NavLink key={i} label={link.label} href={link.href} pathname={pathname} />
+                <NavLink
+                  key={i}
+                  label={link.label}
+                  href={link.href}
+                  pathname={pathname}
+                  onClose={onClose}
+                />
               ))}
             </HStack>
-            <Link href="https://app.yubiai.market">
-              <Button variant={"solid"} color={"black"} size={"sm"} mr={4}>
-                Launch App
-              </Button>
+            <Link href="https://app.yubiai.market" passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <Button variant={"solid"} color={"black"} size={"sm"} mr={4}>
+                  Launch App
+                </Button>
+              </a>
             </Link>
           </Flex>
         </Flex>
@@ -104,7 +110,13 @@ export default function withAction() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link, i) => (
-                <NavLink key={i} label={link.label} href={link.href} pathname={pathname} />
+                <NavLink
+                  key={i}
+                  label={link.label}
+                  href={link.href}
+                  pathname={pathname}
+                  onClose={onClose}
+                />
               ))}
             </Stack>
           </Box>

@@ -5,7 +5,7 @@ import HeroFather from "./HeroFather";
 
 export default function Hero() {
   return (
-    <HeroFather>
+    <HeroFather title={"Yubiai Landing - Home"}>
         <Center h="87vh" color="white">
           <Image
             w={"300px"}
