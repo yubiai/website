@@ -1,35 +1,68 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import { ReactNode, useState } from "react";
 
-const HeroFather = ({ children, title }: { children: ReactNode, title: String }) => {
-
-
-  const listImages = [
-    "bg0.png", "bg1.jpg", "bg2.jpg", "bg3.png", "bg4.png", "bg5.jpg", "bg6.jpg", "bg7.jpg", "bg8.png", "bg9.jpg", "bg10.png", "bg11.jpg"
-  ]
-
-  const [selectImage, setSelectImage] = useState(listImages[0])
-
+const HeroFather = ({
+  children,
+  titleHead,
+  titleFirst,
+  titleSecond,
+  description,
+}: {
+  children: ReactNode;
+  titleHead: String;
+  titleFirst: String;
+  titleSecond: String;
+  description: String;
+}) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{titleHead}</title>
       </Head>
       <main>
-      {listImages && listImages.map((item, i) => (
-            <Button h="1em" key={i} onClick={() => setSelectImage(item)}>{i}</Button>
-          ))}
         <Box
           w="full"
-          h={{ base: "full", md: "800px" }}
-          backgroundImage={`/static/images/${selectImage}`}
+          h="1700px"
+          backgroundImage={`/static/images/bgoficial.png`}
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize="cover"
         >
-
-          {children}
+          <Container maxW={"7xl"}>
+            <Stack as={Box} py={{ base: 20, md: "15em" }}>
+              <Heading
+                fontWeight={800}
+                fontSize={{ base: "2xl", md: "36px" }}
+                lineHeight={"normal"}
+                color="white"
+              >
+                {titleFirst}{" "}
+                {titleSecond && (
+                  <>
+                    <br />
+                    <Text as={"span"} color={"white"}>
+                      ecosystem
+                    </Text>
+                  </>
+                )}
+              </Heading>
+            </Stack>
+            <Box w={{ base: "full", md: "50%" }}>
+              <Text color={"white"} fontSize="20px">
+                {description}
+              </Text>
+            </Box>
+            {children}
+          </Container>
         </Box>
       </main>
     </>

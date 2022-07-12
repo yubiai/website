@@ -6,6 +6,7 @@ import "../styles/globals.css";
 import Footer from "../components/Layouts/Footer";
 import Header from "../components/Layouts/Header";
 import Head from "next/head";
+import Footer1 from "../components/Layouts/Footer1";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

@@ -1,10 +1,5 @@
 import {
-  Box,
-  Container,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
+  SimpleGrid
 } from "@chakra-ui/react";
 import EcosystemCard from "../components/Cards/ecosystemCard";
 import HeroFather from "../components/Layouts/HeroFather";
@@ -55,45 +50,25 @@ const listEcosystem = {
 const Ecosystem = () => {
   return (
     <>
-      <HeroFather title={"Yubiai Landing - Ecosystem"}>
-        <Container maxW={"7xl"}>
-          <Stack
-            as={Box}
-            spacing={{ base: 8, md: 20 }}
-            py={{ base: 20, md: 40 }}
-          >
-            <Heading
-              fontWeight={800}
-              fontSize={{ base: "2xl", md: "36px" }}
-              lineHeight={"normal"}
-              color="white"
-            >
-              Explore the Yubiai <br />
-              <Text as={"span"} color={"white"}>
-                ecosystem
-              </Text>
-            </Heading>
-          </Stack>
-          <Box w={{ base: "full", md: "50%" }}>
-            <Text color={"white"} fontSize="20px">
-              Yubiai integrates different protocols to give his users the best
-              UX and security when using the platform
-            </Text>
-          </Box>
-
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} mt="3em">
-            <EcosystemCard item={listEcosystem.eth} />
-            <EcosystemCard item={listEcosystem.poh} />
-            <EcosystemCard item={listEcosystem.kleros} />
-            <EcosystemCard item={listEcosystem.metamask} />
-            <EcosystemCard item={listEcosystem.ubi} />
-            <EcosystemCard item={listEcosystem.gnosis} />
-            <EcosystemCard item={listEcosystem.polygon} />
-            <EcosystemCard item={listEcosystem.arbitrum} />
-          </SimpleGrid>
-        </Container>
+      <HeroFather
+        titleHead={"Yubiai Landing - Ecosystem"}
+        titleFirst={"Explore the Yubiai"}
+        titleSecond={"ecosystem"}
+        description={
+          "Yubiai integrates different protocols to give his users the best UX and security when using the platform"
+        }
+      >
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} mt="3em">
+          <EcosystemCard item={listEcosystem.eth} />
+          <EcosystemCard item={listEcosystem.poh} />
+          <EcosystemCard item={listEcosystem.kleros} />
+          <EcosystemCard item={listEcosystem.metamask} />
+          <EcosystemCard item={listEcosystem.ubi} />
+          <EcosystemCard item={listEcosystem.gnosis} />
+          <EcosystemCard item={listEcosystem.polygon} />
+          <EcosystemCard item={listEcosystem.arbitrum} />
+        </SimpleGrid>
       </HeroFather>
-      <Box h={{base: "1em", md: "800px"}}></Box>
     </>
   );
 };

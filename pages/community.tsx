@@ -23,56 +23,30 @@ const Community = () => {
       link: "https://t.me/yubiai",
     },
     {
-        image: "/static/networksocial/ytlogo.webp",
-        title: "YouTube",
-        info: "YT",
-        link: "https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA",
-      }
+      image: "/static/networksocial/ytlogo.webp",
+      title: "YouTube",
+      info: "YT",
+      link: "https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA",
+    },
   ];
-
 
   return (
     <>
-      <HeroFather title={"Yubiai Landing - Community"}>
-        <Container maxW={"7xl"}>
-          <Stack
-            as={Box}
-            spacing={{ base: 8, md: 30 }}
-            py={{ base: 20, md: 46 }}
-          >
-            <Heading
-              fontWeight={800}
-              fontSize={{ base: "2xl", md: "36px" }}
-              lineHeight={"normal"}
-              color="white"
-            >
-              Follow us in the Yubiai
-              <br />
-              <Text as={"span"} color={"white"}>
-                community
-              </Text>
-            </Heading>
-          </Stack>
-          <Box
-            w={{ base: "full", md: "50%" }}
-            mt={{ base: "10em", md: "30em" }}
-          >
-            <Text color={"white"} fontSize="20px">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eos
-              eius non distinctio nisi tenetur vitae omnis earum eaque laborum
-              nam, repudiandae mollitia odit. Doloremque error nesciunt velit
-              autem eum?
-            </Text>
-          </Box>
-            <Box mt="2em">
-            {listNetworkSocial &&
-          listNetworkSocial.map((item, i) => (
-            <NetworkSocialCard key={i} item={item} />
-          ))}
-            </Box>
-        </Container>
+      <HeroFather
+        titleHead={"Yubiai Landing - Community"}
+        titleFirst={"Follow us in the Yubiai"}
+        titleSecond={"community"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eoseius non distinctio nisi te"
+        }
+      >
+        <Box mt="3em" h="300px">
+          {listNetworkSocial &&
+            listNetworkSocial.map((item, i) => (
+              <NetworkSocialCard key={i} item={item} />
+            ))}
+        </Box>
       </HeroFather>
-      <Box h={{base: "1em", md: "400px"}}></Box>
     </>
   );
 };
