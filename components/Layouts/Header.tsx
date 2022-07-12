@@ -27,7 +27,7 @@ const Links = [
     href: "/community",
   },
   {
-    label: "Faqs",
+    label: "FAQ",
     href: "/faqs",
   }
 ];
