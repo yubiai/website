@@ -38,7 +38,7 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: "blackAlpha.200"
+        bg: "blackAlpha.200",
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -69,10 +69,10 @@ const Footer = () => {
       >
         <LogoYb />
         <Stack direction={"row"} spacing={6}>
+          <Link href="/">Home</Link>
           <Link href="/ecosystem">Ecosystem</Link>
           <Link href="/community">Community</Link>
           <Link href="/faq">FAQ</Link>
-          <Link href="/contact">Contact</Link>
         </Stack>
       </Container>
 

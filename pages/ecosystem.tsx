@@ -59,8 +59,8 @@ const Ecosystem = () => {
         <Container maxW={"7xl"}>
           <Stack
             as={Box}
-            spacing={{ base: 8, md: 30 }}
-            py={{ base: 20, md: 46 }}
+            spacing={{ base: 8, md: 20 }}
+            py={{ base: 20, md: 40 }}
           >
             <Heading
               fontWeight={800}
@@ -74,10 +74,7 @@ const Ecosystem = () => {
               </Text>
             </Heading>
           </Stack>
-          <Box
-            w={{ base: "full", md: "50%" }}
-            mt={{ base: "10em", md: "30em" }}
-          >
+          <Box w={{ base: "full", md: "50%" }}>
             <Text color={"white"} fontSize="20px">
               Yubiai integrates different protocols to give his users the best
               UX and security when using the platform
@@ -88,18 +85,15 @@ const Ecosystem = () => {
             <EcosystemCard item={listEcosystem.eth} />
             <EcosystemCard item={listEcosystem.poh} />
             <EcosystemCard item={listEcosystem.kleros} />
+            <EcosystemCard item={listEcosystem.metamask} />
+            <EcosystemCard item={listEcosystem.ubi} />
+            <EcosystemCard item={listEcosystem.gnosis} />
+            <EcosystemCard item={listEcosystem.polygon} />
+            <EcosystemCard item={listEcosystem.arbitrum} />
           </SimpleGrid>
         </Container>
       </HeroFather>
-      <Container maxW={"7xl"}>
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-          <EcosystemCard item={listEcosystem.metamask} />
-          <EcosystemCard item={listEcosystem.ubi} />
-          <EcosystemCard item={listEcosystem.gnosis} />
-          <EcosystemCard item={listEcosystem.polygon} />
-          <EcosystemCard item={listEcosystem.arbitrum} />
-        </SimpleGrid>
-      </Container>
+      <Box h={{base: "1em", md: "800px"}}></Box>
     </>
   );
 };
