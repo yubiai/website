@@ -2,7 +2,6 @@ import {
   Box,
   chakra,
   Container,
-  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -12,6 +11,7 @@ import { FaTelegramPlane, FaTwitter, FaYoutube } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import { ReactNode } from "react";
 import LogoYb from "../Logos/LogoYb";
+import Link from "next/link";
 
 const SocialButton = ({
   children,
@@ -24,13 +24,14 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      bg={"white"}
       rounded={"full"}
       w={8}
       h={8}
       cursor={"pointer"}
       as={"a"}
       href={href}
+      target="_blank"
       display={"inline-flex"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -47,17 +48,23 @@ const SocialButton = ({
 
 const Footer = () => {
   return (
-    <Box
-      bg={'#191b30'}
-      color={'white'}
-    >
+    <>
       <Container
+        bg={"#191b30"}
+        color={"white"}
+        position="relative"
         as={Stack}
-        maxW={"6xl"}
+        maxW={"8xl"}
+        mt={"1em"}
         py={4}
         spacing={4}
         justify={"center"}
         align={"center"}
+        borderRadius={"5px"}
+        boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
+        backgroundImage={
+          "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
+        }
       >
         <LogoYb />
         <Stack direction={"row"} spacing={6}>
@@ -68,7 +75,7 @@ const Footer = () => {
         </Stack>
       </Container>
 
-      <Box borderStyle={"solid"} borderColor={"gray.200"}>
+      <Box>
         <Container
           as={Stack}
           maxW={"6xl"}
@@ -78,7 +85,9 @@ const Footer = () => {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 Yubiai Marketplace. All rights reserved</Text>
+          <Text color="white">
+            © 2022 Yubiai Marketplace. All rights reserved
+          </Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton
               label={"Twitter"}
@@ -101,7 +110,7 @@ const Footer = () => {
           </Stack>
         </Container>
       </Box>
-    </Box>
+    </>
   );
 };
 

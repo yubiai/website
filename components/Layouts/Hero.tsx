@@ -1,35 +1,29 @@
-import {
-    Stack,
-    Flex,
-    Text,
-    VStack,
-    useBreakpointValue,
-  } from '@chakra-ui/react';
-  
-  export default function Hero() {
-    return (
-      <Flex
-        w={'full'}
-        h={'100vh'}
-        backgroundImage={
-          'url(https://i.ibb.co/XD12y8G/Yubiai-Bg.png)'
-        }
-        backgroundSize={'cover'}
-        backgroundPosition={'center center'}>
-        <VStack
-          w={'full'}
-          justify={'flex-start'}
-          bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-          <Stack maxW={'2xl'} align={'flex-start'} mt="1em">
-            <Text
-              color={'white'}
-              fontWeight={700}
-              lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              Website under maintenance
-            </Text>
-          </Stack>
-        </VStack>
-      </Flex>
-    );
-  }
+import { Link, Center, Flex, Image } from "@chakra-ui/react";
+import Statistics from "../Infos/Stats";
+import { FaTwitter, FaYoutube } from "react-icons/fa";
+import HeroFather from "./HeroFather";
+
+export default function Hero() {
+  return (
+    <HeroFather title={"Yubiai Landing - Home"}>
+        <Center h="87vh" color="white">
+          <Image
+            w={"300px"}
+            h={"118px"}
+            alt={"Logo"}
+            src={"/static/images/logoyubiai.png"}
+            fallbackSrc={"/static/images/logoyubiai.png"}
+          />
+        </Center>
+        <Flex justifyContent={"right"} mr="2em">
+          <Link mr={'1em'} href="https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA" isExternal>
+            <FaYoutube color="white" fontSize={"2em"} />
+          </Link>
+          <Link mr={'1em'} href="https://twitter.com/YubiaiM" isExternal>
+            <FaTwitter color="white" fontSize={"2em"} />
+          </Link>
+        </Flex>
+        <Statistics />
+    </HeroFather>
+  );
+}
