@@ -98,7 +98,7 @@ export default function withAction() {
             </HStack>
             <Link href="https://app.yubiai.market" passHref>
               <a target="_blank" rel="noopener noreferrer">
-                <Button variant={"solid"} color={"black"} size={"sm"} mr={4}>
+                <Button variant={"solid"} color={"black"} bg="white" size={"sm"} mr={4}>
                   Launch App
                 </Button>
               </a>
