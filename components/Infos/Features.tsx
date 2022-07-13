@@ -5,7 +5,7 @@ const Features = () => {
     <>
       <Box
         position={"relative"}
-        height={"479px"}
+        height={{base: "full", md: "479px"}}
         width={"full"}
         padding={"1.5em"}
         borderRadius={"5px"}
@@ -29,9 +29,9 @@ const Features = () => {
           lineHeight={1.1}
           fontWeight={600}
           color={"white"}
-          fontSize={{ base: "10px", sm: "15px", lg: "20px" }}
+          fontSize={{ base: "3xl", sm: "15px", lg: "20px" }}
         >
-          Q1
+          <Text fontSize={"2xl"}>Q1</Text>
         </Heading>
         <Text
           mt={"1em"}
@@ -51,7 +51,7 @@ const Features = () => {
           color={"white"}
           fontSize={{ base: "10px", sm: "15px", lg: "20px" }}
         >
-          Q2
+          <Text fontSize={"2xl"}>Q2</Text>
         </Heading>
         <Text
           mt={"1em"}
@@ -71,7 +71,7 @@ const Features = () => {
           color={"white"}
           fontSize={{ base: "10px", sm: "15px", lg: "20px" }}
         >
-          Q3
+          <Text fontSize={"2xl"}>Q3</Text>
         </Heading>
         <Text
           mt={"1em"}

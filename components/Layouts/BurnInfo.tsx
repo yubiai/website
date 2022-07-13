@@ -19,18 +19,19 @@ const BurnInfo = () => {
 
   return (
     <>
-      <Container maxW={"7xl"} mt={{ base: "5em", md: "0px" }} mb={{ base: "5em", md: "0px" }}>
+      <Container maxW={"7xl"} mt={{ base: "1em", md: "0px" }} mb={{ base: "5em", md: "0px" }}>
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}
           direction={{ base: "column", md: "row" }}
         >
-          <Stack flex={1} spacing={"1.4em"}>
+          <Stack flex={1} spacing={"1.2em"}>
             <Heading
               lineHeight={1.1}
               fontWeight={600}
               color={"white"}
               fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
+              textAlign={{base: "center", md: "left"}}
             >
               <Text as={"span"} position={"relative"}>
                 Burn Information

@@ -31,7 +31,7 @@ const HeroFather = ({
       <main>
         <Box
           w="full"
-          h="1700px"
+          h={{base: "full", md: "1700px"}}
           backgroundImage={`/static/images/bgoficial.png`}
           backgroundPosition="0 60%"
           backgroundRepeat="no-repeat"

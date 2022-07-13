@@ -32,7 +32,7 @@ export default function Hero() {
             fallbackSrc={"/static/images/logoyubiai.png"}
           />
           </Center>
-          <Heading fontSize={"2xl"} mt="5px">
+          <Heading fontSize={"2xl"} mt="5px" textAlign={"center"}>
             <Text color="white">A Web3 decentralized marketplace</Text>
           </Heading>
         </Box>

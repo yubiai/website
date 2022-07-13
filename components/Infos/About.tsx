@@ -4,6 +4,7 @@ const About = () => {
   return (
     <>
       <Heading
+        textAlign={{base: "center", md: "left"}}
         lineHeight={1.1}
         fontWeight={600}
         color={"white"}
