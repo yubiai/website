@@ -1,22 +1,13 @@
 import {
   Box,
-  Container,
-  Heading,
   SimpleGrid,
-  Stack,
-  Text,
 } from "@chakra-ui/react";
 import NetworkSocialCard from "../components/Cards/nworkSocialCard";
 import HeroFather from "../components/Layouts/HeroFather";
+import { Timeline } from "react-twitter-widgets";
 
 const Community = () => {
   const listNetworkSocial = [
-    {
-      image: "/static/networksocial/twlogo.png",
-      title: "Twitter",
-      info: "Tw",
-      link: "https://twitter.com/YubiaiM",
-    },
     {
       image: "/static/networksocial/linktreelogo.png",
       title: "Linktree",
@@ -26,14 +17,33 @@ const Community = () => {
     {
       image: "/static/networksocial/telegramlogo.png",
       title: "Telegram",
-      info: "TTelegramTelegramTelegram",
+      info: "Telegram",
       link: "https://t.me/yubiai",
     },
+    {
+      image: "/static/networksocial/twlogo.png",
+      title: "Twitter",
+      info: "Tw",
+      link: "https://twitter.com/YubiaiM",
+    },
+
     {
       image: "/static/networksocial/ytlogo.webp",
       title: "YouTube",
       info: "YT",
       link: "https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA",
+    },
+    {
+      image: "/static/networksocial/discordlogo.png",
+      title: "Discord",
+      info: "Discord",
+      link: "https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA",
+    },
+    {
+      image: "/static/networksocial/githublogo.png",
+      title: "Github",
+      info: "Github",
+      link: "https://github.com/yubiai",
     },
   ];
 
@@ -53,6 +63,18 @@ const Community = () => {
               <NetworkSocialCard key={i} item={item} />
             ))}
         </SimpleGrid>
+        <Box mt={{base: "2em", md: "4em"}} p={{md: "1em"}}>
+         <Timeline
+            dataSource={{
+              sourceType: "profile",
+              screenName: "YubiaiM",
+            }}
+            options={{
+              height: "600px",
+              theme: "dark"
+            }}
+          />
+        </Box>
       </HeroFather>
     </>
   );

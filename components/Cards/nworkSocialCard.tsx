@@ -10,18 +10,22 @@ interface itemNwSocial {
 
 const NetworkSocialCard = ({ item }: { item: itemNwSocial }) => {
   return (
-    <Link href={item.link} isExternal>
+    <Link
+      href={item.link}
+      isExternal
+      _hover={{
+        textDecoration: "none",
+      }}
+    >
       <Box
         height="full"
         width="full"
-        mt={"1em"}
         bg={"#191b30"}
         borderRadius="5px"
         boxShadow="0 5px 5px 0 rgba(0, 0, 0, 0.25)"
         cursor={"pointer"}
         _hover={{
-          bg: "red",
-          textDecorationLine:"none"
+          bg: "#191b40",
         }}
       >
         <Flex justifyContent={"space-between"} position="relative">

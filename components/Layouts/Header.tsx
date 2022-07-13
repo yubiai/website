@@ -49,7 +49,6 @@ const NavLink = ({ label, href, pathname, onClose }: LinkProps) => (
     onClick={() => onClose()}
     _hover={{
       textDecoration: "none",
-      borderBottom: "3px solid white",
     }}
   >
     <Link href={`${href}`}>{label}</Link>
