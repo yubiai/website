@@ -29,7 +29,7 @@ const Links = [
   {
     label: "FAQ",
     href: "/faqs",
-  }
+  },
 ];
 
 type LinkProps = {
@@ -40,19 +40,21 @@ type LinkProps = {
 };
 
 const NavLink = ({ label, href, pathname, onClose }: LinkProps) => (
-  <Button
-    rounded={"none"}
-    color="white"
-    bg="transparent"
-    boxShadow="none"
-    borderBottom={href == pathname ? "3px solid white" : "none"}
-    onClick={() => onClose()}
-    _hover={{
-      textDecoration: "none",
-    }}
-  >
-    <Link href={`${href}`}>{label}</Link>
-  </Button>
+  <Link href={`${href}`}>
+    <Button
+      rounded={"none"}
+      color="white"
+      bg="transparent"
+      boxShadow="none"
+      borderBottom={href == pathname ? "3px solid white" : "none"}
+      onClick={() => onClose()}
+      _hover={{
+        textDecoration: "none",
+      }}
+    >
+      {label}
+    </Button>
+  </Link>
 );
 
 export default function withAction() {
@@ -63,7 +65,7 @@ export default function withAction() {
   const pathname = router.pathname;
 
   return (
-    <Box sx={{ position: 'sticky', top: '0', zIndex: '99' }} bg="#191b30">
+    <Box sx={{ position: "sticky", top: "0", zIndex: "99" }} bg="#191b30">
       <Container maxW={"8xl"} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -97,7 +99,13 @@ export default function withAction() {
             </HStack>
             <Link href="https://app.yubiai.market" passHref>
               <a target="_blank" rel="noopener noreferrer">
-                <Button variant={"solid"} color={"black"} bg="white" size={"sm"} mr={4}>
+                <Button
+                  variant={"solid"}
+                  color={"black"}
+                  bg="white"
+                  size={"sm"}
+                  mr={4}
+                >
                   Launch App
                 </Button>
               </a>
