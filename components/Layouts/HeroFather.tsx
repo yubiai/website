@@ -33,7 +33,7 @@ const HeroFather = ({
           w="full"
           h="1700px"
           backgroundImage={`/static/images/bgoficial.png`}
-          backgroundPosition="center"
+          backgroundPosition="0 60%"
           backgroundRepeat="no-repeat"
           backgroundSize="cover"
         >

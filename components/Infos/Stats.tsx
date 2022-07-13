@@ -1,23 +1,16 @@
 import {
   Box,
-  Center,
-  chakra,
-  Flex,
   SimpleGrid,
   Stat,
   StatLabel,
-  StatNumber,
-  useColorModeValue,
+  StatNumber
 } from "@chakra-ui/react";
-import { ReactNode } from "react";
-import { BsPerson } from "react-icons/bs";
-import { FiServer } from "react-icons/fi";
-import { GoLocation } from "react-icons/go";
 
 interface StatsCardProps {
   title: string;
   stat: string;
 }
+
 function StatsCard(props: StatsCardProps) {
   const { title, stat } = props;
   return (

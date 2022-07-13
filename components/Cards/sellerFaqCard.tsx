@@ -9,17 +9,15 @@ const SellerFaqCard = () => {
       padding={"1.5em"}
       borderRadius={"5px"}
       boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
-      backgroundImage={
-        "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
-      }
+      bg="#191b30"
       color="white"
     >
       <Center>
-        <Heading as="h2" size="2xl">
-          Seller
+        <Heading fontSize={"3xl"}>
+          <Text as='u'>Seller</Text>
         </Heading>
       </Center>
-      <Heading as="h4" mt="5px">
+      <Heading fontSize={"2xl"}>
         <Text>Faq 1</Text>
       </Heading>
       <Text>
@@ -28,7 +26,7 @@ const SellerFaqCard = () => {
         nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
         ullam consectetur.
       </Text>
-      <Heading as="h4" mt="5px">
+      <Heading fontSize={"2xl"}>
         <Text>Faq 2</Text>
       </Heading>
       <Text>
@@ -37,7 +35,7 @@ const SellerFaqCard = () => {
         nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
         ullam consectetur.
       </Text>
-      <Heading as="h4" mt="5px">
+      <Heading fontSize={"2xl"}>
         <Text>Faq 3</Text>
       </Heading>
       <Text>
@@ -46,7 +44,7 @@ const SellerFaqCard = () => {
         nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
         ullam consectetur.
       </Text>
-      <Heading as="h4" mt="5px">
+      <Heading fontSize={"2xl"}>
         <Text>Faq 4</Text>
       </Heading>
       <Text>
@@ -55,7 +53,7 @@ const SellerFaqCard = () => {
         nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
         ullam consectetur.
       </Text>
-      <Heading as="h4" mt="5px">
+      <Heading fontSize={"2xl"}>
         <Text>Faq 5</Text>
       </Heading>
       <Text>

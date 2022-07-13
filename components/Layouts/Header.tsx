@@ -63,7 +63,7 @@ export default function withAction() {
   const pathname = router.pathname;
 
   return (
-    <>
+    <Box sx={{ position: 'sticky', top: '0', zIndex: '99' }} bg="#191b30">
       <Container maxW={"8xl"} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -121,6 +121,6 @@ export default function withAction() {
           </Box>
         ) : null}
       </Container>
-    </>
+    </Box>
   );
 }

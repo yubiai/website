@@ -13,7 +13,7 @@ const EcosystemCard = ({
 }) => {
   return (
     <Box
-      height="300px"
+      height="330px"
       padding="1em"
       borderRadius="5px"
       boxShadow="0 4px 4px 0 rgba(0, 0, 0, 0.25)"
@@ -24,7 +24,7 @@ const EcosystemCard = ({
           <Image
             w={"75px"}
             h={"75px"}
-            m="1em"
+            m="5px"
             alt={"Logo"}
             src={item.image}
             fallbackSrc={item.image}
@@ -33,7 +33,7 @@ const EcosystemCard = ({
         <Text color="white" fontSize={"24px"} fontWeight="800">{item.title}</Text>
       </HStack>
       <Box>
-        <Text mt="1em" color="white" fontSize={"15px"}>{item.info}</Text>
+        <Text color="white" fontSize={"15px"} mt="10px">{item.info}</Text>
       </Box>
     </Box>
   );

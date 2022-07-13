@@ -50,10 +50,10 @@ const BurnInfo = () => {
           </Stack>
           <Flex flex={2}>
             <UnorderedList color="white">
-              <ListItem>Lorem ipsum dolor sit amet</ListItem>
-              <ListItem>Consectetur adipiscing elit</ListItem>
-              <ListItem>Integer molestie lorem at massa</ListItem>
-              <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+              <ListItem><Text fontSize={"2xl"}>% Loren Lorena Loren</Text></ListItem>
+              <ListItem><Text fontSize={"2xl"}>% Loren Lorena Loren</Text></ListItem>
+              <ListItem><Text fontSize={"2xl"}>% Loren Lorena Loren</Text></ListItem>
+              <ListItem><Text fontSize={"2xl"}>% Loren Lorena Loren</Text></ListItem>
             </UnorderedList>
           </Flex>
         </Stack>

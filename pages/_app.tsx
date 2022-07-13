@@ -6,6 +6,7 @@ import "../styles/globals.css";
 import Footer from "../components/Layouts/Footer";
 import Header from "../components/Layouts/Header";
 import Head from "next/head";
+import TopButton from "../components/Buttons/topButton";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -33,6 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="Robots" content="all" />
       </Head>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <TopButton />
       <Header />
 
       <Component {...pageProps} />

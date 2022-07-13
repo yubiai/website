@@ -1,4 +1,13 @@
-import { Link, Center, Flex, Image, Button, Box } from "@chakra-ui/react";
+import {
+  Link,
+  Center,
+  Flex,
+  Image,
+  Button,
+  Box,
+  Text,
+  Heading,
+} from "@chakra-ui/react";
 import Statistics from "../Infos/Stats";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 
@@ -8,19 +17,25 @@ export default function Hero() {
       w="full"
       h="full"
       backgroundImage={`/static/images/bgoficial.png`}
-      backgroundPosition="center"
+      backgroundPosition="0 35%"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
     >
-      {" "}
       <Center h="87vh" color="white">
-        <Image
-          w={"300px"}
-          h={"118px"}
-          alt={"Logo"}
-          src={"/static/images/logoyubiai.png"}
-          fallbackSrc={"/static/images/logoyubiai.png"}
-        />
+        <Box>
+          <Center>
+          <Image
+            w={"300px"}
+            h={"118px"}
+            alt={"Logo"}
+            src={"/static/images/logoyubiai.png"}
+            fallbackSrc={"/static/images/logoyubiai.png"}
+          />
+          </Center>
+          <Heading fontSize={"2xl"} mt="5px">
+            <Text color="white">A Web3 decentralized marketplace</Text>
+          </Heading>
+        </Box>
       </Center>
       <Flex justifyContent={"right"}>
         <Button
