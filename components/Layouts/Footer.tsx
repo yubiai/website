@@ -56,7 +56,6 @@ const Footer = () => {
         position="relative"
         as={Stack}
         maxW={"8xl"}
-        mt={"1em"}
         py={4}
         spacing={4}
         justify={"center"}

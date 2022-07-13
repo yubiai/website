@@ -50,7 +50,7 @@ const HeroFather = ({
                   <>
                     <br />
                     <Text as={"span"} color={"white"}>
-                      ecosystem
+                      {titleSecond}
                     </Text>
                   </>
                 )}
