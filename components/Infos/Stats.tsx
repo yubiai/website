@@ -23,10 +23,10 @@ function StatsCard(props: StatsCardProps) {
   return (
       <Stat px={{ base: 2, md: 10 }} py={"3"} rounded={"lg"} alignItems="center">
       <Box pl={{ base: 2, md: 4 }}>
-        <StatNumber fontSize={"2xl"} fontWeight={"medium"}>
+        <StatNumber fontSize={"5xl"} fontWeight={"medium"}>
           {stat}
         </StatNumber>
-        <StatLabel fontWeight={"medium"}>{title}</StatLabel>
+        <StatLabel fontSize={"1xl"} fontWeight={"medium"}>{title}</StatLabel>
       </Box>
     </Stat>
   );
