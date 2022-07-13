@@ -43,10 +43,11 @@ export default function Hero() {
           m="1em"
           href="https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"
           isExternal
+          aria-label="Youtube yubiai"
         >
           <FaYoutube color="white" fontSize={"2em"} />
         </Link>
-        <Link m="1em" w="5px" href="https://twitter.com/YubiaiM" isExternal>
+        <Link m="1em" w="5px" href="https://twitter.com/YubiaiM" isExternal aria-label="Tw Yubiai">
           <FaTwitter color="white" fontSize={"2em"} />
         </Link>
       </Flex>
