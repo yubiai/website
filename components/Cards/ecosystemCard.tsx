@@ -17,7 +17,7 @@ const EcosystemCard = ({
       padding="1em"
       borderRadius="5px"
       boxShadow="0 4px 4px 0 rgba(0, 0, 0, 0.25)"
-      backgroundImage="linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
+      bg={"#191b30"}
     >
       <HStack>
         <Link href={"/"}>

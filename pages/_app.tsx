@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Yubiai Market" />
         <meta property="og:title" content="Yubiai - Web" />
         <meta property="og:description" content="Yubiai Landing" />
-        <meta property="og:url" content="https://www.yubiai.com/" />
+        <meta property="og:url" content="https://www.yubiai.market" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/static/images/logo2.png" />
