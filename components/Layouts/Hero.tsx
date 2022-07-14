@@ -3,25 +3,52 @@ import {
   Center,
   Flex,
   Image,
-  Button,
   Box,
   Text,
   Heading,
+  Button,
 } from "@chakra-ui/react";
-import Statistics from "../Infos/Stats";
-import { FaTwitter, FaYoutube } from "react-icons/fa";
+import { ReactNode } from "react";
+import {
+  FaTwitter,
+  FaGithub,
+  FaTelegramPlane,
+  FaDiscord,
+} from "react-icons/fa";
+
+const ButtonSocial = ({
+  children,
+  link,
+  label,
+}: {
+  children: ReactNode;
+  link: String;
+  label: String;
+}) => (
+  <Link w="30px" mr="2em" href={`${link}`} isExternal aria-label={`${label}`}>
+    <Button
+      w="4em"
+      bg="transparent"
+      _hover={{
+        bg: "blackAlpha.500",
+      }}
+    >
+      {children}
+    </Button>
+  </Link>
+);
 
 export default function Hero() {
   return (
     <Box
       w="full"
       h="full"
-      backgroundImage={'/static/images/bg14.jpg'}
+      backgroundImage={"/static/images/bg14.jpg"}
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
     >
-      <Center h="87vh" color="white">
+      <Center h="86vh" color="white">
         <Box>
           <Center>
             <Image
@@ -37,21 +64,20 @@ export default function Hero() {
           </Heading>
         </Box>
       </Center>
-      <Flex justifyContent={"right"} mr="3em">
-        <Link
-          w="5px"
-          m="1em"
-          href="https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"
-          isExternal
-          aria-label="Youtube yubiai"
-        >
-          <FaYoutube color="white" fontSize={"2em"} />
-        </Link>
-        <Link m="1em" w="5px" href="https://twitter.com/YubiaiM" isExternal aria-label="Tw Yubiai">
-          <FaTwitter color="white" fontSize={"2em"} />
-        </Link>
+      <Flex justifyContent={"right"} mr="3em" h="6vh">
+        <ButtonSocial label={"Telegram Yubiai"} link={"https://t.me/yubiai"}>
+          <FaTelegramPlane fontSize={"2em"} color={"white"} />
+        </ButtonSocial>
+        <ButtonSocial label={"Twitter Yubiai"} link={"https://twitter.com/YubiaiM"}>
+          <FaTwitter fontSize={"2em"} color={"white"} />
+        </ButtonSocial>
+        <ButtonSocial label={"Github Yubiai"} link={"https://github.com/yubiai"}>
+          <FaGithub fontSize={"2em"} color={"white"} />
+        </ButtonSocial>
+        <ButtonSocial label={"Discord Yubiai"} link={"https://discord.gg/a9CQKJXb8X"}>
+          <FaDiscord fontSize={"2em"} color={"white"} />
+        </ButtonSocial>
       </Flex>
-      <Statistics />
     </Box>
   );
 }

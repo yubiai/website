@@ -67,7 +67,7 @@ export default function withAction() {
   return (
     <Box sx={{ position: "sticky", top: "0", zIndex: "99" }} bg="#191b30">
       <Container maxW={"8xl"} px={4}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex h={"8vh"} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
