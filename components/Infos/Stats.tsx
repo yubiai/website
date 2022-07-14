@@ -33,10 +33,10 @@ export default function Statistics() {
         spacing={{ base: 2, lg: 4 }}
         color="white"
       >
-        <StatsCard title={"Users"} stat={"5,000"} />
-        <StatsCard title={"Publications"} stat={"2,000"} />
-        <StatsCard title={"Transactions"} stat={"10,000"} />
-        <StatsCard title={"Disputes"} stat={"1,000"} />
+        <StatsCard title={"Users"} stat={"0"}  />
+        <StatsCard title={"Publications"} stat={"0"} />
+        <StatsCard title={"Transactions"} stat={"0"} />
+        <StatsCard title={"Disputes"} stat={"0"} />
       </SimpleGrid>
     </Box>
   );

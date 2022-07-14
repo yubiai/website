@@ -11,8 +11,8 @@ export default function Custom404() {
       <Box
         w="full"
         h="full"
-        backgroundImage={`/static/images/bgoficial.png`}
-        backgroundPosition="0 35%"
+        backgroundImage={`/static/images/bg14.png`}
+        backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
       >

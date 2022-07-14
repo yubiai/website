@@ -11,8 +11,8 @@ export default function Custom500() {
       <Box
         w="full"
         h="full"
-        backgroundImage={`/static/images/bgoficial.png`}
-        backgroundPosition="0 35%"
+        backgroundImage={`/static/images/b14.png`}
+        backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
       >

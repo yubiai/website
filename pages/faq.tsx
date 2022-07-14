@@ -3,7 +3,7 @@ import BuyerFaqCard from "../components/Cards/buyerFaqCard";
 import SellerFaqCard from "../components/Cards/sellerFaqCard";
 import HeroFather from "../components/Layouts/HeroFather";
 
-const Faqs = () => {
+const Faq = () => {
   return (
     <>
       <HeroFather
@@ -67,4 +67,4 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
+export default Faq;

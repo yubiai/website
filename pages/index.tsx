@@ -1,4 +1,4 @@
-import { Box, Center, Container, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import BurnInfo from "../components/Layouts/BurnInfo";

@@ -28,7 +28,7 @@ const Links = [
   },
   {
     label: "FAQ",
-    href: "/faqs",
+    href: "/faq",
   },
 ];
 

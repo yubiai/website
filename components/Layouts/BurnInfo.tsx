@@ -43,7 +43,7 @@ const BurnInfo = () => {
               labelStyle={(index) => ({
                 fill: dataMock[index].color,
                 fontSize: "5px",
-                fontFamily: "sans-serif",
+                fontFamily: "sans-serif"
               })}
               radius={35}
               labelPosition={110}
