@@ -13,7 +13,7 @@ const EcosystemCard = ({
 }) => {
   return (
     <Box
-      height={{base: "full", md: "330px"}}
+      height={{base: "full", md: "360px", lg: "330px"}}
       padding="1em"
       borderRadius="5px"
       boxShadow="0 4px 4px 0 rgba(0, 0, 0, 0.25)"

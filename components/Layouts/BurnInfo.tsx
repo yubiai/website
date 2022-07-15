@@ -86,6 +86,30 @@ const BurnInfo = () => {
               labelPosition={110}
               style={{ height: "25em" }}
             />
+            <Box
+              display={{ base: "block", sm: "block", md: "none" }}
+              position={"relative"}
+              textAlign={{ base: "left", md: "center" }}
+              height={"12em"}
+              width={"full"}
+              padding={"2em"}
+              borderRadius={"5px"}
+              mb={"3em"}
+              boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
+              backgroundImage={
+                "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
+              }
+            >
+              <Text color="#dd6a6a">
+                <b>Platform Fee:</b> 0% 
+              </Text>
+              <Text color="#4898ce">
+                <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10% 
+              </Text>
+              <Text color="#14b765">
+                <b>Dynamic buyer optional Ubi Burner Fee:</b> 0% - 10% 
+              </Text>
+            </Box>
           </Stack>
           <Stack flex={1} spacing={"1em"}>
             <Heading
@@ -112,9 +136,34 @@ const BurnInfo = () => {
           </Stack>
         </SimpleGrid>
         <Box
+          display={{ base: "block", sm: "block", md: "none" }}
           position={"relative"}
-          textAlign={{base: "left", md: "center"}}
-          height={'full'}
+          textAlign={{ base: "left", md: "center" }}
+          height={"12em"}
+          width={"full"}
+          padding={"2em"}
+          borderRadius={"5px"}
+          mb={"3em"}
+          boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
+          backgroundImage={
+            "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
+          }
+        >
+          <Text color="#dd6a6a">
+            <b>Platform Fee:</b> 0.1%
+          </Text>
+          <Text color="#4898ce">
+            <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10%
+          </Text>
+          <Text color="#14b765">
+            <b>Dynamic buyer optional Ubi Burner Fee:</b> 0% - 10%
+          </Text>
+        </Box>
+        <Box
+          display={{ base: "none", sm: "none", md: "block" }}
+          position={"relative"}
+          textAlign={{ base: "left", md: "center" }}
+          height={"full"}
           width={"full"}
           padding={"2em"}
           borderRadius={"5px"}

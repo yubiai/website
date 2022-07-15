@@ -9,7 +9,7 @@ const Info = () => {
         align={"center"}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column", sm: "column", md: "row" }}
       >
         <Stack flex={1} spacing={"1.8em"}>
           <About />

@@ -56,8 +56,9 @@ const Faq = () => {
         </Box>
         <Stack
           direction={["column", "row"]}
-          spacing={{ base: "280px", md: "24px" }}
+          spacing={{ base: "24px", md: "24px" }}
           mt="1em"
+          mb="2em"
         >
           <BuyerFaqCard />
           <SellerFaqCard />
