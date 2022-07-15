@@ -45,20 +45,13 @@ const Features = () => {
                 Q3
               </Text>
             </Heading>
-            <Text
-              mt={"1em"}
-              color={"white"}
-              fontSize={"17px"}
-              fontWeight={"normal"}
-              fontStyle={"normal"}
-            >
-              <UnorderedList>
-                <ListItem>Pre-Testing</ListItem>
-                <ListItem>Payments</ListItem>
-                <ListItem>Notifications</ListItem>
-                <ListItem>Token Reputation</ListItem>
-              </UnorderedList>
-            </Text>
+
+            <UnorderedList color="white" mt="0.7em">
+              <ListItem>Pre-Testing</ListItem>
+              <ListItem>Payments</ListItem>
+              <ListItem>Notifications</ListItem>
+              <ListItem>Token Reputation</ListItem>
+            </UnorderedList>
             <Heading
               mt="10px"
               lineHeight={1.1}
@@ -70,22 +63,15 @@ const Features = () => {
                 Q4
               </Text>
             </Heading>
-            <Text
-              mt={"1em"}
-              color={"white"}
-              fontSize={"17px"}
-              fontWeight={"normal"}
-              fontStyle={"normal"}
-            >
-              <UnorderedList>
-                <ListItem>Tootip guide help</ListItem>
-                <ListItem>Curate</ListItem>
-                <ListItem>Testing</ListItem>
-                <ListItem>Dashboard Admin</ListItem>
-                <ListItem>NFT minting & trading</ListItem>
-                <ListItem>Deply plan (Gnosis & Polygon)</ListItem>
-              </UnorderedList>
-            </Text>
+
+            <UnorderedList color="white" mt="0.7em">
+              <ListItem >Tootip guide help</ListItem>
+              <ListItem>Curate</ListItem>
+              <ListItem>Testing</ListItem>
+              <ListItem>Dashboard Admin</ListItem>
+              <ListItem>NFT minting & trading</ListItem>
+              <ListItem>Deply plan (Gnosis & Polygon)</ListItem>
+            </UnorderedList>
           </Box>
           <Box>
             <Heading
@@ -99,17 +85,10 @@ const Features = () => {
                 Q1
               </Text>
             </Heading>
-            <Text
-              mt={"1em"}
-              color={"white"}
-              fontSize={"17px"}
-              fontWeight={"normal"}
-              fontStyle={"normal"}
-            >
-              <UnorderedList>
-                <ListItem> Products module</ListItem>
-              </UnorderedList>
-            </Text>
+
+            <UnorderedList color="white" mt="0.7em">
+              <ListItem> Products module</ListItem>
+            </UnorderedList>
           </Box>
         </SimpleGrid>
       </Box>

@@ -37,7 +37,7 @@ const Community = () => {
       image: "/static/networksocial/discordlogo.png",
       title: "Discord",
       info: "Discord",
-      link: "https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA",
+      link: "https://discord.gg/a9CQKJXb8X",
     },
     {
       image: "/static/networksocial/githublogo.png",
@@ -45,6 +45,12 @@ const Community = () => {
       info: "Github",
       link: "https://github.com/yubiai",
     },
+    {
+      image: "/static/networksocial/discourselogo.png",
+      title: "Governance forum (Coming soon..)",
+      info: "Governance forum (Coming soon..)",
+      link: "https://github.com/yubiai",
+    }
   ];
 
   return (
