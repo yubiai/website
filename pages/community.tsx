@@ -54,7 +54,7 @@ const Community = () => {
         titleFirst={"Follow us in the Yubiai"}
         titleSecond={"community"}
         description={
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eoseius non distinctio nisi te"
+          "The Yubiai community is an ecosystem of real humans interacting between each other on our socials. Join us"
         }
       >
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} mt="3em">

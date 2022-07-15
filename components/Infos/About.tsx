@@ -18,10 +18,10 @@ const About = () => {
         </Text>
       </Heading>
       <Text color={"white"} fontSize={"20px"} fontWeight={"normal"} fontStyle={"normal"}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eos eius non distinctio nisi tenetur vitae omnis earum eaque laborum nam, repudiandae mollitia odit. Doloremque error nesciunt velit autem eum?
+      Yubiai stands for `You UBI And I` is a community born project from some ProofOfHumanity members, a platform where buyers & sellers meet to exchange in a secure, easy, transparent and cheap way everything they want while making social impact.
       </Text>
       <Text color={"white"} fontSize={"20px"} fontWeight={"normal"} fontStyle={"normal"}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eos eius non distinctio nisi tenetur vitae omnis earum eaque laborum nam, repudiandae mollitia odit. Doloremque error nesciunt velit autem eum?
+      As every transaction between buyers and sellers has a small fee intended to buy and burn $UBI (The Universal Basic Income Token) thus increasing his value.
       </Text>
     </>
   );

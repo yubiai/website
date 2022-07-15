@@ -5,7 +5,7 @@ const SellerFaqCard = () => {
     <Box
       width={{ base: "100%", md: "50%" }}
       position={"relative"}
-      height={{base: "full", md: "700px"}}
+      height={{ base: "full", md: "700px" }}
       padding={"1.5em"}
       borderRadius={"5px"}
       boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
@@ -14,53 +14,26 @@ const SellerFaqCard = () => {
     >
       <Center>
         <Heading fontSize={"3xl"}>
-          <Text as='u'>Seller</Text>
+          <Text as="u">Seller</Text>
         </Heading>
       </Center>
-      <Heading fontSize={"2xl"}>
-        <Text>Faq 1</Text>
+      <Heading fontSize={"2xl"} mt="1em">
+        <Text>How do I start selling?</Text>
       </Heading>
       <Text>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-        ipsum deserunt aliquam praesentium rerum expedita? Veritatis error,
-        nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
-        ullam consectetur.
+        Start by clicking on “Connect” on the top right corner then below the
+        search bar on the middle of the navigation area(top middle)click on
+        “Sell” and follow through the steps from Category to Product Images then
+        after filling each field click on “Preview & Submit for review” verify
+        that all is correct and click on `Submit for review`
       </Text>
-      <Heading fontSize={"2xl"}>
-        <Text>Faq 2</Text>
+      <Heading fontSize={"2xl"} mt="1em">
+        <Text>What is `UBI Burning Amount`?</Text>
       </Heading>
       <Text>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-        ipsum deserunt aliquam praesentium rerum expedita? Veritatis error,
-        nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
-        ullam consectetur.
-      </Text>
-      <Heading fontSize={"2xl"}>
-        <Text>Faq 3</Text>
-      </Heading>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-        ipsum deserunt aliquam praesentium rerum expedita? Veritatis error,
-        nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
-        ullam consectetur.
-      </Text>
-      <Heading fontSize={"2xl"}>
-        <Text>Faq 4</Text>
-      </Heading>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-        ipsum deserunt aliquam praesentium rerum expedita? Veritatis error,
-        nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
-        ullam consectetur.
-      </Text>
-      <Heading fontSize={"2xl"}>
-        <Text>Faq 5</Text>
-      </Heading>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-        ipsum deserunt aliquam praesentium rerum expedita? Veritatis error,
-        nihil cupiditate ad iure voluptas maxime modi nesciunt vero et magni
-        ullam consectetur.
+        UBI Burning Amount lets you choose on a dinamyc and optional way how
+        much % will be deducted and sent from the total price of the item you
+        are selling to the UBI Burner to increase the value of $UBI.
       </Text>
     </Box>
   );
