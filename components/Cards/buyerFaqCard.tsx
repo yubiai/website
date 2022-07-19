@@ -5,7 +5,7 @@ const BuyerFaqCard = () => {
     <Box
       width={{ base: "100%", md: "50%" }}
       position={"relative"}
-      height={"700px"}
+      height={{ base: "660px", md: "400px" }}
       padding={"1.5em"}
       borderRadius={"5px"}
       boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}

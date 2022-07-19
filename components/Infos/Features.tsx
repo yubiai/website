@@ -50,7 +50,8 @@ const Features = () => {
               <ListItem>Pre-Testing</ListItem>
               <ListItem>Payments</ListItem>
               <ListItem>Notifications</ListItem>
-              <ListItem>Token Reputation</ListItem>
+              <ListItem>Token</ListItem>
+              <ListItem>Reputation</ListItem>
             </UnorderedList>
             <Heading
               mt="10px"
@@ -70,7 +71,7 @@ const Features = () => {
               <ListItem>Testing</ListItem>
               <ListItem>Dashboard Admin</ListItem>
               <ListItem>NFT minting & trading</ListItem>
-              <ListItem>Deply plan (Gnosis & Polygon)</ListItem>
+              <ListItem>Deploy plan (Gnosis & Polygon)</ListItem>
             </UnorderedList>
           </Box>
           <Box>

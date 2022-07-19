@@ -14,7 +14,7 @@ const Info = () => {
         <Stack flex={1} spacing={"1.8em"}>
           <About />
         </Stack>
-        <Flex flex={2}>
+        <Flex flex={2} w="full">
           <Features />
         </Flex>
       </Stack>

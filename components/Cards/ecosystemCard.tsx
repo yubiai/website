@@ -1,26 +1,23 @@
 import { Box, Flex, HStack, Image, Link, Text } from "@chakra-ui/react";
 
 interface itemEcosystem {
-    image: string;
-    title: string;
-    info: string;
-  }
+  image: string;
+  title: string;
+  info: string;
+  link: string;
+}
 
-const EcosystemCard = ({
-  item
-}: {
-  item: itemEcosystem
-}) => {
+const EcosystemCard = ({ item }: { item: itemEcosystem }) => {
   return (
     <Box
-      height={{base: "full", md: "360px", lg: "330px"}}
+      height={{ base: "full", md: "360px", lg: "330px" }}
       padding="1em"
       borderRadius="5px"
       boxShadow="0 4px 4px 0 rgba(0, 0, 0, 0.25)"
       bg={"#191b30"}
     >
-      <HStack>
-        <Link href={"/"}>
+      <Link href={item.link} isExternal>
+        <HStack>
           <Image
             w={"75px"}
             h={"75px"}
@@ -29,11 +26,16 @@ const EcosystemCard = ({
             src={item.image}
             fallbackSrc={item.image}
           />
-        </Link>
-        <Text color="white" fontSize={"24px"} fontWeight="800">{item.title}</Text>
-      </HStack>
+          <Text color="white" fontSize={"24px"} fontWeight="800">
+            {item.title}
+          </Text>
+        </HStack>
+      </Link>
+
       <Box>
-        <Text color="white" fontSize={"15px"} mt="10px">{item.info}</Text>
+        <Text color="white" fontSize={"15px"} mt="10px">
+          {item.info}
+        </Text>
       </Box>
     </Box>
   );

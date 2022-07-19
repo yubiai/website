@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           key="viewport"
         />
         <meta name="theme-color" content="#191b30" />
-        <meta name="description" content="Yubiai Marketplace Landing" />
+        <meta name="description" content="Yubiai Marketplace Landing. A Web3 decentralized marketplace." />
         <meta
           name="keywords"
           content="yubiai, market, marketplace, crypto, eth, ubi, poh, metamask"
