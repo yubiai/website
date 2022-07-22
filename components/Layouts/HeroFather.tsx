@@ -1,8 +1,6 @@
 import {
   Box,
-  Button,
   Container,
-  Flex,
   Heading,
   Stack,
   Text,
@@ -32,7 +30,7 @@ const HeroFather = ({
         <Box
           w="full"
           h={{base: "full", md: "2200px", lg: "1800px"}}
-          backgroundImage={`/static/images/bg14.jpg`}
+          backgroundImage={`/static/images/bg.jpg`}
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize="cover"

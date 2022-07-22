@@ -64,7 +64,7 @@ const Ecosystem = () => {
           "Yubiai integrates different protocols to give his users the best UX and security when using the platform"
         }
       >
-        <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3 }} spacing={5} mt="2em">
+        <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3 }} spacing={5} m="2em">
           <EcosystemCard item={listEcosystem.eth} />
           <EcosystemCard item={listEcosystem.poh} />
           <EcosystemCard item={listEcosystem.kleros} />
