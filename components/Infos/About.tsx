@@ -11,7 +11,7 @@ const About = () => {
         fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
       >
         <Text as={"span"} position={"relative"}>
-          About the proyect
+          About the project
         </Text>
       </Heading>
       <Text
