@@ -51,6 +51,12 @@ const listEcosystem = {
     info: "Arbitrum is a type of technology known as an optimistic rollup. This technology allows smart contracts from Ethereum to scale by sending messages between smart contracts and those in the Arbitrum second chain layer.",
     link: "https://portal.arbitrum.one/"
   },
+  talentLayer: {
+    image: "/static/ecosystem/TalentLayer_Circle_Light.png",
+    title: "TalentLayer",
+    info: "TalentLayer is the interoperability layer for work reputation. When you complete a job on Yubiai, you and the person you transact with give each other a review; growing your reputation over time. TalentLayer IDs allow freelancers on Yubiai to own your reputation as a soul-bound NFT. TalentLayer IDs are interoperable: your reputation can work on any integrated marketplaces. If you loose access to your wallet, your TalentLayer ID can be recovered to a new wallet via an emergency recovery process.",
+    link: "https://www.talentlayer.org/"
+  }
 };
 
 const Ecosystem = () => {
@@ -73,6 +79,7 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.gnosis} />
           <EcosystemCard item={listEcosystem.polygon} />
           <EcosystemCard item={listEcosystem.arbitrum} />
+          <EcosystemCard item={listEcosystem.talentLayer} />
         </SimpleGrid>
       </HeroFather>
     </>
