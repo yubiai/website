@@ -97,7 +97,7 @@ export default function withAction() {
                 />
               ))}
             </HStack>
-            <Link href="https://app.yubiai.market" passHref>
+            <Link href="https://prepro.yubiai.market" passHref>
               <a target="_blank" rel="noopener noreferrer">
                 <Button
                   variant={"solid"}
