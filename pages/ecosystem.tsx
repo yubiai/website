@@ -56,6 +56,12 @@ const listEcosystem = {
     title: "TalentLayer",
     info: "TalentLayer is the interoperability layer for work reputation. When you complete a job on Yubiai, you and the person you transact with give each other a review; growing your reputation over time. TalentLayer IDs allow freelancers on Yubiai to own your reputation as a soul-bound NFT. TalentLayer IDs are interoperable: your reputation can work on any integrated marketplaces. If you loose access to your wallet, your TalentLayer ID can be recovered to a new wallet via an emergency recovery process.",
     link: "https://www.talentlayer.org/"
+  },
+  filecoin: {
+    image: "/static/ecosystem/filecoin-logo.svg",
+    title: "Filecoin",
+    info: "Filecoin is a decentralized storage network designed to store humanity's most important information. An open-source cloud storage marketplace, protocol, and incentive layer.",
+    link: "https://filecoin.io/"
   }
 };
 
@@ -80,6 +86,7 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.polygon} />
           <EcosystemCard item={listEcosystem.arbitrum} />
           <EcosystemCard item={listEcosystem.talentLayer} />
+          <EcosystemCard item={listEcosystem.filecoin} />
         </SimpleGrid>
       </HeroFather>
     </>
