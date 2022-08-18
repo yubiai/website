@@ -60,7 +60,7 @@ const listEcosystem = {
   filecoin: {
     image: "/static/ecosystem/filecoin-logo.svg",
     title: "Filecoin",
-    info: "Filecoin is a decentralized storage network designed to store humanity's most important information. An open-source cloud storage marketplace, protocol, and incentive layer.",
+    info: "Filecoin is a decentralized storage network designed to store humanity's most important information. An open-source cloud storage marketplace, protocol, and incentive layer. Yubiai data will be stored & retrieved using Filecoin, their powerful, dynamic and robust protocol will be inherited by this integration.",
     link: "https://filecoin.io/"
   }
 };
