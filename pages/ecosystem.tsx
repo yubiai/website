@@ -21,12 +21,6 @@ const listEcosystem = {
     info: "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. We use Kleros escrow, dispute resolution and curate as security and guarantee to make easier and safer transactions.",
     link: "https://kleros.io/"
   },
-  metamask: {
-    image: "/static/ecosystem/metamasklogo.png",
-    title: "Metamask",
-    info: "A crypto wallet & gateway to blockchain apps, log in with your metamask wallet that you used to register on PoH and start buying and selling on Yubiai.",
-    link: "https://metamask.io/"
-  },
   ubi: {
     image: "/static/ecosystem/ubilogo.svg",
     title: "UBI",
@@ -80,7 +74,6 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.eth} />
           <EcosystemCard item={listEcosystem.poh} />
           <EcosystemCard item={listEcosystem.kleros} />
-          <EcosystemCard item={listEcosystem.metamask} />
           <EcosystemCard item={listEcosystem.ubi} />
           <EcosystemCard item={listEcosystem.gnosis} />
           <EcosystemCard item={listEcosystem.polygon} />
