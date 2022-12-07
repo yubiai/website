@@ -60,7 +60,7 @@ export default function Hero() {
             />
           </Center>
           <Heading fontSize={"2xl"} mt="5px" textAlign={"center"}>
-            <Text color="white">A Web3 decentralized marketplace</Text>
+            <Text color="white">The decentralized marketplace</Text>
           </Heading>
         </Box>
       </Center>
