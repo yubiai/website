@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Link, Stack, Text } from "@chakra-ui/react";
 import BuyerFaqCard from "../components/Cards/buyerFaqCard";
 import SellerFaqCard from "../components/Cards/sellerFaqCard";
 import HeroFather from "../components/Layouts/HeroFather";
@@ -52,6 +52,30 @@ const Faq = () => {
             inside the scope or regulations of each country and specifications
             of submission your item will be published if not it will get
             rejected.
+          </Text>
+          <Heading mt="1em">
+            <Text color="white">I want to invest. Are you raising funds?</Text>
+          </Heading>
+          <Text color="white">
+            Yes, we are. Please, email us so we can discuss further these opportunities.
+          </Text>
+          <Heading mt="1em">
+            <Text color="white">How much you have raised so far?</Text>
+          </Heading>
+          <Text color="white">
+            So far, we have raised $50.000 as an initial seed investment by participating in the incubator program of Cooperative Kleros.
+          </Text>
+          <Heading mt="1em">
+            <Text color="white">Are you incorporated?</Text>
+          </Heading>
+          <Text color="white">
+          We are in process of being incorporated.
+          </Text>
+          <Heading mt="1em">
+            <Text color="white">I have a question that is not answered here.</Text>
+          </Heading>
+          <Text color="white">
+            For any other questions, don’t hesitate to contact us at <Link color="blue.400"><a href="mailto:contact@yubiai.market">contact@yubiai.market</a></Link>
           </Text>
         </Box>
         <Stack
