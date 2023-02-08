@@ -84,7 +84,7 @@ const Footer = () => {
           align={{ base: "center", md: "center" }}
         >
           <Text color="white">
-            © 2022 Yubiai Marketplace. All rights reserved
+            © {new Date().getFullYear()} Yubiai Marketplace. All rights reserved
           </Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton
