@@ -90,7 +90,7 @@ const BurnInfo = () => {
               display={{ base: "block", sm: "block", md: "none" }}
               position={"relative"}
               textAlign={{ base: "left", md: "center" }}
-              height={"12em"}
+              height={"5em"}
               width={"full"}
               padding={"2em"}
               borderRadius={"5px"}
@@ -103,12 +103,12 @@ const BurnInfo = () => {
               <Text color="#dd6a6a">
                 <b>Platform Fee:</b> 0% 
               </Text>
-              <Text color="#4898ce">
+             {/*  <Text color="#4898ce">
                 <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10% 
               </Text>
               <Text color="#14b765">
                 <b>Dynamic buyer optional Ubi Burner Fee:</b> 0% - 10% 
-              </Text>
+              </Text> */}
             </Box>
           </Stack>
           <Stack flex={1} spacing={"1em"}>
@@ -139,7 +139,7 @@ const BurnInfo = () => {
           display={{ base: "block", sm: "block", md: "none" }}
           position={"relative"}
           textAlign={{ base: "left", md: "center" }}
-          height={"12em"}
+          height={"5em"}
           width={"full"}
           padding={"2em"}
           borderRadius={"5px"}
