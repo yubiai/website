@@ -25,7 +25,7 @@ const About = () => {
         exchange in a secure, easy, transparent and cheap way everything they
         want while making social impact.
       </Text>
-      <Text
+      {/* <Text
         color={"white"}
         fontSize={"20px"}
         fontWeight={"normal"}
@@ -34,7 +34,7 @@ const About = () => {
         As every transaction between buyers and sellers has a small fee intended
         to buy and burn $UBI (The Universal Basic Income Token) thus increasing
         his value.
-      </Text>
+      </Text> */}
     </>
   );
 };

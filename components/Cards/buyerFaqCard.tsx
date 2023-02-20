@@ -25,14 +25,14 @@ const BuyerFaqCard = () => {
         the search bar on the middle of the navigation area, search whatever you
         want and then click on the item card that will appear.
       </Text>
-      <Heading fontSize={"2xl"} mt="1em">
+      {/* <Heading fontSize={"2xl"} mt="1em">
         <Text>What is `UBI Burning Amount`?</Text>
       </Heading>
       <Text>
         UBI Burning Amount lets you choose on a dinamyc and optional way how
         much % will be deducted and sent from the total price of the item you
         are buying to the UBI Burner to increase the value of $UBI.
-      </Text>
+      </Text> */}
     </Box>
   );
 };

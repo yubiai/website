@@ -13,7 +13,7 @@ import { PieChart } from "react-minimal-pie-chart";
 const BurnInfo = () => {
   const firstYear = [
     { title: "PlatForm fee", value: 0, label: "0%", color: "#dd6a6a" },
-    {
+    /* {
       title: "Dynamic seller optional ubi burner fee",
       value: 10,
       label: "0.6% - 10%",
@@ -24,13 +24,13 @@ const BurnInfo = () => {
       value: 10,
       label: "0% - 10%",
       color: "#14b765",
-    },
+    }, */
     { title: "", value: 80, label: "", color: "#143850" },
   ];
 
   const secondYear = [
     { title: "PlatForm fee", value: 0.1, label: "0.1%", color: "#dd6a6a" },
-    {
+   /*  {
       title: "Dynamic seller optional ubi burner fee",
       value: 10,
       label: "0.6% - 10%",
@@ -41,7 +41,7 @@ const BurnInfo = () => {
       value: 10,
       label: "0% - 10%",
       color: "#14b765",
-    },
+    }, */
     { title: "", value: 79.9, label: "", color: "#143850" },
   ];
 
@@ -152,12 +152,12 @@ const BurnInfo = () => {
           <Text color="#dd6a6a">
             <b>Platform Fee:</b> 0.1%
           </Text>
-          <Text color="#4898ce">
+          {/* <Text color="#4898ce">
             <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10%
           </Text>
           <Text color="#14b765">
             <b>Dynamic buyer optional Ubi Burner Fee:</b> 0% - 10%
-          </Text>
+          </Text> */}
         </Box>
         <Box
           display={{ base: "none", sm: "none", md: "block" }}
@@ -176,14 +176,14 @@ const BurnInfo = () => {
           <Text color="#dd6a6a">
             <b>Platform Fee:</b> 0% (First year) | 0.1% (After first year)
           </Text>
-          <Text color="#4898ce">
+          {/* <Text color="#4898ce">
             <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10% (First
             year) | 0.6% - 10% (After first year)
           </Text>
           <Text color="#14b765">
             <b>Dynamic buyer optional Ubi Burner Fee:</b> 0% - 10% (First year)
             | 0% - 10% (After first year)
-          </Text>
+          </Text> */}
         </Box>
       </Container>
     </>

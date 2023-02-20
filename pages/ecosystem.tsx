@@ -74,8 +74,8 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.eth} />
           <EcosystemCard item={listEcosystem.poh} />
           <EcosystemCard item={listEcosystem.kleros} />
-          <EcosystemCard item={listEcosystem.ubi} />
-          <EcosystemCard item={listEcosystem.gnosis} />
+{/*           <EcosystemCard item={listEcosystem.ubi} />
+ */}          <EcosystemCard item={listEcosystem.gnosis} />
           <EcosystemCard item={listEcosystem.polygon} />
           <EcosystemCard item={listEcosystem.arbitrum} />
           <EcosystemCard item={listEcosystem.talentLayer} />

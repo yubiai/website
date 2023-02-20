@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Yubiai Marketplace Landing. A Web3 decentralized marketplace." />
         <meta
           name="keywords"
-          content="yubiai, market, marketplace, crypto, eth, ubi, poh, metamask"
+          content="yubiai, market, marketplace, crypto, eth, poh, metamask"
         />
         <meta name="author" content="Yubiai Market" />
         <meta property="og:title" content="Yubiai - Web" />
