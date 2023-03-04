@@ -6,7 +6,7 @@ import {
   Button,
   useDisclosure,
   Stack,
-  Container,
+  Container
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import LogoYb from "../Logos/LogoYb";
@@ -17,45 +17,83 @@ const Links = [
   {
     label: "Home",
     href: "/",
+    isExternal: false
   },
   {
     label: "Ecosystem",
     href: "/ecosystem",
+    isExternal: false
   },
   {
     label: "Community",
     href: "/community",
+    isExternal: false
+  },
+  {
+    label: "Whitepaper",
+    href: "/static/yubiai_whitepaper.pdf",
+    isExternal: true
   },
   {
     label: "FAQ",
     href: "/faq",
-  },
+    isExternal: false
+  }
 ];
 
 type LinkProps = {
   label: string;
   href: string;
+  isExternal: boolean | null;
   pathname: string;
   onClose: () => void;
 };
 
-const NavLink = ({ label, href, pathname, onClose }: LinkProps) => (
-  <Link href={`${href}`}>
-    <Button
-      rounded={"none"}
-      color="white"
-      bg="transparent"
-      boxShadow="none"
-      borderBottom={href == pathname ? "3px solid white" : "none"}
-      onClick={() => onClose()}
-      _hover={{
-        textDecoration: "none",
-      }}
-    >
-      {label}
-    </Button>
-  </Link>
-);
+const NavLink = ({ label, href, isExternal, pathname, onClose }: LinkProps) => {
+
+  if (isExternal) {
+    return (
+      <Link
+        href={`${href}`}
+        passHref legacyBehavior
+      >
+        <a target="_blank" rel="noopener noreferrer">
+          <Button
+            rounded={"none"}
+            color="white"
+            bg="transparent"
+            boxShadow="none"
+            borderBottom={href == pathname ? "3px solid white" : "none"}
+            onClick={() => onClose()}
+            _hover={{
+              textDecoration: "none",
+            }}
+          >
+            {label}
+          </Button>
+        </a>
+      </Link>
+    )
+  } else {
+    return (
+      <Link href={`${href}`}>
+        <Button
+          rounded={"none"}
+          color="white"
+          bg="transparent"
+          boxShadow="none"
+          borderBottom={href == pathname ? "3px solid white" : "none"}
+          onClick={() => onClose()}
+          _hover={{
+            textDecoration: "none",
+          }}
+        >
+          {label}
+        </Button>
+      </Link>
+    )
+  }
+};
 
 export default function withAction() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -92,6 +130,7 @@ export default function withAction() {
                   key={i}
                   label={link.label}
                   href={link.href}
+                  isExternal={link.isExternal}
                   pathname={pathname}
                   onClose={onClose}
                 />
@@ -121,6 +160,7 @@ export default function withAction() {
                   key={i}
                   label={link.label}
                   href={link.href}
+                  isExternal={link.isExternal}
                   pathname={pathname}
                   onClose={onClose}
                 />

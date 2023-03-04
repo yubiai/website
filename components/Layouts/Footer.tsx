@@ -69,6 +69,14 @@ const Footer = () => {
           <Link href="/">Home</Link>
           <Link href="/ecosystem">Ecosystem</Link>
           <Link href="/community">Community</Link>
+          <Link
+            href={"/static/yubiai_whitepaper.pdf"}
+            passHref legacyBehavior
+          >
+            <a target="_blank" rel="noopener noreferrer">
+              Whitepaper
+            </a>
+          </Link>
           <Link href="/faq">FAQ</Link>
         </Stack>
       </Container>
