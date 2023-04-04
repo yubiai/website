@@ -75,7 +75,7 @@ const Faq = () => {
             <Text color="white">I have a question that is not answered here.</Text>
           </Heading>
           <Text color="white">
-            For any other questions, don’t hesitate to contact us at <Link color="blue.400"><a href="mailto:contact@yubiai.market">contact@yubiai.market</a></Link>
+            For any other questions, don’t hesitate to contact us at <Link href="mailto:contact@yubiai.market" color="blue.400">contact@yubiai.market</Link>
           </Text>
         </Box>
         <Stack

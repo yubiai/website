@@ -73,9 +73,7 @@ const Footer = () => {
             href={"/static/yubiai_whitepaper.pdf"}
             passHref legacyBehavior
           >
-            <a target="_blank" rel="noopener noreferrer">
               Whitepaper
-            </a>
           </Link>
           <Link href="/faq">FAQ</Link>
         </Stack>

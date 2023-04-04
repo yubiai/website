@@ -4,7 +4,8 @@ import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import theme from "../styles/theme";
 import "../styles/globals.css";
 import Footer from "../components/Layouts/Footer";
-import Header from "../components/Layouts/Header";
+import HeaderNew from "../components/Layouts/HeaderNew";
+
 import Head from "next/head";
 import TopButton from "../components/Buttons/topButton";
 
@@ -35,8 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <TopButton />
-      <Header />
-
+      <HeaderNew />
       <Component {...pageProps} />
       <Footer />
     </ChakraProvider>
