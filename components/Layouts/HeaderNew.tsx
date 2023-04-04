@@ -291,6 +291,11 @@ const NAV_ITEMS: Array<NavItem> = [
         href: 'https://docs.google.com/document/d/e/2PACX-1vST-lArWWV8urj3phEiWmzPZ3fnySB6EqW3IRyr2rrf7MakpfsmLhpvlOn9nLUvp-IZ98JlnfJJmR5i/pub',
       },
       {
+        label: 'Yellow Paper',
+        subLabel: 'View the document',
+        href: 'https://docs.google.com/document/d/e/2PACX-1vR0KPcbPuv9edabvnBQT2n38xtDLSvF7WdaOMBheZOS6j-KnsVE1pgTtuHzCfWwQRZOaWSzZjLa5pcY/pub',
+      },
+      {
         label: 'One Pager',
         subLabel: 'View the document',
         href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
