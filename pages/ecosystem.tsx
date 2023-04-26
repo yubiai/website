@@ -33,6 +33,12 @@ const listEcosystem = {
     info: "Gnosis builds new market mechanisms for decentralized finance. Their three interoperable product lines allow you to securely create, trade, and hold digital assets on Ethereum at very cheap gas fees. Yubiai deploying on gnosis is a must, enjoy the p2p transactions of everything there is on our platform at the cheapest gas prices.",
     link: "https://gnosis.io/"
   },
+  lens: {
+    image: "/static/ecosystem/lenslogo.png",
+    title: "Lens Protocol",
+    info: "Lens Protocol is a blockchain-based open-source social graph created to reshape the future of social media concepts in the era of Web3 and decentralization. It enables content creators to 'own their digital roots' and enable people to uncompromisingly own the connections between themselves and the communities, forming a fully composable, user-owned social graph with modularity in mind.",
+    link: "https://www.lens.xyz/"
+  },
   polygon: {
     image: "/static/ecosystem/polygonlogo.svg",
     title: "Polygon",
@@ -74,8 +80,9 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.eth} />
           <EcosystemCard item={listEcosystem.poh} />
           <EcosystemCard item={listEcosystem.kleros} />
-{/*           <EcosystemCard item={listEcosystem.ubi} />
+          {/*           <EcosystemCard item={listEcosystem.ubi} />
  */}          <EcosystemCard item={listEcosystem.gnosis} />
+          <EcosystemCard item={listEcosystem.lens} />
           <EcosystemCard item={listEcosystem.polygon} />
           <EcosystemCard item={listEcosystem.arbitrum} />
           <EcosystemCard item={listEcosystem.talentLayer} />
