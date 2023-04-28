@@ -21,9 +21,7 @@ const BuyerFaqCard = () => {
         <Text>How do I start buying?</Text>
       </Heading>
       <Text>
-        Start by clicking on “Connect” on the top right corner then head over to
-        the search bar on the middle of the navigation area, search whatever you
-        want and then click on the item card that will appear.
+      Begin by clicking on ´Login´ located at the top right corner. A window will then appear, offering you the option to sign in with either ´Proof of Humanity´ (PoH) or ´Lens´. After you´ve logged in, proceed to the search bar in the middle of the navigation area. Input what you´re looking for, and then click on the item card that appears.
       </Text>
       {/* <Heading fontSize={"2xl"} mt="1em">
         <Text>What is `UBI Burning Amount`?</Text>

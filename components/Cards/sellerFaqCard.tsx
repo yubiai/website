@@ -21,11 +21,7 @@ const SellerFaqCard = () => {
         <Text>How do I start selling?</Text>
       </Heading>
       <Text>
-        Start by clicking on “Connect” on the top right corner then below the
-        search bar on the middle of the navigation area(top middle)click on
-        “Sell” and follow through the steps from Category to Product Images then
-        after filling each field click on “Preview & Submit for review” verify
-        that all is correct and click on `Submit for review`
+      Begin by clicking on ´Login´ located at the top right corner. A new window will appear, offering you the option to sign in with either ´Proof of Humanity´ (PoH) or ´Lens´. After you´ve logged in, find the ´Sell´ button located below the search bar in the middle of the navigation area (top middle) and click on it. Follow the steps from Category to Product Images, filling out each field. Once you´ve completed this, click on ´Preview & Submit for review´, verify that all the details are correct, and then click on ´Submit for review´.
       </Text>
       {/* <Heading fontSize={"2xl"} mt="1em">
         <Text>What is `UBI Burning Amount`?</Text>

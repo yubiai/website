@@ -31,10 +31,7 @@ const Faq = () => {
             <Text color="white">How do I use Yubiai?</Text>
           </Heading>
           <Text color="white">
-            If you are already registered in Proof Of Humanity you can connect
-            with your wallet from PoH on app.yubiai.market and start using the
-            platform, if not just go ahead to https://app.proofofhumanity.id/,
-            create a new metamask wallet and register.
+          If you are already registered in Proof Of Humanity or Lens, you can Login with your wallet from PoH or Lens on <Link href="https://app.yubiai.market/" color="blue.400" isExternal>app.yubiai.market</Link> and start using the platform. If you are not registered yet, you can create a new Metamask wallet and register at <Link href="https://app.proofofhumanity.id/" color="blue.400" isExternal>https://app.proofofhumanity.id/</Link> or claim your ID(Lens) in TalentLayer <Link href="https://claim.talentlayer.org/" color="blue.400" isExternal>https://claim.talentlayer.org/</Link> and sign as Lens.
           </Text>
           <Heading mt="1em">
             <Text color="white">How does Yubiai work?</Text>
@@ -48,7 +45,7 @@ const Faq = () => {
             anything goes well it releases the payment to the seller or if
             anything goes sideways the dispute resolver kicks in and a juror
             will decide upon evidence how to rule. And there is the last
-            mechanism that is curate, in every submission of an item, if it’s
+            mechanism that is curate, in every submission of an item, if it is
             inside the scope or regulations of each country and specifications
             of submission your item will be published if not it will get
             rejected.
