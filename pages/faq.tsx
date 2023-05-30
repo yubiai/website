@@ -31,7 +31,7 @@ const Faq = () => {
             <Text color="white">How do I use Yubiai?</Text>
           </Heading>
           <Text color="white">
-          If you are already registered in Proof Of Humanity or Lens, you can Login with your wallet from PoH or Lens on <Link href="https://app.yubiai.market/" color="blue.400" isExternal>app.yubiai.market</Link> and start using the platform. If you are not registered yet, you can create a new Metamask wallet and register at <Link href="https://app.proofofhumanity.id/" color="blue.400" isExternal>https://app.proofofhumanity.id/</Link> or claim your ID(Lens) in TalentLayer <Link href="https://claim.talentlayer.org/" color="blue.400" isExternal>https://claim.talentlayer.org/</Link> and sign as Lens.
+          If you are already registered in Proof Of Humanity or Lens, you can Login with your wallet from PoH or Lens on <Link href="https://app.yubiai.market/" color="blue.400" isExternal>app.yubiai.market</Link> and start using the platform. If you are not registered yet, you can create a new Metamask wallet and register at <Link href="https://app.proofofhumanity.id/" color="blue.400" isExternal>https://app.proofofhumanity.id/</Link>.
           </Text>
           <Heading mt="1em">
             <Text color="white">How does Yubiai work?</Text>
