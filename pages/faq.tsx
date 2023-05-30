@@ -60,7 +60,7 @@ const Faq = () => {
             <Text color="white">How much you have raised so far?</Text>
           </Heading>
           <Text color="white">
-            So far, we have raised $50.000 as an initial seed investment by participating in the incubator program of Cooperative Kleros.
+            So far, we have raised $50.000 as an initial Pre-Seed investment by participating in the incubator program of Cooperative Kleros.
           </Text>
           <Heading mt="1em">
             <Text color="white">Are you incorporated?</Text>
