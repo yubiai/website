@@ -60,7 +60,7 @@ const BurnInfo = () => {
           textAlign={"center"}
         >
           <Text as={"span"} position={"relative"}>
-            Burn Information
+            Fee
           </Text>
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} mt="1em">
@@ -150,7 +150,7 @@ const BurnInfo = () => {
           }
         >
           <Text color="#dd6a6a">
-            <b>Platform Fee:</b> 0.1%
+            <b>Platform Fee:</b> 0.3%
           </Text>
           {/* <Text color="#4898ce">
             <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10%
