@@ -12,7 +12,7 @@ const listEcosystem = {
   poh: {
     image: "/static/ecosystem/poh.webp",
     title: "Proof Of Humanity",
-    info: "Proof of Humanity, a system combining webs of trust, with reverse Turing tests, and dispute resolution to create a sybil-proof list of humans. This is Yubiai's main authentication layer, by leveraging proof of humanity you know for sure that you are operating with a real human.",
+    info: "Proof of Humanity, a system combining webs of trust, with reverse Turing tests, and dispute resolution to create a sybil-proof list of humans. This is Yubiai's main badge layer for future governance and token eligibility criteria for rewards, by leveraging proof of humanity you know for sure that you are operating with a real human.",
     link: "https://www.proofofhumanity.id/"
   },
   kleros: {
@@ -62,6 +62,12 @@ const listEcosystem = {
     title: "Filecoin",
     info: "Filecoin is a decentralized storage network designed to store humanity's most important information. An open-source cloud storage marketplace, protocol, and incentive layer. Yubiai data will be stored & retrieved using Filecoin, their powerful, dynamic and robust protocol will be inherited by this integration.",
     link: "https://filecoin.io/"
+  },
+  sequence: {
+    image: "/static/ecosystem/sequence-logo.svg",
+    title: "Sequence",
+    info: "Sequence provides users with a seamless web3 wallet to access Ethereum-compatible networks, and a powerful web3 infrastructure stack for developers that makes it easy to build web3 apps and games. By integrating Sequence as the sign-in method, Yubiai will provide users with a seamless web3 wallet experience, simplifying onboarding and eliminating the need for separate wallets or complex private key management.",
+    link: "https://sequence.xyz/welcome"
   }
 };
 
@@ -85,8 +91,8 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.lens} />
           <EcosystemCard item={listEcosystem.polygon} />
           <EcosystemCard item={listEcosystem.arbitrum} />
-          <EcosystemCard item={listEcosystem.talentLayer} />
           <EcosystemCard item={listEcosystem.filecoin} />
+          <EcosystemCard item={listEcosystem.sequence} />
         </SimpleGrid>
       </HeroFather>
     </>
