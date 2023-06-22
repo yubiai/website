@@ -29,7 +29,7 @@ const BurnInfo = () => {
   ];
 
   const secondYear = [
-    { title: "PlatForm fee", value: 0.1, label: "0.1%", color: "#dd6a6a" },
+    { title: "PlatForm fee", value: 0.1, label: "0.3%", color: "#dd6a6a" },
    /*  {
       title: "Dynamic seller optional ubi burner fee",
       value: 10,
@@ -174,7 +174,7 @@ const BurnInfo = () => {
           }
         >
           <Text color="#dd6a6a">
-            <b>Platform Fee:</b> 0% (First year) | 0.1% (After first year)
+            <b>Platform Fee:</b> 0% (First year) | 0.3% (After first year)
           </Text>
           {/* <Text color="#4898ce">
             <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10% (First
