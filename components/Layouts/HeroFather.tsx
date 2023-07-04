@@ -36,7 +36,7 @@ const HeroFather = ({
           backgroundSize="cover"
         >
           <Container maxW={"7xl"}>
-            <Stack as={Box} py={{ base: 20, md: "15em" }}>
+            <Stack as={Box} py={{ base: 20, md: "5em" }}>
               <Heading
                 fontWeight={800}
                 fontSize={{ base: "2xl", md: "36px" }}

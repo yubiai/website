@@ -5,7 +5,7 @@ const BuyerFaqCard = () => {
     <Box
       width={{ base: "100%", md: "50%" }}
       position={"relative"}
-      height={{ base: "660px", md: "400px" }}
+      height={{ base: "570px", md: "570px" }}
       padding={"1.5em"}
       borderRadius={"5px"}
       boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
@@ -21,7 +21,19 @@ const BuyerFaqCard = () => {
         <Text>How do I start buying?</Text>
       </Heading>
       <Text>
-      Begin by clicking on ´Login´ located at the top right corner. A window will then appear, offering you the option to sign in with either ´Proof of Humanity´ (PoH) or ´Lens´. After you´ve logged in, proceed to the search bar in the middle of the navigation area. Input what you´re looking for, and then click on the item card that appears.
+        Explore listings: Once you're logged in, browse through the available listings to find the services you're interested in. You can search for specific categories to refine your search.
+      </Text>
+      <Text>
+        View listing details: Click on a listing to view more information about the service, including the description, price, and any additional details provided by the seller. Take your time to review the details and ensure it meets your requirements.
+      </Text>
+      <Text>
+        Contact the seller: If you have any questions or need more information, you can use the platform chat to communicate directly with the seller. This will help you clarify any doubts and discuss the service in more detail as well as secure evidence in case of dispute.
+      </Text>
+      <Text>
+        Make a purchase: When you're ready to proceed, you can initiate the purchase by following the seller's instructions. Yubiai currently uses xDAI(1xDAI = 1USD)cryptocurrency for transactions, so ensure you have sufficient xDAI in your Metamask wallet to complete the payment.
+      </Text>
+      <Text>
+        Confirm the transaction: To protect both buyers and sellers, the payment will be held in escrow until the transaction is completed successfully. Follow the instructions provided by Yubiai to confirm and finalize the transaction.
       </Text>
       {/* <Heading fontSize={"2xl"} mt="1em">
         <Text>What is `UBI Burning Amount`?</Text>
