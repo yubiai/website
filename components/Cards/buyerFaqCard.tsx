@@ -21,7 +21,7 @@ const BuyerFaqCard = () => {
         <Text>How do I start buying?</Text>
       </Heading>
       <Text>
-        Explore listings: Once you're logged in, browse through the available listings to find the services you're interested in. You can search for specific categories to refine your search.
+        Explore listings: Once you&apos;re logged in, browse through the available listings to find the services you&apos;re interested in. You can search for specific categories to refine your search.
       </Text>
       <Text>
         View listing details: Click on a listing to view more information about the service, including the description, price, and any additional details provided by the seller. Take your time to review the details and ensure it meets your requirements.
@@ -30,7 +30,7 @@ const BuyerFaqCard = () => {
         Contact the seller: If you have any questions or need more information, you can use the platform chat to communicate directly with the seller. This will help you clarify any doubts and discuss the service in more detail as well as secure evidence in case of dispute.
       </Text>
       <Text>
-        Make a purchase: When you're ready to proceed, you can initiate the purchase by following the seller's instructions. Yubiai currently uses xDAI(1xDAI = 1USD)cryptocurrency for transactions, so ensure you have sufficient xDAI in your Metamask wallet to complete the payment.
+        Make a purchase: When you&apos;re ready to proceed, you can initiate the purchase by following the seller&apos;s instructions. Yubiai currently uses xDAI(1xDAI = 1USD)cryptocurrency for transactions, so ensure you have sufficient xDAI in your Metamask wallet to complete the payment.
       </Text>
       <Text>
         Confirm the transaction: To protect both buyers and sellers, the payment will be held in escrow until the transaction is completed successfully. Follow the instructions provided by Yubiai to confirm and finalize the transaction.

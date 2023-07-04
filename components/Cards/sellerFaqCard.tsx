@@ -21,13 +21,13 @@ const SellerFaqCard = () => {
         <Text>How do I start selling?</Text>
       </Heading>
       <Text>
-        Create a service listing: Once logged in, and with your profile information filled, click on the Sell button below the search field on the navigation bar. Provide a clear and detailed description of the service you want to offer, including pricing, delivery timeframe, and any other relevant information. This will help potential buyers understand what you're offering.
+        Create a service listing: Once logged in, and with your profile information filled, click on the Sell button below the search field on the navigation bar. Provide a clear and detailed description of the service you want to offer, including pricing, delivery timeframe, and any other relevant information. This will help potential buyers understand what you&apos;re offering.
       </Text>
       <Text>
         Manage your listings: You can view and manage your listings by clicking on the Profile Icon and Listings. Here, you can edit & send for review your listings or pause it by selecting Unpublish as needed.
       </Text>
       <Text>
-        Respond to buyer inquiries: As potential buyers have questions or require more information, you'll receive notifications through the platform. Make sure to respond promptly and provide helpful answers to their queries. This will help build trust and facilitate the buying process
+        Respond to buyer inquiries: As potential buyers have questions or require more information, you&apos;ll receive notifications through the platform. Make sure to respond promptly and provide helpful answers to their queries. This will help build trust and facilitate the buying process
       </Text>
       <Text>
         Receive purchase requests: When a buyer is interested to hire you, they can start a chat within the listing they are on, and a chat will open up between both parties to settle the specific requirements of the serivce. Be prepared to receive purchase requests and communicate with buyers to finalize the transaction.

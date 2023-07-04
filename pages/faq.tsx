@@ -29,7 +29,7 @@ const Faq = () => {
             <Text color="white">How do I use Yubiai?</Text>
           </Heading>
           <Text color="white">
-            Set up a Metamask wallet: If you don't already have one, create a Metamask wallet by visiting the official <Link href="https://metamask.io/" color="blue.400" isExternal>Metamask website</Link>  and install the extension for your web browser or use the MetaMask Mobile Browser from the MetaMask mobile app and start using the platform.
+            Set up a Metamask wallet: If you don&apos;t already have one, create a Metamask wallet by visiting the official <Link href="https://metamask.io/" color="blue.400" isExternal>Metamask website</Link>  and install the extension for your web browser or use the MetaMask Mobile Browser from the MetaMask mobile app and start using the platform.
           </Text>
           <Text color="white">
             Visit Yubiai: Go to the <Link href="https://app.yubiai.market/" color="blue.400" isExternal>Yubiai app</Link>
@@ -62,10 +62,10 @@ const Faq = () => {
             Verified Accounts: Yubiai implements a badge system to verify the authenticity of user accounts, helping to prevent bots and ensure that transactions occur between real human beings. This adds an extra layer of trust and integrity to the platform.
           </Text>
           <Text color="white">
-            Curate (Not yet implemented): Yubiai plans to introduce a feature called Curate, which will serve as a mechanism for reviewing and approving submitted items. This process will ensure that listings comply with country-specific regulations and meet the required submission criteria. Items that meet the guidelines will be published, while those that don't will be rejected.
+            Curate (Not yet implemented): Yubiai plans to introduce a feature called Curate, which will serve as a mechanism for reviewing and approving submitted items. This process will ensure that listings comply with country-specific regulations and meet the required submission criteria. Items that meet the guidelines will be published, while those that don&apos;t will be rejected.
           </Text>
           <Text color="white">
-            By combining these layers of security, Yubiai aims to provide a safe and reliable marketplace experience for buyers and sellers. The platform's commitment to security, dispute resolution and curation helps build trust and ensures a fair and transparent environment for all users.
+            By combining these layers of security, Yubiai aims to provide a safe and reliable marketplace experience for buyers and sellers. The platform&apos;s commitment to security, dispute resolution and curation helps build trust and ensures a fair and transparent environment for all users.
           </Text>
           <Heading mt="0.25em">
             <Text color="white">I want to invest. Are you raising funds?</Text>

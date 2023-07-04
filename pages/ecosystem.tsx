@@ -64,7 +64,7 @@ const listEcosystem = {
     link: "https://filecoin.io/"
   },
   sequence: {
-    image: "/static/ecosystem/sequence-logo.svg",
+    image: "/static/ecosystem/sequence-logo.png",
     title: "Sequence",
     info: "Sequence provides users with a seamless web3 wallet to access Ethereum-compatible networks, and a powerful web3 infrastructure stack for developers that makes it easy to build web3 apps and games. By integrating Sequence as the sign-in method, Yubiai will provide users with a seamless web3 wallet experience, simplifying onboarding and eliminating the need for separate wallets or complex private key management.",
     link: "https://sequence.xyz/welcome"
