@@ -51,7 +51,7 @@ const Footer = () => {
   return (
     <>
       <Container
-        bg={"#191b30"}
+        
         color={"white"}
         position="relative"
         as={Stack}
@@ -60,9 +60,7 @@ const Footer = () => {
         spacing={4}
         justify={"center"}
         align={"center"}
-        backgroundImage={
-          "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
-        }
+        
       >
         <LogoYb />
         <Stack direction={"row"} spacing={6}>

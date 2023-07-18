@@ -38,7 +38,7 @@ const ButtonYB = {
 }
 
 const config = {
-  initialColorMode: "dark",
+  initialColorMode: "light",
   useSystemColorMode: false,
 };
 
@@ -47,7 +47,13 @@ const theme = extendTheme({
   styles: {
     global: () => ({
       body: {
-        bg: "#191b30",
+        _dark: {
+          bgGradient: "linear(to-b, #1D273D, #0087d199)"
+        },
+        _light: {
+          bgGradient: "linear(to-b, #00ABD1, #F0F3FF)"
+        },
+        bgGradient:'linear(to-b, #00ABD1 ,#F0F3FF )',
         fontFamily: "OpenSans, sans-serif",
       }
     })

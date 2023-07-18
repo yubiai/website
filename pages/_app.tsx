@@ -5,7 +5,6 @@ import theme from "../styles/theme";
 import "../styles/globals.css";
 import Footer from "../components/Layouts/Footer";
 import HeaderNew from "../components/Layouts/HeaderNew";
-
 import Head from "next/head";
 import TopButton from "../components/Buttons/topButton";
 

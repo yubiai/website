@@ -30,10 +30,7 @@ const HeroFather = ({
         <Box
           w="full"
           h={{base: "full", md: "2200px", lg: "2200px"}}
-          backgroundImage={`/static/images/bg.jpg`}
-          backgroundPosition="center"
-          backgroundRepeat="no-repeat"
-          backgroundSize="cover"
+         
         >
           <Container maxW={"7xl"}>
             <Stack as={Box} py={{ base: 20, md: "5em" }}>

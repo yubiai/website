@@ -43,10 +43,7 @@ export default function Hero() {
     <Box
       w="full"
       h="full"
-      backgroundImage={"/static/images/bg.jpg"}
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      backgroundSize="cover"
+
     >
       <Center h="86vh" color="white">
         <Box>

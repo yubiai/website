@@ -21,6 +21,8 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 import LogoYb from "../Logos/LogoYb";
+import  LanguageChange  from "../Buttons/translButton";
+import { ColorModeToggler } from "../Buttons/darkModeButton";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -28,17 +30,14 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box sx={{ position: "sticky", top: "0", zIndex: "99" }} bg="#191b30">
-      <Container maxW={"8xl"} px={4}>
+    <Box sx={{ position: "sticky", top: "0", zIndex: "99" }}>
+      <Container maxW={"8xl"} px={4} style={{display: "flex", justifyContent: "center" }}>
         <Flex
           color={'white'}
           minH={'60px'}
           py={{ base: 2 }}
-          px={{ base: 4 }}
-          borderBottom={1}
-          borderStyle={'solid'}
-          borderColor={'gray.900'}
-          align={'center'}>
+          px={{ base: 4 }}>
+
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
@@ -61,7 +60,7 @@ export default function WithSubnavigation() {
               <DesktopNav />
             </Flex>
           </Flex>
-
+          <LanguageChange />
           <Stack
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
@@ -70,7 +69,7 @@ export default function WithSubnavigation() {
             <a href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
               <Button
                 variant={"solid"}
-                color={"black"}
+                color={"#00BCD4"}
                 bg="white"
                 size={"sm"}
                 mr={4}
@@ -79,6 +78,7 @@ export default function WithSubnavigation() {
               </Button>
             </a>
           </Stack>
+          <ColorModeToggler />
         </Flex>
       </Container>
 

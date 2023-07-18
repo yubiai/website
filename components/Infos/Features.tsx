@@ -18,9 +18,9 @@ const Features = () => {
         padding={"1.5em"}
         borderRadius={"5px"}
         boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
-        backgroundImage={
+        /*backgroundImage={
           "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
-        }
+        }*/
       >
         <Heading
           lineHeight={1.1}

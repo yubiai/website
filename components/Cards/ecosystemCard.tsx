@@ -14,7 +14,8 @@ const EcosystemCard = ({ item }: { item: itemEcosystem }) => {
       padding="1em"
       borderRadius="5px"
       boxShadow="0 4px 4px 0 rgba(0, 0, 0, 0.25)"
-      bg={"#191b30"}
+      bg={"white"}
+      opacity={0.88}
     >
       <Link href={item.link} isExternal>
         <HStack>
@@ -26,14 +27,14 @@ const EcosystemCard = ({ item }: { item: itemEcosystem }) => {
             src={item.image}
             fallbackSrc={item.image}
           />
-          <Text color="white" fontSize={"24px"} fontWeight="800">
+          <Text color="#00BCD4" fontSize={"24px"} fontWeight="800">
             {item.title}
           </Text>
         </HStack>
       </Link>
 
       <Box>
-        <Text color="white" fontSize={"15px"} mt="10px">
+        <Text color="#00BCD4" fontSize={"15px"} mt="10px">
           {item.info}
         </Text>
       </Box>

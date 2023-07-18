@@ -8,7 +8,7 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
-import { PieChart } from "react-minimal-pie-chart";
+
 
 const BurnInfo = () => {
   const firstYear = [
@@ -30,18 +30,18 @@ const BurnInfo = () => {
 
   const secondYear = [
     { title: "PlatForm fee", value: 0.1, label: "0.3%", color: "#dd6a6a" },
-   /*  {
-      title: "Dynamic seller optional ubi burner fee",
-      value: 10,
-      label: "0.6% - 10%",
-      color: "#4898ce",
-    },
-    {
-      title: "Dynamic buyer optional ubi burner fee",
-      value: 10,
-      label: "0% - 10%",
-      color: "#14b765",
-    }, */
+    /*  {
+       title: "Dynamic seller optional ubi burner fee",
+       value: 10,
+       label: "0.6% - 10%",
+       color: "#4898ce",
+     },
+     {
+       title: "Dynamic buyer optional ubi burner fee",
+       value: 10,
+       label: "0% - 10%",
+       color: "#14b765",
+     }, */
     { title: "", value: 79.9, label: "", color: "#143850" },
   ];
 
@@ -51,6 +51,7 @@ const BurnInfo = () => {
         maxW={"7xl"}
         mt={{ base: "1em", md: "0px" }}
         mb={{ base: "5em", md: "0px" }}
+
       >
         <Heading
           lineHeight={1.1}
@@ -58,13 +59,14 @@ const BurnInfo = () => {
           color={"white"}
           fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
           textAlign={"center"}
+
         >
           <Text as={"span"} position={"relative"}>
             Fee
           </Text>
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} mt="1em">
-          <Stack flex={1} spacing={"1.2em"}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5} mt="1em" >
+          <Stack flex={1} spacing={"1.2em"} >
             <Heading
               lineHeight={1.1}
               fontWeight={600}
@@ -74,18 +76,6 @@ const BurnInfo = () => {
             >
               <Text as={"span"}>First year</Text>
             </Heading>
-            <PieChart
-              data={firstYear}
-              label={({ dataEntry }) => dataEntry.label}
-              labelStyle={(index) => ({
-                fill: firstYear[index].color,
-                fontSize: "4px",
-                fontFamily: "sans-serif",
-              })}
-              radius={25}
-              labelPosition={110}
-              style={{ height: "25em" }}
-            />
             <Box
               display={{ base: "block", sm: "block", md: "none" }}
               position={"relative"}
@@ -96,14 +86,14 @@ const BurnInfo = () => {
               borderRadius={"5px"}
               mb={"3em"}
               boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
-              backgroundImage={
-                "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
-              }
+            /*backgroundImage={
+              "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
+            }*/
             >
               <Text color="#dd6a6a">
-                <b>Platform Fee:</b> 0% 
+                <b>Platform Fee:</b> 0%
               </Text>
-             {/*  <Text color="#4898ce">
+              {/*  <Text color="#4898ce">
                 <b>Dynamic seller optional Ubi Burner Fee:</b> 0.6% - 10% 
               </Text>
               <Text color="#14b765">
@@ -121,18 +111,6 @@ const BurnInfo = () => {
             >
               <Text as={"span"}>After first year</Text>
             </Heading>
-            <PieChart
-              data={secondYear}
-              label={({ dataEntry }) => dataEntry.label}
-              labelStyle={(index) => ({
-                fill: secondYear[index].color,
-                fontSize: "4px",
-                fontFamily: "sans-serif",
-              })}
-              radius={25}
-              labelPosition={110}
-              style={{ height: "25em" }}
-            />
           </Stack>
         </SimpleGrid>
         <Box
@@ -144,10 +122,11 @@ const BurnInfo = () => {
           padding={"2em"}
           borderRadius={"5px"}
           mb={"3em"}
-          boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
-          backgroundImage={
-            "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
-          }
+
+        /*boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
+        backgroundImage={
+          "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
+        }*/
         >
           <Text color="#dd6a6a">
             <b>Platform Fee:</b> 0.3%
@@ -168,10 +147,10 @@ const BurnInfo = () => {
           padding={"2em"}
           borderRadius={"5px"}
           mb={"3em"}
-          boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
-          backgroundImage={
-            "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
-          }
+        /*boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
+        backgroundImage={
+          "linear-gradient(to bottom, rgba(57, 61, 92, 0.94) 2%, rgba(39, 48, 122, 0) 100%)"
+        }*/
         >
           <Text color="#dd6a6a">
             <b>Platform Fee:</b> 0% (First year) | 0.3% (After first year)
