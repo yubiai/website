@@ -43,22 +43,23 @@ export default function Hero() {
     <Box
       w="full"
       h="full"
-
+      backgroundImage={"/static/images/Artwork.png"}
+      backgroundPosition="right"
+      backgroundRepeat="no-repeat"
+      backgroundSize="auto"
     >
       <Center h="86vh" color="white">
         <Box>
           <Center>
             <Image
-              w={"300px"}
-              h={"118px"}
+              w={"594px"}
+              h={"232px"}
               alt={"Logo"}
               src={"/static/images/logoyubiai.png"}
               fallbackSrc={"/static/images/logoyubiai.png"}
+
             />
           </Center>
-          <Heading fontSize={"2xl"} mt="5px" textAlign={"center"}>
-            <Text color="white">The decentralized marketplace</Text>
-          </Heading>
         </Box>
       </Center>
       <Flex justifyContent={"right"} mr="3em" h="6vh">
