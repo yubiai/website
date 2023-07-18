@@ -2,7 +2,7 @@ import { Container, Stack, Flex } from "@chakra-ui/react";
 import About from "../Infos/About";
 import Features from "../Infos/Features";
 
-const Info = () => {
+const Info = ({t}) => {
   return (
     <Container maxW={"7xl"}>
       <Stack
@@ -12,7 +12,7 @@ const Info = () => {
         direction={{ base: "column", sm: "column", md: "row" }}
       >
         <Stack flex={1} spacing={"1.8em"}>
-          <About />
+          <About t={t}/>
         </Stack>
         {/* <Flex flex={2} w="full">
           <Features />

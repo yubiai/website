@@ -1,0 +1,12 @@
+{
+    "locales": ["en", "es"],
+    "defaultLocale": "en",
+    "pages": {
+      "*": ["common","navbar", "home", "ecosystem", "community","faq"],
+      "/": ["home"],
+      "/faq": ["faq"],
+      "/ecosystem": ["ecosystem"],
+      "/community": ["community"]
+     
+    }
+}

@@ -1,6 +1,10 @@
 import { Button, Heading, Text, Stack } from "@chakra-ui/react";
+import useTranslation from 'next-translate/useTranslation';
+import React from "react";
 
-const About = () => {
+const About = ({}) => {
+  const { t } = useTranslation("home");
+  
   return (
     <>
       <Heading
@@ -11,8 +15,9 @@ const About = () => {
         fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
       >
         <Text as={"span"} position={"relative"}>
-          About the project
+          {t("About the project")} 
         </Text>
+        
       </Heading>
       <Text
         color={"white"}

@@ -29,8 +29,8 @@ const HeroFather = ({
       <main>
         <Box
           w="full"
-          h={{base: "full", md: "2200px", lg: "2200px"}}
-         
+          h={{ base: "full", md: "2200px", lg: "2200px" }}
+
         >
           <Container maxW={"7xl"}>
             <Stack as={Box} py={{ base: 20, md: "5em" }}>

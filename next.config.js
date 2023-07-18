@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'standalone',
-  reactStrictMode: true,
-}
+//const { withAxiom } = require('next-axiom')
+const nextTranslate = require('next-translate-plugin')
 
-module.exports = nextConfig
+module.exports = nextTranslate({
+  // ... your existing config
+  reactStrictMode: false,
+})

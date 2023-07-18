@@ -6,7 +6,7 @@ export const ColorModeToggler = () => {
   return (
     <header >
       {colorMode === "light" ? (
-        <Button leftIcon={<MoonIcon />} onClick={toggleColorMode} style={{with: '40px', paddingRight: '7px'}}/>
+        <Button leftIcon={<MoonIcon />} onClick={toggleColorMode} style={{with: '40px', paddingRight: '7px', backgroundColor:"transparent"}}/>
       ) : (
         <Button leftIcon={<SunIcon />} onClick={toggleColorMode} style={{with: '40px', paddingRight: '7px'}}/>
       )}

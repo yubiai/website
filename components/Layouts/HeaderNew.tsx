@@ -71,7 +71,7 @@ export default function WithSubnavigation() {
                 variant={"solid"}
                 color={"#00BCD4"}
                 bg="white"
-                size={"sm"}
+                //size={"sm"}
                 mr={4}
               >
                 Launch App

@@ -7,6 +7,7 @@ import Footer from "../components/Layouts/Footer";
 import HeaderNew from "../components/Layouts/HeaderNew";
 import Head from "next/head";
 import TopButton from "../components/Buttons/topButton";
+import React from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

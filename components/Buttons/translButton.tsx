@@ -20,14 +20,15 @@ const LanguageChange: React.FC = () => {
   };
 
   return (
-    <Menu>
+    <Menu >
       <MenuButton
+        style={{marginRight:"10px", border: "1px solid white", height:"40px"}}
         as={Button}
         aria-label="language"
         rightIcon={<ChevronDownIcon />}
         backgroundColor="transparent"
         color="white"
-        ml="1em"
+        //ml="1em"
         p={{ base: 0, md: "1em" }}
         _hover={{ bg: '#1C538A', color: 'gray.200' }}
         _expanded={{ bg: 'blue.400' }}
