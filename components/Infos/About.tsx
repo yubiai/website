@@ -1,10 +1,11 @@
-import { Button, Heading, Text, Stack } from "@chakra-ui/react";
+import { Flex, Heading, Text, Stack } from "@chakra-ui/react";
 import useTranslation from 'next-translate/useTranslation';
 import React from "react";
+import AutoPlay from "../CarouselPreview/carouselPreview";
 
-const About = ({}) => {
+const About = ({ }) => {
   const { t } = useTranslation("home");
-  
+
   return (
     <>
       <Heading
@@ -13,23 +14,35 @@ const About = ({}) => {
         fontWeight={600}
         color={"white"}
         fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
+        style={{ border: "1px dotted red", width: "1440px", padding: "25px", display: "flex", justifyContent: "center" }}
       >
-        <Text as={"span"} position={"relative"}>
-          {t("About the project")} 
+        <Text as={"span"} position={"relative"} style={{ fontSize: "64px"}}>
+          {t("About Yubiai")}
         </Text>
-        
+
       </Heading>
-      <Text
-        color={"white"}
-        fontSize={"20px"}
-        fontWeight={"normal"}
-        fontStyle={"normal"}
-      >
-        Yubiai stands for `You UBI And I` is a community born project from some
-        ProofOfHumanity members, a platform where buyers & sellers meet to
-        exchange in a secure, easy, transparent and cheap way everything they
-        want while making social impact.
-      </Text>
+      <Stack
+        spacing={4}
+        direction={{ base: "column", md: "row" }}
+        align={{ base: "center", md: "start" }}>
+        <Text
+          color={"white"}
+          fontSize={"24px"}
+          fontWeight={"normal"}
+          fontStyle={"normal"}
+          w={"491px"}
+          style={{
+            border: "1px dotted pink",
+            wordWrap: "break-word",
+          }}
+        >
+          Yubiai stands for <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>You UBI And I.</span><br />
+          It is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>community-born</span> project initiated by some <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>ProofOfHumanity</span> members. Yubiai is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>platform</span> where <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>buyers & sellers</span> meet to exchange in a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>secure, easy, transparent, and cheap</span> way their services while making <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>social impact</span>.
+        </Text>
+        <Flex style={{ border: "1px dotted greenyellow", width: "657px", height: "400px" }}>
+          <AutoPlay  />
+        </Flex>
+      </Stack>
       {/* <Text
         color={"white"}
         fontSize={"20px"}

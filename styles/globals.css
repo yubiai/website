@@ -1,6 +1,7 @@
 html,
 body {
-  background-color: #191b30;
+  
+  background-color: linear(to-b, #00ABD1 75%, #F0F3FF);
   padding: 0;
   margin: 0;
   font-family: OpenSans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

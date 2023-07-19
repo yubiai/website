@@ -11,9 +11,9 @@ const Info = ({t}) => {
         py={{ base: 20, md: 28 }}
         direction={{ base: "column", sm: "column", md: "row" }}
       >
-        <Stack flex={1} spacing={"1.8em"}>
+        {/*<Stack flex={1} spacing={"1.8em"}>
           <About t={t}/>
-        </Stack>
+  </Stack>*/}
         {/* <Flex flex={2} w="full">
           <Features />
         </Flex> */}

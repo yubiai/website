@@ -13,6 +13,7 @@
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@types/react-slick": "^0.23.10",
     "framer-motion": "^6.3.13",
     "js-cookie": "^3.0.5",
     "next": "^13.2.4",
@@ -23,7 +24,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-minimal-pie-chart": "^8.3.0",
-    "react-twitter-widgets": "^1.11.0"
+    "react-slick": "^0.29.0",
+    "react-twitter-widgets": "^1.11.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.0.0",

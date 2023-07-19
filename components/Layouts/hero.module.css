@@ -1,0 +1,8 @@
+/* hero.module.css */
+.hero-container {
+    background-image: url("/static/images/Artwork.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  
