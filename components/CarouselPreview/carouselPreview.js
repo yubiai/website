@@ -25,15 +25,15 @@ export default class AutoPlay extends Component {
                     {/* Add your carousel items here */}
                     <div >
                         <Image
-                         w={{ base: "289px", sm: "3xl", lg: "279px"}}
-                         h={{ base: "420px", sm: "3xl", lg: "410px"}}
+                         w={{ base: "289px", sm: "75%", lg: "282px"}}
+                         h={{ base: "400px", sm: "75%", lg: "400px"}}
                          src={"/static/images/C1.png"} alt={"C1"} />
 
                     </div>
                     <div>
                         <Image 
-                         w={{ base: "289px", sm: "3xl", lg: "279px"}}
-                         h={{ base: "420px", sm: "3xl", lg: "410px"}}
+                         w={{ base: "289px", sm: "75%", lg: "282px"}}
+                         h={{ base: "400px", sm: "75%", lg: "400px"}}
                          src={"/static/images/C2.png"}
                          alt={"C2"}
                           />

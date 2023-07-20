@@ -14,7 +14,7 @@ const About = ({ }) => {
         fontWeight={600}
         color={"white"}
         fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
-        style={{ border: "1px dotted red", width: "1440px", padding: "25px", display: "flex", justifyContent: "center" }}
+        style={{ width: "1440px", padding: "25px", display: "flex", justifyContent: "center" }}
       >
         <Text as={"span"} position={"relative"} style={{ fontSize: "64px"}}>
           {t("About Yubiai")}
@@ -32,14 +32,13 @@ const About = ({ }) => {
           fontStyle={"normal"}
           w={"491px"}
           style={{
-            border: "1px dotted pink",
             wordWrap: "break-word",
           }}
         >
-          Yubiai stands for <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>You UBI And I.</span><br />
-          It is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>community-born</span> project initiated by some <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>ProofOfHumanity</span> members. Yubiai is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>platform</span> where <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>buyers & sellers</span> meet to exchange in a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>secure, easy, transparent, and cheap</span> way their services while making <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>social impact</span>.
+          Yubiai stands for <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>You UBI And I.</span><br />
+          It is a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>community-born</span> project initiated by some <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>ProofOfHumanity</span> members. Yubiai is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>platform</span> where <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>buyers & sellers</span> meet to exchange in a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>secure, easy, transparent, and cheap</span> way their services while making <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>social impact</span>.
         </Text>
-        <Flex style={{ border: "1px dotted greenyellow", width: "657px", height: "400px" }}>
+        <Flex style={{ width: "657px", height: "400px" }}>
           <AutoPlay  />
         </Flex>
       </Stack>

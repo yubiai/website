@@ -2,7 +2,7 @@ import { Container, Stack, Flex } from "@chakra-ui/react";
 import About from "../Infos/About";
 import Features from "../Infos/Features";
 
-const Info = ({t}) => {
+const Info = () => {
   return (
     <Container maxW={"7xl"}>
       <Stack
