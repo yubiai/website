@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <TopButton />
-      <HeaderNew />
+      <HeaderNew  />
       <Component {...pageProps} />
       <Footer />
     </ChakraProvider>

@@ -2,7 +2,7 @@ import {  SimpleGrid } from "@chakra-ui/react";
 import ActionCard from "../Cards/actionCard";
 import UploadIcon from '../Icons/uploadIcon'; 
 import ReactDOMServer from "react-dom/server";
-import Icon from "../Icons/TelephoneIcon";
+import Icon from "../Icons/uploadIcon";
 
 const uploadIconDataUrl = URL.createObjectURL(
   new Blob([ReactDOMServer.renderToStaticMarkup(<Icon

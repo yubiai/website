@@ -30,7 +30,7 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box sx={{ position: "sticky", top: "0", zIndex: "99" }}>
+    <Box sx={{ position: "sticky", top: "0", zIndex: "99", background: "rgba(29, 39, 61, 0.9)", backdropFilter: "blur(4px)"}}>
       <Container maxW={"8xl"} px={4} style={{display: "flex", justifyContent: "center" }}>
         <Flex
           color={'white'}
@@ -96,7 +96,7 @@ const DesktopNav = () => {
   const router = useRouter();
 
   return (
-    <Stack direction={'row'} spacing={4}>
+    <Stack direction={'row'} spacing={4} >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -211,7 +211,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
+    <Stack spacing={4} onClick={children && onToggle} >
       <Flex
         py={2}
         as={Link}
@@ -220,7 +220,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         align={'center'}
         _hover={{
           textDecoration: 'none',
-        }}>
+        }}> 
         <Text
           fontWeight={600}
           color={useColorModeValue('gray.600', 'gray.200')}>
