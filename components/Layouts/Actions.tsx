@@ -1,10 +1,20 @@
-import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import {  SimpleGrid } from "@chakra-ui/react";
 import ActionCard from "../Cards/actionCard";
+import UploadIcon from '../Icons/uploadIcon'; 
+import ReactDOMServer from "react-dom/server";
+import Icon from "../Icons/TelephoneIcon";
 
+const uploadIconDataUrl = URL.createObjectURL(
+  new Blob([ReactDOMServer.renderToStaticMarkup(<Icon
+     fill={"#001664"}
+     />)], {
+    type: "image/svg+xml",
+  })
+);
 
 const listActions = {
   upload: {
-    image: "/static/featuresIcons/uploadIcon.svg",
+    image: uploadIconDataUrl,
     title: "Upload your work",
     info: "Is it being an UX/UI designer? Making memes? Working as an Scuba diving professor? We want to know your talent, let us know what you’re best at and wait for future clients to contact you!"
   },

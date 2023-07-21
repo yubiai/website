@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Buttons/darkModeButton.js"
-  ],
+, "components/CarouselPreview/carouselPreview.js"  ],
   "exclude": [
     "node_modules"
   ]

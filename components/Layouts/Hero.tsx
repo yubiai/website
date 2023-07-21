@@ -7,14 +7,13 @@ import {
 
 } from "@chakra-ui/react";
 import About from "../Infos/About";
-import styles from "./hero.module.css";
 import Actions from "./Actions";
 
 
 export default function Hero() {
   return (
     <Box
-      className={styles["hero-container"]}
+      className={"hero-container"}
       w="full"
       h="1728px"
       style={{ flexDirection: "column", display: "flex" }}
@@ -62,12 +61,8 @@ export default function Hero() {
         </Flex>
         <Flex style={{ display: "flex", justifyContent: "center" }} >
           <Actions />
-
         </Flex>
-
       </Box>
-
-
     </Box>
   );
 }

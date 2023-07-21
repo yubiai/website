@@ -1,7 +1,10 @@
 import { Flex, HStack, Text, Image } from "@chakra-ui/react";
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
+
+
 
 interface itemActions {
-  image: string;
+  image: string,
   title: string;
   info: string;
 
@@ -14,7 +17,15 @@ const ActionCard = ({ item }: { item: itemActions }) => {
       width={{ base: "full", md: "360px", lg: "388px" }}
       borderRadius="20px"
       bg={"white"}
-
+      color={"#00BCD4"}
+      transition="transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, fill 0.3s ease-in-out"
+      _hover={{
+        color: "white",
+        backgroundColor: "#00BCD4",
+        transform: "translateY(-40px)"
+        
+      }}
+      className={"parent"}
     >
       <HStack flexDirection={"column"}>
         <Image
@@ -25,9 +36,9 @@ const ActionCard = ({ item }: { item: itemActions }) => {
           src={item.image}
           fallbackSrc={item.image}
           marginTop={"20px"}
+          
         />
         <Text
-          color="#00BCD4"
           fontSize={"36px"}
           fontWeight="700"
           lineHeight={1}
@@ -37,7 +48,6 @@ const ActionCard = ({ item }: { item: itemActions }) => {
           {item.title}
         </Text>
         <Text
-          color="#00BCD4"
           fontSize={"20px"}
           fontWeight="300"
           textAlign={"center"}
@@ -47,10 +57,8 @@ const ActionCard = ({ item }: { item: itemActions }) => {
           {item.info}
         </Text>
       </HStack>
-
-
-
     </Flex>
+
   );
 };
 

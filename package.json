@@ -14,7 +14,6 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@types/react-slick": "^0.23.10",
-    "framer-motion": "^6.3.13",
     "js-cookie": "^3.0.5",
     "next": "^13.2.4",
     "next-axiom": "^0.18.0",
