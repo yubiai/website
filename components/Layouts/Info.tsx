@@ -1,8 +1,6 @@
 import { Box, Text, Flex, Image, Spacer } from "@chakra-ui/react";
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
-//import styles from "./info.module.css";
-
-
+import MoreInfo from "./MoreInfo";
 
 const Info = () => {
 
@@ -10,7 +8,7 @@ const Info = () => {
     <Box
       className={"info-container"}
       w="full"
-      h="2096px"
+      h="2576px"
       style={{ border: "1px dotted black" }}
     >
       <Text
@@ -123,11 +121,13 @@ const Info = () => {
             style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "100%", maxWidth: "738px" }}
           >
             <Image
-              w={"88px"}
-              h={"37px"}
+              w={"110px"}
+              h={"46.25px"}
               alt={"Logo"}
               src={"/static/images/logoyubiai.png"}
               fallbackSrc={"/static/images/logoyubiai.png"}
+              filter={"drop-shadow(2px 4px 6px black)"}
+              background={"rgba(0, 148.40, 212, 0.15)"}
             />
             <Image
               alt={"freelancerIcon"}
@@ -431,6 +431,7 @@ const Info = () => {
         >
           *0% equivalent for the first year, after first year only 0.3% for PREMIUM clients with higher visualization impact for a low subscription cost<br />** The fee goes directly to the liquidity of the $YBI token</Text>
       </Flex>
+      <MoreInfo />
     </Box >
   );
 };
