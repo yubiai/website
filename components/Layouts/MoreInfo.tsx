@@ -40,7 +40,7 @@ const MoreInfo = () => {
                     flexDirection={"column"}
                     fontWeight={"800"}
                     alignItems={"center"}
-                >+{"n"}<span style={{ color: "white" }}>Sellers</span>
+                >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Sellers</span>
                 </Text>
                 <Text
                     fontSize={"36px"}
@@ -49,7 +49,7 @@ const MoreInfo = () => {
                     flexDirection={"column"}
                     fontWeight={"800"}
                     alignItems={"center"}
-                >+{"n"}<span style={{ color: "white" }}>Buyers</span>
+                >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Buyers</span>
                 </Text>
                 <Text
                     fontSize={"36px"}
@@ -58,7 +58,7 @@ const MoreInfo = () => {
                     flexDirection={"column"}
                     fontWeight={"800"}
                     alignItems={"center"}
-                >+{"n"}<span style={{ color: "white" }}>Transactions</span>
+                >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Transactions</span>
                 </Text>
             </Flex>
             <Flex
@@ -67,9 +67,9 @@ const MoreInfo = () => {
                 className={"slider"}
             >
                 <Flex className={"slide-track"}>
-                    <Flex className={"slide"}>
+                    <Flex className={"slide"} style={{ maxWidth: "253px", justifyContent:"space-between"}}>
                         <Image
-                            w={"58px"}
+                            w={"40px"}
                             h={"43px"}
                             alt={"ethlogo"}
                             src={"/static/ecosystem/ethlogo.png"}
@@ -80,7 +80,7 @@ const MoreInfo = () => {
                             fontWeight={"700"}
                         >ETHEREUM</Text>
                     </Flex>
-                    <Flex className={"slide"}>
+                    <Flex className={"slide"} style={{ maxWidth: "202px", justifyContent:"space-between"}}>
                         <Image
                             w={"58px"}
                             h={"43px"}
@@ -93,20 +93,20 @@ const MoreInfo = () => {
                             fontWeight={"700"}
                         >GNOSIS</Text>
                     </Flex>
-                    <Flex className={"slide"}>
+                    <Flex className={"slide"} style={{ maxWidth: "273px", justifyContent:"space-between"}}>
                         <Image
                             w={"58px"}
                             h={"43px"}
                             alt={"seqlogo"}
-                            src={"/static/ecosystem/sequence-logo.svg"}
-                            fallbackSrc={"/static/ecosystem/sequence-logo.svg"} />
+                            src={"/static/ecosystem/sequence-logo.png"}
+                            fallbackSrc={"/static/ecosystem/sequence-logo.png"} />
                         <Text
                             color={"white"}
                             fontSize={"36px"}
                             fontWeight={"700"}
                         >SEQUENCE</Text>
                     </Flex>
-                    <Flex className={"slide"}>
+                    <Flex className={"slide"} style={{ maxWidth: "232px", justifyContent:"space-between"}}>
                         <Image
                             w={"58px"}
                             h={"43px"}
@@ -119,9 +119,9 @@ const MoreInfo = () => {
                             fontWeight={"700"}
                         >FILECOIN</Text>
                     </Flex>
-                    <Flex className={"slide"}>
+                    <Flex className={"slide"} style={{ maxWidth: "219px", justifyContent:"space-between"}}>
                         <Image
-                            w={"58px"}
+                            w={"48px"}
                             h={"43px"}
                             alt={"kleroslogo"}
                             src={"/static/ecosystem/kleros.png"}
@@ -145,7 +145,7 @@ const MoreInfo = () => {
                             fontWeight={"700"}
                         >PROOF OF HUMANITY</Text>
                     </Flex>
-                    <Flex className={"slide"}>
+                    <Flex className={"slide"} style={{ maxWidth: "375px", justifyContent:"space-between"}}>
                         <Image
                             w={"58px"}
                             h={"43px"}

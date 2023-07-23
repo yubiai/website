@@ -29,7 +29,7 @@ body {
 
 .slider {
   background: transparent;
-  height: 100px;
+  height: 70px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -39,7 +39,7 @@ body {
 .slider::before,
 .slider::after {
   content: "";
-  height: 100px;
+  height: 70px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -60,11 +60,14 @@ body {
   animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
+  justify-content: space-evenly;
+  height: 70px;
 }
 
 .slide {
-  height: 100px;
-  width: 250px;
+  height: 70px;
+  width: 472px;
+  justify-content: space-evenly;
 }
 
 @keyframes scroll {
