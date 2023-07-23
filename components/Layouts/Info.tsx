@@ -9,7 +9,7 @@ const Info = () => {
       className={"info-container"}
       w="full"
       h="2576px"
-      style={{ border: "1px dotted black" }}
+      //style={{ border: "1px dotted black" }}
     >
       <Text
         color="#001664"

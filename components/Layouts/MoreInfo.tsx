@@ -11,7 +11,7 @@ const MoreInfo = () => {
             maxH={"483px"}
             justifyContent="center"
             alignItems="center"
-            border={"1px dotted red"}
+            
         >
             <Text
                 fontSize={"50px"}
@@ -63,7 +63,6 @@ const MoreInfo = () => {
             </Flex>
             <Flex
                 direction={"row"}
-                border={"1px dotted greenyellow"}
                 className={"slider"}
             >
                 <Flex className={"slide-track"}>

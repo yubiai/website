@@ -25,7 +25,8 @@
     "react-minimal-pie-chart": "^8.3.0",
     "react-slick": "^0.29.0",
     "react-twitter-widgets": "^1.11.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.0.0",
