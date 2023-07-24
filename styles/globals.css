@@ -27,6 +27,15 @@ body {
   fill: black; /* Change this to the desired fill color */
 }
 
+.text-container span {
+  font-weight: 600;
+
+}
+
+.text-container:hover span {
+  color: white; 
+}
+
 .slider {
   background: transparent;
   height: 70px;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const SVG = ({
+const Icon = ({
   style = {hover:"fill:red"},
   fill = "#000",
   width = "131",
@@ -24,4 +24,4 @@ const SVG = ({
   </svg>
 );
 
-export default SVG;
+export default Icon;
