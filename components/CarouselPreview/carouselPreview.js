@@ -31,16 +31,16 @@ const Carousel = () => {
                 <SwiperSlide>
                     <Flex className={"slide-track-carousel"}>
                         <Image className="slide-carousel"
-                            w={{ base: "289px", sm: "75%", lg: "282px" }}
-                            h={{ base: "400px", sm: "75%", lg: "400px" }}
+                            w={"282px"}
+                            h={"400px"}
                             src={"/static/images/C1.png"} alt={"C1"} />
                     </Flex>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Flex className={"slide-track-carousel"}>
                         <Image className="slide-carousel"
-                            w={{ base: "289px", sm: "75%", lg: "282px" }}
-                            h={{ base: "400px", sm: "75%", lg: "400px" }}
+                            w={"282px"}
+                            h={"400px"}
                             src={"/static/images/C2.png"}
                             alt={"C2"}
                         />
@@ -49,8 +49,8 @@ const Carousel = () => {
                 <SwiperSlide>
                     <Flex className={"slide-track-carousel"}>
                         <Image className="slide-carousel"
-                            w={{ base: "289px", sm: "75%", lg: "282px" }}
-                            h={{ base: "400px", sm: "75%", lg: "400px" }}
+                            w={"282px"}
+                            h={"400px"}
                             src={"/static/images/C3.png"}
                             alt={"C3"}
                         />
@@ -59,8 +59,8 @@ const Carousel = () => {
                 <SwiperSlide>
                     <Flex className={"slide-track-carousel"}>
                         <Image className="slide-carousel"
-                            w={{ base: "289px", sm: "75%", lg: "282px" }}
-                            h={{ base: "400px", sm: "75%", lg: "400px" }}
+                            w={"282px"}
+                            h={"400px"}
                             src={"/static/images/C4.png"}
                             alt={"C4"}
                         />

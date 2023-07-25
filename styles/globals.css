@@ -24,8 +24,14 @@ body {
 }
 
 .parent:hover svg path {
-  fill: black; /* Change this to the desired fill color */
+  fill: black; 
 }
+
+/*.text-container {
+  display: flex;
+  justify-content: center;
+
+}*/
 
 .text-container span {
   font-weight: 600;
@@ -42,7 +48,7 @@ body {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: auto;
+  width: 100%;
 }
 
 .slider::before,
@@ -68,7 +74,7 @@ body {
 .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 14);
+ width: auto;
   justify-content: space-evenly;
   height: 70px;
 }
@@ -85,7 +91,7 @@ body {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 599px;
+  /*width: 599px;*/
 }
 
 .slider-carousel::before,
@@ -111,7 +117,7 @@ body {
 .slide-track-carousel {
   /*animation: scroll 20s linear infinite;*/
   display: flex;
-  width: calc(296px * 4);
+  /*width: calc(296px * 4);*/
   
   height: 437px;
 }

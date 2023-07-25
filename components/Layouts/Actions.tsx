@@ -1,4 +1,4 @@
-import {  SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid, Box } from "@chakra-ui/react";
 import ActionCard from "../Cards/actionCard";
 
 const listActions = {
@@ -22,13 +22,22 @@ const listActions = {
 const Actions = () => {
   return (
     <>
-      
-        <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3 }} spacing={5} m="2em">
+
+      <SimpleGrid
+        columns={{ base: 1, sm: 1, md: 2, lg: 3 }}
+        spacing={5}
+        m="2em"
+
+      >
+        <Box py={{ base: "1.2rem", md: "0", lg: "0" }}>
           <ActionCard item={listActions.upload} />
-          <ActionCard item={listActions.search} />
+        </Box>
+        <ActionCard item={listActions.search} />
+        <Box py={{ base: "1.2rem", md: "0", lg: "0" }}>
           <ActionCard item={listActions.connect} />
-        </SimpleGrid>
-      
+        </Box>
+      </SimpleGrid>
+
     </>
   );
 };

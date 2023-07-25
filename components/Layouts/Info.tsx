@@ -9,11 +9,11 @@ const Info = () => {
       className={"info-container"}
       w="full"
       h="4236px"
-      //style={{ border: "1px dotted black" }}
+      style={{ border: "1px dotted black" }}
     >
       <Text
         color="#001664"
-        fontSize={"64px"}
+        fontSize={{ base: "32px", md: "32px", lg: "64px" }}
         fontWeight="700"
         lineHeight={1}
         textAlign={"center"}
@@ -23,16 +23,20 @@ const Info = () => {
         Why choose Yubiai?
       </Text>
       <Flex
-        width="auto"
+        //width="auto"
         height="564px"
-        style={{ justifyContent: "space-around" }}
-        
+        maxWidth={{base: "100%", md: "50%", lg: "1212px" }}
+        width={{base: "100%", md: "50%", lg: "100%" }}
+        justifyContent={{base: "space-around", md: "space-around", lg: "center" }}
+        //alignItems={{base: "center", md: "center", lg: "center" }}
+        //fontSize={{base: "25%", md: "0", lg: "0" }}
       >
         <div className="text-container">
           <Text
             color={"#001664"}
-            width={"1154px"}
+            width={{base: "auto", md: "auto", lg: "100%" }}
             fontSize={"24px"}
+            p={{ base: "5", md: "2", lg: "0" }}
             fontWeight={"normal"}
             lineHeight={1.2}
             fontStyle={"normal"}

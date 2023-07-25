@@ -2,23 +2,38 @@ import { Flex, Heading, Text, Stack } from "@chakra-ui/react";
 import useTranslation from 'next-translate/useTranslation';
 import React from "react";
 import AutoPlay from "../CarouselPreview/carouselPreview";
+import { useBreakpointValue } from "@chakra-ui/react";
 
 const About = ({ }) => {
   const { t } = useTranslation("home");
+  const justifyHeading = useBreakpointValue({
+    base:"center",
+    sm: "center",
+    md: "center",
+    lg: "center",
+  });
+  const widthHeading = useBreakpointValue({
+    base:"auto",
+    sm: "auto",
+    md: "auto",
+    lg: "100%",
+  });
 
   return (
     <>
       <Heading
         textAlign={{ base: "center", md: "left" }}
-        justifyContent={{ base: "flex-start", md: "flex-start", lg: "center" }}
+        justifyContent={justifyHeading}
         lineHeight={1.1}
+        py={5}
         fontWeight={600}
+        width={ "widthHeading"}
         color={"white"}
-        fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
-        style={{ width: "1440px", padding: "25px", display: "flex" }}
-        border={"1px dotted green"}
+        fontSize={{base:"32px",md:"32px", lg:"64px"}}
+        style={{ display: "flex" }}
+        
       >
-        <Text as={"span"} position={"relative"} style={{ fontSize: "64px" }}>
+        <Text as={"span"} position={"relative"} >
           {t("About Yubiai")}
         </Text>
 
@@ -44,7 +59,7 @@ const About = ({ }) => {
           It is a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>community-born</span> project initiated by some <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>ProofOfHumanity</span> members. Yubiai is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>platform</span> where <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>buyers & sellers</span> meet to exchange in a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>secure, easy, transparent, and cheap</span> way their services while making <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>social impact</span>.
         </Text>
         <Flex
-          w={{base:"300px", md:"auto", lg: "599px"}}
+          w={{base:"290px", md:"auto", lg: "599px"}}
           h={{base:"auto", md:"auto", lg: "400px"}}
           justifyContent={{base:"center", md:"center"}}
           

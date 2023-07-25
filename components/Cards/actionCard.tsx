@@ -18,6 +18,7 @@ const ActionCard = ({ item }: { item: itemActions }) => {
       borderRadius="20px"
       bg={"white"}
       color={"#00BCD4"}
+      
       transition="transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, fill 0.3s ease-in-out"
       _hover={{
         color: "white",
