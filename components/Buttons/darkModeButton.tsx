@@ -6,9 +6,9 @@ export const ColorModeToggler = () => {
   return (
     <header >
       {colorMode === "light" ? (
-        <Button leftIcon={<MoonIcon />} onClick={toggleColorMode} style={{with: '40px', paddingRight: '7px', backgroundColor:"transparent"}}/>
+        <Button leftIcon={<MoonIcon />} onClick={toggleColorMode} style={{width: '40px', paddingRight: '7px', backgroundColor:"transparent"}}/>
       ) : (
-        <Button leftIcon={<SunIcon />} onClick={toggleColorMode} style={{with: '40px', paddingRight: '7px'}}/>
+        <Button leftIcon={<SunIcon />} onClick={toggleColorMode} style={{width: '40px', paddingRight: '7px'}}/>
       )}
     </header>
   );

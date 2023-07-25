@@ -10,13 +10,15 @@ const About = ({ }) => {
     <>
       <Heading
         textAlign={{ base: "center", md: "left" }}
+        justifyContent={{ base: "flex-start", md: "flex-start", lg: "center" }}
         lineHeight={1.1}
         fontWeight={600}
         color={"white"}
         fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
-        style={{ width: "1440px", padding: "25px", display: "flex", justifyContent: "center" }}
+        style={{ width: "1440px", padding: "25px", display: "flex" }}
+        border={"1px dotted green"}
       >
-        <Text as={"span"} position={"relative"} style={{ fontSize: "64px"}}>
+        <Text as={"span"} position={"relative"} style={{ fontSize: "64px" }}>
           {t("About Yubiai")}
         </Text>
 
@@ -26,9 +28,10 @@ const About = ({ }) => {
         direction={{ base: "column", md: "row" }}
         align={{ base: "center", md: "start" }}
         justifyContent={"center"}
-        >
+      >
         <Text
           color={"white"}
+          p={{ base: "5", md: "2", lg: "0" }}
           fontSize={"24px"}
           fontWeight={"normal"}
           fontStyle={"normal"}
@@ -40,8 +43,14 @@ const About = ({ }) => {
           Yubiai stands for <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>You UBI And I.</span><br />
           It is a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>community-born</span> project initiated by some <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>ProofOfHumanity</span> members. Yubiai is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>platform</span> where <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>buyers & sellers</span> meet to exchange in a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>secure, easy, transparent, and cheap</span> way their services while making <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>social impact</span>.
         </Text>
-        <Flex style={{ width: "599px", height: "400px" }}>
-          <AutoPlay  />
+        <Flex
+          w={{base:"300px", md:"auto", lg: "599px"}}
+          h={{base:"auto", md:"auto", lg: "400px"}}
+          justifyContent={{base:"center", md:"center"}}
+          
+          //</Stack>style={{ width: "599px", height: "400px" }}
+          >
+          <AutoPlay />
         </Flex>
       </Stack>
       {/* <Text

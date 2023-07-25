@@ -3,24 +3,26 @@ import { Flex, Image } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-
+import { useBreakpointValue } from "@chakra-ui/react";
 
 
 
 const Carousel = () => {
+    const slidesPerView = useBreakpointValue({ base: 1, sm: 1, md: 1, lg: 2 });
+
 
     return (
         <Swiper
             spaceBetween={0}
-            slidesPerView={2}
+            slidesPerView={slidesPerView}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             loop={true}
             autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
-              }}
-            modules={[ Autoplay ]}
+            }}
+            modules={[Autoplay]}
         >
             <Flex
                 className={"slider-carousel"}

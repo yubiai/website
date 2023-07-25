@@ -14,35 +14,40 @@ export default function Hero() {
   return (
     <Box
       className={"hero-container"}
-      w="full"
-      h="1728px"
+      w={{ base: "100%", md: "50%", lg: "100%" }}
+      h={{ base: "auto", md: "1728px" }}
       style={{ flexDirection: "column", display: "flex" }}
+      
     >
       <Box style={{ display: "contents" }}>
-        <Box style={{
+        <Box 
+          h={{base:"auto", md:"750%", lg:"438px"}}
+          w={{base:"auto", md:"75%", lg:"800px"}}
+          style={{
           display: "flex",
           flexDirection: "row",
           alignSelf: "flex-end",
-          height: "438px",
           alignItems: "flex-end",
-          width: "800px",
           justifyContent: "space-around",
         }}>
           <Image
-            w={"594px"}
-            h={"232px"}
+            py={{base:"10", md: "10", lg: "0"}}
+            w={{base:"50%", md: "100%", lg: "594px"}}
+            h={{base:"50%", md: "100%", lg: "232px"}}
             alt={"Logo"}
             src={"/static/images/logoyubiai.png"}
             fallbackSrc={"/static/images/logoyubiai.png"}
           />
 
         </Box>
-        <Box style={{
+        <Box 
+          marginLeft={{base:"0",md:"0", lg:"85px"}}
+          width={{base:"auto",md:"50%", lg:"auto"}}
+          border={"1px dotted black"}
+          style={{
           display: "flex",
-          flexDirection: "column",
-          width: "auto",
-          marginLeft: "85px"
-        }} >
+          flexDirection: "column"
+          }} >
           <About />
         </Box>
         <Flex style={{ display: "flex", justifyContent: "center", margin: "4rem" }}
