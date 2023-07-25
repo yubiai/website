@@ -8,7 +8,7 @@ const MoreInfo = () => {
             direction="column"
             w="full"
             h="100%"
-            maxH={"1123px"}
+            maxH={"2100px"}
             justifyContent="center"
             alignItems="center"
 
@@ -171,17 +171,22 @@ const MoreInfo = () => {
                 direction="column"
                 w="full"
                 h="100%"
-                maxH={"630px"}
+                maxH={"1300px"}
                 justifyContent="flex-start"
                 alignItems="center">
                 <Text color={"#001664"} fontSize={"64px"} fontWeight={"700"}>How a transaction works in Yubiai</Text>
-                <Text color={"#001664"} fontSize={"64px"} fontWeight={"700"}>IMAGEN DE COMO FUNCIONA</Text>
+                <Image 
+                    h={"85%"}
+                    w={"75%"}
+                    alt={"howitworks"}
+                    src={"/static/featuresIcons/howitworks.png"}
+                    fallbackSrc={"/static/featuresIcons/howitworks.png"} /> 
             </Flex>
             <Flex
                 direction="column"
                 w="full"
                 h="100%"
-                maxH={"600px"}
+                maxH={"448px"}
                 justifyContent="flex-start"
                 alignItems="center">
                 <Flex
@@ -189,7 +194,7 @@ const MoreInfo = () => {
                     w="full"
                     justifyContent={"center"}
                     h={"100%"}
-                    maxH={"600px"}
+                    maxH={"448px"}
                 >
                     <Flex
                         direction="column"

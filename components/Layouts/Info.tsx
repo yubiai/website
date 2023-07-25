@@ -8,7 +8,7 @@ const Info = () => {
     <Box
       className={"info-container"}
       w="full"
-      h="3216px"
+      h="4236px"
       //style={{ border: "1px dotted black" }}
     >
       <Text
