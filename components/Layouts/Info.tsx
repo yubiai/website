@@ -140,7 +140,7 @@ const Info = () => {
               border={"1px dotted blue"}
               width={"100%"}>
               <Flex flexDirection={"column"} width={"100%"}>
-                <Flex p={"3.9rem 0 0 0 "} direction={"column"} border={"1px solid black"}>
+                <Flex p={"3.9rem 0 0 0 "} direction={"column"} border={"1px solid black"} width={"250px"}>
                   <Text
                     display={"flex"}
                     h={"50px"}
@@ -149,7 +149,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>Client Fee</Text>
+                    >Client Fee</Text>
                   <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
@@ -157,7 +157,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>Freelance Fee</Text>
+                    >Freelance Fee</Text>
                     <Text
                     display={"flex"}
                     h={"50px"}
@@ -166,7 +166,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>Withdrawal Fee</Text>
+                    >Withdrawal Fee</Text>
                     <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
@@ -174,7 +174,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>Decentralized</Text>
+                    >Decentralized</Text>
                      <Text
                     display={"flex"}
                     h={"50px"}
@@ -183,7 +183,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>Content Ownership</Text>
+                    >Content Ownership</Text>
                     <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
@@ -191,7 +191,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>Efficient Escrow</Text>
+                    >Efficient Escrow</Text>
                     <Text
                     display={"flex"}
                     h={"50px"}
@@ -200,7 +200,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>No Limit on Task Size</Text>
+                    >No Limit on Task Size</Text>
                     <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
@@ -208,8 +208,9 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    width={"auto"}>Scalable Dispute System</Text>
+                    >Scalable Dispute System</Text>
                 </Flex>
+
               </Flex>
               <SwiperComparison />
             </Flex>

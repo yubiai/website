@@ -3,16 +3,15 @@ import { Box, Flex, Image, Text, Spacer } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import { useBreakpointValue } from "@chakra-ui/react";
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
 
 const SwiperComparison = () => {
-  const slidesPerView = useBreakpointValue({ base: 1, sm: 1, md: 1, lg: 1 });
-
+  
   return (
     <Swiper
       spaceBetween={0}
-      slidesPerView={slidesPerView}
+      //width={275}
+      slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
       loop={true}
@@ -25,7 +24,7 @@ const SwiperComparison = () => {
       <Flex direction={"column"}>
         {/*Yubiai*/}
         <SwiperSlide
-          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "auto", border: "1px dotted pink", justifyContent: "center" }}>
+          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", border: "1px dotted pink", justifyContent: "center" }}>
 
           <Spacer
           >
