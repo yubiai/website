@@ -27,11 +27,11 @@ body {
   fill: black; 
 }
 
-/*.text-container {
+.text-container {
   display: flex;
   justify-content: center;
-
-}*/
+  
+}
 
 .text-container span {
   font-weight: 600;
