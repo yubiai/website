@@ -6,7 +6,7 @@ import 'swiper/css';
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
 
 const SwiperComparison = () => {
-  
+
   return (
     <Swiper
       spaceBetween={0}
@@ -38,14 +38,15 @@ const SwiperComparison = () => {
                 display={"flex"}
                 w={"110px"}
                 h={"46.25px"}
-                marginBottom={"1rem"}
                 alt={"Logo"}
                 src={"/static/images/logoyubiai.png"}
                 fallbackSrc={"/static/images/logoyubiai.png"}
 
               />
             </Flex>
-            <Flex p={{base:"0.71rem 0 0 0 ", sm:"0.78rem 0 0 0", md:"0.61rem 0 0 0"}} direction={"column"}>
+            <Flex
+              mt={"0.78em"}
+              direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -163,7 +164,7 @@ const SwiperComparison = () => {
 
               />
             </Flex>
-            <Flex p={"0.81rem 0 0 0 "} direction={"column"}>
+            <Flex mt={"0.78em"} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -286,7 +287,7 @@ const SwiperComparison = () => {
 
               />
             </Flex>
-            <Flex p={"0.81rem 0 0 0 "} direction={"column"}>
+            <Flex mt={"0.78em"} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -410,7 +411,7 @@ const SwiperComparison = () => {
 
               />
             </Flex>
-            <Flex p={"0.81rem 0 0 0 "} direction={"column"}>
+            <Flex mt={"0.78em"} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -511,7 +512,7 @@ const SwiperComparison = () => {
           </Spacer>
         </SwiperSlide>
       </Flex>
-    </Swiper>
+    </Swiper >
   );
 }
 export default SwiperComparison;
