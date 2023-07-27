@@ -18,7 +18,7 @@ const Info = () => {
       h="auto"
       display={"flex"}
       flexDirection={"column"}
-      style={{ border: "1px dotted black" }}
+      //style={{ border: "1px dotted black" }}
     >
       <Text
         color="#001664"
@@ -58,7 +58,7 @@ const Info = () => {
         width="auto"
         height={{ base: "auto", md: "auto", lg: "405px" }}
         style={{ justifyContent: "center", display: "flex", flexDirection: "row" }}
-        border={"1px dotted greenyellow"}>
+        >
         <Flex >
           <Image
             width={"491px"}
@@ -112,7 +112,7 @@ const Info = () => {
         width="auto"
         height="1030px"
         style={{ justifyContent: "flex-start", flexDirection: "column", alignItems: "center", display: "flex" }}
-        border={"1px dotted red"}>
+        >
         <Text
           color={"#001664"}
           fontSize={{ base: "26px", md: "26px", lg: "48px" }}
@@ -137,10 +137,11 @@ const Info = () => {
           {isBaseOrMd ? (
             <Flex
               flexDirection={"row"}
-              border={"1px dotted blue"}
-              width={"100%"}>
+              width={"100%"}
+              p={2}
+              >
               <Flex flexDirection={"column"} width={"100%"}>
-                <Flex p={"3.9rem 0 0 0 "} direction={"column"} border={"1px solid black"} width={"250px"}>
+                <Flex p={"3.9rem 0 0 0 "} direction={"column"} width={"250px"}>
                   <Text
                     display={"flex"}
                     h={"50px"}

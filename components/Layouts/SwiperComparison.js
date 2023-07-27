@@ -24,7 +24,7 @@ const SwiperComparison = () => {
       <Flex direction={"column"}>
         {/*Yubiai*/}
         <SwiperSlide
-          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", border: "1px dotted pink", justifyContent: "center" }}>
+          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", justifyContent: "center" }}>
 
           <Spacer
           >
@@ -45,7 +45,7 @@ const SwiperComparison = () => {
 
               />
             </Flex>
-            <Flex p={"0.81rem 0 0 0 "} direction={"column"}>
+            <Flex p={{base:"0.71rem 0 0 0 ", sm:"0.78rem 0 0 0", md:"0.61rem 0 0 0"}} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -141,7 +141,7 @@ const SwiperComparison = () => {
         </SwiperSlide>
         {/*freelancer*/}
         <SwiperSlide
-          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "auto", border: "1px dotted pink", justifyContent: "center" }}>
+          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "auto", justifyContent: "center" }}>
 
           <Spacer
           >
@@ -265,7 +265,7 @@ const SwiperComparison = () => {
         </SwiperSlide>
         {/*upwork*/}
         <SwiperSlide
-          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "auto", border: "1px dotted pink", justifyContent: "center" }}>
+          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "auto", justifyContent: "center" }}>
 
           <Spacer
           >
@@ -388,7 +388,7 @@ const SwiperComparison = () => {
         </SwiperSlide>
         {/*Fiverr*/}
         <SwiperSlide
-          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "auto", border: "1px dotted pink", justifyContent: "center" }}>
+          style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "auto", justifyContent: "center" }}>
 
           <Spacer
           >
@@ -401,7 +401,7 @@ const SwiperComparison = () => {
               <Image
                 display={"flex"}
                 //justifyContent={"center"}
-                w={"110px"}
+                w={"92px"}
                 h={"46.25px"}
                 marginBottom={"1rem"}
                 alt={"fiverrlogo"}
