@@ -16,17 +16,20 @@ const MoreInfo = () => {
             <Flex
                 direction="column"
                 w="full"
-                h="100%"
-                maxH={"490px"}
+                h="auto"
+                //maxH={"490px"}
                 justifyContent="center"
-                alignItems="center">
+                alignItems="center"
+                >
                 <Text
-                    fontSize={"50px"}
+                    textAlign={"center"}
+                    fontSize={{base: "26px", md:"36px", lg:"50px"}}
                     color={"#001664"}
                     fontWeight={"700"}
+
                 >Join Our Thriving Web3 Community</Text>
                 <Text
-                    fontSize={"36px"}
+                    fontSize={{base: "22px", md:"20px", lg:"36px"}}
                     color={"#F0F3FF"}
                     fontWeight={"700"}
                     width={"auto"}
@@ -41,7 +44,7 @@ const MoreInfo = () => {
                     maxWidth={"700px"}
                 >
                     <Text
-                        fontSize={"36px"}
+                        fontSize={{base: "22px", md:"20px", lg:"36px"}}
                         color={"#001664"}
                         display={"flex"}
                         flexDirection={"column"}
@@ -50,7 +53,7 @@ const MoreInfo = () => {
                     >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Sellers</span>
                     </Text>
                     <Text
-                        fontSize={"36px"}
+                        fontSize={{base: "22px", md:"20px", lg:"36px"}}
                         color={"#001664"}
                         display={"flex"}
                         flexDirection={"column"}
@@ -59,7 +62,7 @@ const MoreInfo = () => {
                     >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Buyers</span>
                     </Text>
                     <Text
-                        fontSize={"36px"}
+                        fontSize={{base: "22px", md:"20px", lg:"36px"}}
                         color={"#001664"}
                         display={"flex"}
                         flexDirection={"column"}
@@ -71,6 +74,8 @@ const MoreInfo = () => {
                 <Flex
                     direction={"row"}
                     className={"slider"}
+                    border={"1px dotted red"}
+                    
                 >
                     <Flex className={"slide-track"}>
                         <Flex className={"slide"} style={{ maxWidth: "253px", justifyContent: "space-between" }}>
@@ -175,12 +180,12 @@ const MoreInfo = () => {
                 justifyContent="flex-start"
                 alignItems="center">
                 <Text color={"#001664"} fontSize={"64px"} fontWeight={"700"}>How a transaction works in Yubiai</Text>
-                <Image 
+                <Image
                     h={"85%"}
                     w={"75%"}
                     alt={"howitworks"}
                     src={"/static/featuresIcons/howitworks.png"}
-                    fallbackSrc={"/static/featuresIcons/howitworks.png"} /> 
+                    fallbackSrc={"/static/featuresIcons/howitworks.png"} />
             </Flex>
             <Flex
                 direction="column"

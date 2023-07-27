@@ -1,5 +1,4 @@
 import { Flex, HStack, Text, Image } from "@chakra-ui/react";
-import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 
 
 
@@ -13,7 +12,7 @@ interface itemActions {
 const ActionCard = ({ item }: { item: itemActions }) => {
   return (
     <Flex
-      height={{ base: "full", md: "360px", lg: "492px" }}
+      height={{ base: "full", md: "100%", lg: "492px" }}
       width={{ base: "full", md: "360px", lg: "388px" }}
       borderRadius="20px"
       bg={"white"}

@@ -14,8 +14,8 @@ export default function Hero() {
   return (
     <Box
       className={"hero-container"}
-      w={{ base: "100%", md: "50%", lg: "100%" }}
-      h={{ base: "auto", md: "1728px" }}
+      w={{ base: "100%", md: "auto", lg: "100%" }}
+      h={{ base: "auto", md: "auto" }}
       style={{ flexDirection: "column", display: "flex" }}
 
     >

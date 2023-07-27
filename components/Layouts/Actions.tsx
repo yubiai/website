@@ -24,16 +24,19 @@ const Actions = () => {
     <>
 
       <SimpleGrid
-        columns={{ base: 1, sm: 1, md: 2, lg: 3 }}
+        columns={{ base: 1, sm: 1, md: 1, lg: 2, xl: 3 }}
         spacing={5}
-        m="2em"
+        h={{ base: "auto", sm: "auto", md: "auto", lg: "auto", xl: "auto" }}
+        m={{ base: "0 2em", sm: "0 2em", md: "2em", lg: "1em" }}
 
       >
-        <Box py={{ base: "1.2rem", md: "0", lg: "0" }}>
+        <Box mt={{ base: "2em", md: "0", lg: "0" }}>
           <ActionCard item={listActions.upload} />
         </Box>
-        <ActionCard item={listActions.search} />
-        <Box py={{ base: "1.2rem", md: "0", lg: "0" }}>
+        <Box mt={{ base: "2em", md: "1.5em", lg: "0" }}>
+          <ActionCard item={listActions.search} />
+        </Box>
+        <Box mt={{ base: "2em", md: "1.5em", lg: "0" }}>
           <ActionCard item={listActions.connect} />
         </Box>
       </SimpleGrid>

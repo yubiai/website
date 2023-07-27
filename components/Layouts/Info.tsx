@@ -9,7 +9,7 @@ import { useBreakpointValue } from "@chakra-ui/react";
 
 
 const Info = () => {
-  const isBaseOrMd = useBreakpointValue({ base: true, md: true, lg: false });
+  const isBaseOrMd = useBreakpointValue({ base: true, md: true, lg: true, xl: false });
 
   return (
     <Box
@@ -18,7 +18,7 @@ const Info = () => {
       h="auto"
       display={"flex"}
       flexDirection={"column"}
-      //style={{ border: "1px dotted black" }}
+    //style={{ border: "1px dotted black" }}
     >
       <Text
         color="#001664"
@@ -35,7 +35,8 @@ const Info = () => {
         //width="auto"
         height={{ base: "auto", md: "auto", lg: "auto" }}
         maxWidth={{ base: "auto", md: "auto", lg: "auto" }}
-        width={{ base: "100%", md: "50%", lg: "100%" }}
+        width={{ base: "100%", md: "100%", lg: "100%" }}
+        padding={{ base: "0 2em", md: "0 2em", lg: "0 1em" }}
         justifyContent={{ base: "space-around", md: "space-around", lg: "space-around" }}
 
       >
@@ -58,7 +59,7 @@ const Info = () => {
         width="auto"
         height={{ base: "auto", md: "auto", lg: "405px" }}
         style={{ justifyContent: "center", display: "flex", flexDirection: "row" }}
-        >
+      >
         <Flex >
           <Image
             width={"491px"}
@@ -78,7 +79,7 @@ const Info = () => {
         >
           <Image
             width={"723px"}
-            h={{ base: "calc(17vw / 1)", md: "calc(723px / (16/9))", lg: "132px" }}
+            h={{ base: "calc(17vw / 1)", md: "calc(17vw / 1)", lg: "132px" }}
             alt={"lowFees"}
             src={"/static/featuresIcons/lowFeesIcon.png"}
             fallbackSrc={"/static/featuresIcons/lowFeesIcon"}
@@ -88,7 +89,7 @@ const Info = () => {
           />
           <Image
             width={"723px"}
-            h={{ base: "calc(15vw / 1)", md: "calc(723px / (16/9))", lg: "132px" }}
+            h={{ base: "calc(15vw / 1)", md: "calc(17vw / 1)", lg: "132px" }}
             alt={"cryptoPaym"}
             src={"/static/featuresIcons/cryptoPaymIcon.png"}
             fallbackSrc={"/static/featuresIcons/cryptoPaymIcon.png"}
@@ -99,7 +100,7 @@ const Info = () => {
           <Image
             width={"723px"}
             alt={"svcsIcon"}
-            h={{ base: "calc(15vw / 1)", md: "calc(723px / (16/9))", lg: "132px" }}
+            h={{ base: "calc(15vw / 1)", md: "calc(17vw / 1)", lg: "132px" }}
             src={"/static/featuresIcons/servicesIcon.png"}
             fallbackSrc={"/static/featuresIcons/servicesIcon.png"}
             _hover={{
@@ -110,16 +111,16 @@ const Info = () => {
       </Flex>
       <Flex
         width="auto"
-        height="1030px"
+        height="auto"
         style={{ justifyContent: "flex-start", flexDirection: "column", alignItems: "center", display: "flex" }}
-        >
+      >
         <Text
           color={"#001664"}
           fontSize={{ base: "26px", md: "26px", lg: "48px" }}
           m={{ base: "1rem", md: "1rem", lg: "1rem" }}
           fontWeight={"500"}
           width={"100%"}
-          maxWidth={"1212px"}
+          maxWidth={"auto"}
           justifyContent={"center"}
           textAlign={"center"}
         >
@@ -139,9 +140,11 @@ const Info = () => {
               flexDirection={"row"}
               width={"100%"}
               p={2}
-              >
+            >
               <Flex flexDirection={"column"} width={"100%"}>
-                <Flex p={"3.9rem 0 0 0 "} direction={"column"} width={"250px"}>
+                <Flex p={"3.9rem 0 0 0 "} direction={"column"}
+                  //border={{ base: "1px dotted red", sm: "1px dotted blue", md: "1px dotted green", lg: "1px dotted pink" }}
+                  width={{ base: "250px", sm: "250px", md: "250px", lg: "310px" }}>
                   <Text
                     display={"flex"}
                     h={"50px"}
@@ -150,7 +153,7 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >Client Fee</Text>
+                  >Client Fee</Text>
                   <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
@@ -158,8 +161,8 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >Freelance Fee</Text>
-                    <Text
+                  >Freelance Fee</Text>
+                  <Text
                     display={"flex"}
                     h={"50px"}
                     backgroundColor={"rgba(0, 22, 100, 0.30)"}
@@ -167,16 +170,16 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >Withdrawal Fee</Text>
-                    <Text display={"flex"}
+                  >Withdrawal Fee</Text>
+                  <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
                     borderRadius={"20px 0 0 20px"}
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >Decentralized</Text>
-                     <Text
+                  >Decentralized</Text>
+                  <Text
                     display={"flex"}
                     h={"50px"}
                     backgroundColor={"rgba(0, 22, 100, 0.30)"}
@@ -184,16 +187,16 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >Content Ownership</Text>
-                    <Text display={"flex"}
+                  >Content Ownership</Text>
+                  <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
                     borderRadius={"20px 0 0 20px"}
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >Efficient Escrow</Text>
-                    <Text
+                  >Efficient Escrow</Text>
+                  <Text
                     display={"flex"}
                     h={"50px"}
                     backgroundColor={"rgba(0, 22, 100, 0.30)"}
@@ -201,15 +204,15 @@ const Info = () => {
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >No Limit on Task Size</Text>
-                    <Text display={"flex"}
+                  >No Limit on Task Size</Text>
+                  <Text display={"flex"}
                     h={"50px"}
                     //backgroundColor={"rgba(217, 114, 241, 0.6)"}
                     borderRadius={"20px 0 0 20px"}
                     alignItems={"center"}
                     justifyContent={"center"}
                     color={"black"}
-                    >Scalable Dispute System</Text>
+                  >Scalable Dispute System</Text>
                 </Flex>
 
               </Flex>
@@ -219,6 +222,7 @@ const Info = () => {
             <>
               <Box
                 width={"1212px"}
+                //border={{ base: "1px dotted green", sm: "1px dotted red", md: "1px dotted blue", lg: "1px dotted black" }}
                 height={"60px"}
                 margin={"0.5rem"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
