@@ -538,6 +538,7 @@ const Info = () => {
         </>
         <Text
           color={"black"}
+          m={"0 1em"}
         >
           *0% equivalent for the first year, after first year only 0.3% for PREMIUM clients with higher visualization impact for a low subscription cost<br />** The fee goes directly to the liquidity of the $YBI token</Text>
       </Flex>
