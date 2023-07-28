@@ -20,16 +20,16 @@ const MoreInfo = () => {
                 //maxH={"490px"}
                 justifyContent="center"
                 alignItems="center"
-                >
+            >
                 <Text
                     textAlign={"center"}
-                    fontSize={{base: "26px", md:"36px", lg:"50px"}}
+                    fontSize={{ base: "26px", md: "36px", lg: "50px" }}
                     color={"#001664"}
                     fontWeight={"700"}
 
                 >Join Our Thriving Web3 Community</Text>
                 <Text
-                    fontSize={{base: "22px", md:"20px", lg:"36px"}}
+                    fontSize={{ base: "22px", md: "20px", lg: "36px" }}
                     color={"#F0F3FF"}
                     fontWeight={"700"}
                     width={"auto"}
@@ -44,7 +44,7 @@ const MoreInfo = () => {
                     maxWidth={"700px"}
                 >
                     <Text
-                        fontSize={{base: "22px", md:"20px", lg:"36px"}}
+                        fontSize={{ base: "22px", md: "20px", lg: "36px" }}
                         color={"#001664"}
                         display={"flex"}
                         flexDirection={"column"}
@@ -53,7 +53,7 @@ const MoreInfo = () => {
                     >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Sellers</span>
                     </Text>
                     <Text
-                        fontSize={{base: "22px", md:"20px", lg:"36px"}}
+                        fontSize={{ base: "22px", md: "20px", lg: "36px" }}
                         color={"#001664"}
                         display={"flex"}
                         flexDirection={"column"}
@@ -62,7 +62,7 @@ const MoreInfo = () => {
                     >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Buyers</span>
                     </Text>
                     <Text
-                        fontSize={{base: "22px", md:"20px", lg:"36px"}}
+                        fontSize={{ base: "22px", md: "20px", lg: "36px" }}
                         color={"#001664"}
                         display={"flex"}
                         flexDirection={"column"}
@@ -74,11 +74,13 @@ const MoreInfo = () => {
                 <Flex
                     direction={"row"}
                     className={"slider"}
-                    border={"1px dotted red"}
-                    
+
+
                 >
                     <Flex className={"slide-track"}>
-                        <Flex className={"slide"} style={{ maxWidth: "253px", justifyContent: "space-between" }}>
+                        <Flex className={"slide"}
+                            maxWidth={{ base: "200px", sm: "200px", md: "220px", lg: "253px", xl: "253px" }}
+                            style={{ justifyContent: "space-evenly", alignItems: "center" }}>
                             <Image
                                 w={"40px"}
                                 h={"43px"}
@@ -87,11 +89,13 @@ const MoreInfo = () => {
                                 fallbackSrc={"/static/ecosystem/ethlogo.png"} />
                             <Text
                                 color={"white"}
-                                fontSize={"36px"}
+                                fontSize={{ base: "24px", md: "28px", lg: "36px" }}
                                 fontWeight={"700"}
                             >ETHEREUM</Text>
                         </Flex>
-                        <Flex className={"slide"} style={{ maxWidth: "202px", justifyContent: "space-between" }}>
+                        <Flex className={"slide"}
+                            maxWidth={{ base: "150px", sm: "160px", md: "180px", lg: "223px", xl: "223px" }}
+                            style={{ justifyContent: "space-evenly", alignItems: "center" }}>
                             <Image
                                 w={"58px"}
                                 h={"43px"}
@@ -100,11 +104,13 @@ const MoreInfo = () => {
                                 fallbackSrc={"/static/ecosystem/gnosislogo.svg"} />
                             <Text
                                 color={"white"}
-                                fontSize={"36px"}
+                                fontSize={{ base: "24px", md: "28px", lg: "36px" }}
                                 fontWeight={"700"}
                             >GNOSIS</Text>
                         </Flex>
-                        <Flex className={"slide"} style={{ maxWidth: "273px", justifyContent: "space-between" }}>
+                        <Flex className={"slide"}
+                            maxWidth={{ base: "210px", sm: "230px", md: "240px", lg: "273px", xl: "273px" }}
+                            style={{ justifyContent: "space-evenly", alignItems: "center" }}>
                             <Image
                                 w={"58px"}
                                 h={"43px"}
@@ -113,11 +119,13 @@ const MoreInfo = () => {
                                 fallbackSrc={"/static/ecosystem/sequence-logo.png"} />
                             <Text
                                 color={"white"}
-                                fontSize={"36px"}
+                                fontSize={{ base: "24px", md: "28px", lg: "36px" }}
                                 fontWeight={"700"}
                             >SEQUENCE</Text>
                         </Flex>
-                        <Flex className={"slide"} style={{ maxWidth: "232px", justifyContent: "space-between" }}>
+                        <Flex className={"slide"}
+                            maxWidth={{ base: "180px", sm: "175px", md: "190px", lg: "232px", xl: "232px" }}
+                            style={{ justifyContent: "space-evenly", alignItems: "center" }}>
                             <Image
                                 w={"58px"}
                                 h={"43px"}
@@ -126,11 +134,14 @@ const MoreInfo = () => {
                                 fallbackSrc={"/static/ecosystem/filecoin-logo.svg"} />
                             <Text
                                 color={"white"}
-                                fontSize={"36px"}
+                                fontSize={{ base: "24px", md: "28px", lg: "36px" }}
                                 fontWeight={"700"}
                             >FILECOIN</Text>
                         </Flex>
-                        <Flex className={"slide"} style={{ maxWidth: "219px", justifyContent: "space-between" }}>
+                        <Flex className={"slide"}
+                            maxWidth={{ base: "160px", sm: "170px", md: "190px", lg: "212px", xl: "222px" }}
+                            style={{ justifyContent: "space-evenly", alignItems: "center" }}
+                        >
                             <Image
                                 w={"48px"}
                                 h={"43px"}
@@ -139,11 +150,15 @@ const MoreInfo = () => {
                                 fallbackSrc={"/static/ecosystem/kleros.png"} />
                             <Text
                                 color={"white"}
-                                fontSize={"36px"}
+                                fontSize={{ base: "24px", md: "28px", lg: "36px" }}
                                 fontWeight={"700"}
                             >KLEROS</Text>
                         </Flex>
-                        <Flex className={"slide"}>
+                        <Flex className={"slide"}
+                            maxWidth={{ base: "330px", sm: "330px", md: "450px", lg: "450px", xl: "450px" }}
+                            style={{ justifyContent: "space-evenly", alignItems: "center" }}
+
+                        >
                             <Image
                                 w={"58px"}
                                 h={"43px"}
@@ -152,11 +167,14 @@ const MoreInfo = () => {
                                 fallbackSrc={"/static/ecosystem/poh.webp"} />
                             <Text
                                 color={"white"}
-                                fontSize={"36px"}
+                                fontSize={{ base: "24px", md: "28px", lg: "36px" }}
                                 fontWeight={"700"}
                             >PROOF OF HUMANITY</Text>
                         </Flex>
-                        <Flex className={"slide"} style={{ maxWidth: "375px", justifyContent: "space-between" }}>
+                        <Flex className={"slide"}
+                            maxWidth={{ base: "280px", sm: "290px", md: "330px", lg: "390px", xl: "390px" }}
+                            style={{ justifyContent: "space-evenly", alignItems: "center" }}
+                        >
                             <Image
                                 w={"58px"}
                                 h={"43px"}
@@ -165,7 +183,7 @@ const MoreInfo = () => {
                                 fallbackSrc={"/static/ecosystem/lenslogo.png"} />
                             <Text
                                 color={"white"}
-                                fontSize={"36px"}
+                                fontSize={{ base: "24px", md: "28px", lg: "36px" }}
                                 fontWeight={"700"}
                             >LENS PROTOCOL</Text>
                         </Flex>
@@ -179,7 +197,7 @@ const MoreInfo = () => {
                 maxH={"1300px"}
                 justifyContent="flex-start"
                 alignItems="center">
-                <Text color={"#001664"} fontSize={"64px"} fontWeight={"700"}>How a transaction works in Yubiai</Text>
+                <Text color={"#001664"} fontSize={{ base: "24px", md: "28px", lg: "56px" }} fontWeight={"700"}>How a transaction works</Text>
                 <Image
                     h={"85%"}
                     w={"75%"}

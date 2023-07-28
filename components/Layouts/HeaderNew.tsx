@@ -40,7 +40,6 @@ export default function WithSubnavigation() {
     //flexGrow={flexGrowValue}
     >
       <Container
-        border={{ base: "1px dotted red", md: "1px dotted blue", lg: "1px dotted pink" }}
         px={4} style={{ display: "flex", justifyContent: "center" }}>
         <Flex
           color={'white'}

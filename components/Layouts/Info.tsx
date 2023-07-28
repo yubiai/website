@@ -131,6 +131,7 @@ const Info = () => {
           fontSize={{ base: "22px", md: "22px", lg: "32px" }}
           fontWeight={"500"}
           justifyContent={"center"}
+          textAlign={"center"}
         >
           Check some of our key features in comparison to the competition below
         </Text>
