@@ -41,12 +41,12 @@ export default function WithSubnavigation() {
     >
       <Container
         border={{ base: "1px dotted red", md: "1px dotted blue", lg: "1px dotted pink" }}
-        maxW={"8xl"} px={4} style={{ display: "flex", justifyContent: "center" }}>
+        px={4} style={{ display: "flex", justifyContent: "center" }}>
         <Flex
           color={'white'}
           minH={'60px'}
           py={{ base: 2 }}
-          px={{ base: 4 }}>
+          px={{ base: 1 }}>
 
           <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -66,28 +66,28 @@ export default function WithSubnavigation() {
               <LogoYb />
             </Box>
 
-            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <Flex display={{ base: 'none', md: 'flex' }} ml={{md:-4}}>
               <DesktopNav />
             </Flex>
           </Flex>
           <LanguageChange />
+          <ColorModeToggler />
           <Stack
-            flex={{ base: 1, md: 0 }}
+            flex={{ base: 1, md: 1 }}
             justify={'flex-end'}
             direction={'row'}
-            spacing={10}>
+            spacing={5}>
             <a href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
               <Button
                 variant={"solid"}
                 color={"#00BCD4"}
                 bg="white"
-                //size={"sm"}
+                size={{ base: "sm", sm: "sm", md: "md" }}
                 mr={0}
               >
                 Launch App
               </Button>
             </a>
-            <ColorModeToggler />
           </Stack>
 
         </Flex>
@@ -107,9 +107,9 @@ const DesktopNav = () => {
   const router = useRouter();
 
   return (
-    <Stack direction={'row'} spacing={4} >
+    <Stack direction={'row'} spacing={{md:1, lg: 4, xl:4}} >
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
+        <Box key={navItem.label} >
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
               {
