@@ -8,7 +8,7 @@ import { useBreakpointValue } from "@chakra-ui/react";
 
 
 const Carousel = () => {
-    const slidesPerView = useBreakpointValue({ base: 1, sm: 1, md: 1, lg: 2 });
+    const slidesPerView = useBreakpointValue({ base: 1, sm: 1, md: 2, lg: 2 });
 
 
     return (

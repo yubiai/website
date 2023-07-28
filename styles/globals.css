@@ -74,7 +74,7 @@ body {
 .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
- width: auto;
+  width: auto;
   justify-content: space-evenly;
   height: 70px;
 }

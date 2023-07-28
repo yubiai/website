@@ -40,7 +40,7 @@ const About = ({ }) => {
       </Heading>
       <Stack
         spacing={4}
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column", md: "column", lg:"row", xl:"row" }}
         align={{ base: "center", md: "start" }}
         justifyContent={"center"}
       >
@@ -59,7 +59,7 @@ const About = ({ }) => {
           It is a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>community-born</span> project initiated by some <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>ProofOfHumanity</span> members. Yubiai is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>platform</span> where <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>buyers & sellers</span> meet to exchange in a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>secure, easy, transparent, and cheap</span> way their services while making <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>social impact</span>.
         </Text>
         <Flex
-          w={{base:"290px", md:"auto", lg: "599px"}}
+          w={{base:"290px", md:"599px", lg: "599px"}}
           h={{base:"auto", md:"auto", lg: "400px"}}
           justifyContent={{base:"center", md:"center"}}
           

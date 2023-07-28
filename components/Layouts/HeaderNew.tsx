@@ -21,17 +21,27 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 import LogoYb from "../Logos/LogoYb";
-import  LanguageChange  from "../Buttons/translButton";
+import LanguageChange from "../Buttons/translButton";
 import { ColorModeToggler } from "../Buttons/darkModeButton";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useBreakpointValue } from "@chakra-ui/react";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
+  //const flexGrowValue = useBreakpointValue({ base: 1, md: 1, lg: 3 });
 
   return (
-    <Box sx={{ position: "sticky", top: "0", zIndex: "99", background: "rgba(29, 39, 61, 0.9)", backdropFilter: "blur(4px)"}}>
-      <Container maxW={"8xl"} px={4} style={{display: "flex", justifyContent: "center" }}>
+    <Box
+      //border={{ base: "1px dotted red", md: "1px dotted blue", lg: "1px dotted pink" }}
+      sx={{ position: "sticky", top: "0", zIndex: "99", background: "rgba(29, 39, 61, 0.9)", backdropFilter: "blur(4px)" }}
+    //display={"flex"}
+    //w={"100%"}
+    //flexGrow={flexGrowValue}
+    >
+      <Container
+        border={{ base: "1px dotted red", md: "1px dotted blue", lg: "1px dotted pink" }}
+        maxW={"8xl"} px={4} style={{ display: "flex", justifyContent: "center" }}>
         <Flex
           color={'white'}
           minH={'60px'}
@@ -65,20 +75,21 @@ export default function WithSubnavigation() {
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
             direction={'row'}
-            spacing={6}>
+            spacing={10}>
             <a href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
               <Button
                 variant={"solid"}
                 color={"#00BCD4"}
                 bg="white"
                 //size={"sm"}
-                mr={4}
+                mr={0}
               >
                 Launch App
               </Button>
             </a>
+            <ColorModeToggler />
           </Stack>
-          <ColorModeToggler />
+
         </Flex>
       </Container>
 
@@ -220,7 +231,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         align={'center'}
         _hover={{
           textDecoration: 'none',
-        }}> 
+        }}>
         <Text
           fontWeight={600}
           color={useColorModeValue('gray.600', 'gray.200')}>
