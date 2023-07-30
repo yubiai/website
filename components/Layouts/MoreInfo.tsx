@@ -1,4 +1,4 @@
-import { Text, Flex, Image, Button, Stack } from "@chakra-ui/react"
+import { Text, Flex, Image, Button, Stack, Link } from "@chakra-ui/react"
 
 
 const MoreInfo = () => {
@@ -217,7 +217,7 @@ const MoreInfo = () => {
                     w="full"
                     justifyContent={{ base: "flex-start", sm: "flex-start", md: "space-evenly", lg: "space-evenly", xl: "space-evenly" }}
                     h={{ base: "440px", sm: "440px", md: "446px", lg: "448px", xl: "448px" }}
-                    
+
                 >
                     <Flex
                         direction="column"
@@ -226,26 +226,29 @@ const MoreInfo = () => {
                         width={{ base: "auto", sm: "auto", md: "auto", lg: "594px" }}
                         textAlign={"center"}
                         height={{ base: "250px", sm: "250px", md: "446px", lg: "446px" }}
-                        
+
                     >
                         <Text
                             color={"#001664"}
                             fontSize={{ base: "32px", md: "32px", lg: "64px" }}
                             fontWeight={"700"}
-                            
+
                             _hover={{
                                 color: "white"
                             }}
                         >Join the Yubiai community</Text>
                         <Text color={"#001664"} fontSize={{ base: "22px", md: "20px", lg: "33px" }}>Learn more about our community, get support and start working with us</Text>
                         <Stack
-                           
-                           
-                        
+
+
+
                         >
-                            <a
+                            <Link
+                                width={{ base: "175px", sm: "175px", md: "175px", lg: "288px", xl: "288px" }}
+                                height={{ base: "auto", sm: "auto", md: "auto", lg: "50px", xl: "50px" }}
+                                _hover={{ textDecoration: "none" }}
                                 style={{
-                                    width: "100%", maxWidth: "288px", height: "100%", maxHeight: "50px",
+
                                     backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px"
                                 }}
                                 href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
@@ -265,13 +268,16 @@ const MoreInfo = () => {
                                         color: "white"
                                     }}
                                 >LAUNCH APP</Button>
-                            </a>
-                            <a style={{ width: "100%", maxWidth: "288px", height: "100%", maxHeight: "50px", backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px" }} href="mailto: contact@yubiai.market">
+                            </Link>
+                            <Link
+                                width={{ base: "175px", sm: "175px", md: "175px", lg: "288px", xl: "288px" }}
+                                height={{ base: "auto", sm: "auto", md: "auto", lg: "50px", xl: "50px" }}
+                                _hover={{ textDecoration: "none" }} style={{ backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px" }} href="mailto: contact@yubiai.market">
                                 <Button
                                     color={"#001664"}
                                     fontSize={"25px"}
                                     fontWeight={"700"}
-                                    size={{ base: "sm", sm: "sm", md: "md" }}
+                                    size={{ base: "sm", sm: "sm", md: "md", lg: "lg", xl: "xl" }}
                                     bg="transparent"
                                     h={"100%"}
                                     maxH={"50px"}
@@ -282,7 +288,7 @@ const MoreInfo = () => {
                                         backgroundColor: "#001664",
                                         color: "white"
                                     }}>CONTACT US</Button>
-                            </a>
+                            </Link>
                         </Stack>
                     </Flex>
                     <Flex
