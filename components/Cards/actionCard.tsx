@@ -22,7 +22,7 @@ const ActionCard = ({ item }: { item: itemActions }) => {
       _hover={{
         color: "white",
         backgroundColor: "#00BCD4",
-        transform: "translateY(-40px)"
+        transform: "translateY(-20px)"
         
       }}
       className={"parent"}

@@ -1,4 +1,4 @@
-import { Text, Flex, Image, Button } from "@chakra-ui/react"
+import { Text, Flex, Image, Button, Stack } from "@chakra-ui/react"
 
 
 const MoreInfo = () => {
@@ -206,68 +206,97 @@ const MoreInfo = () => {
                     fallbackSrc={"/static/featuresIcons/howitworks.png"} />
             </Flex>
             <Flex
-                direction="column"
+                direction={"column"}
                 w="full"
                 h="100%"
-                maxH={"448px"}
-                justifyContent="flex-start"
-                alignItems="center">
+                maxH={{ base: "740px", sm: "740px", md: "740px", lg: "448px", xl: "448px" }}
+                justifyContent={{ base: "space-evenly", sm: "space-evenly", md: "space-between", lg: "space-around", xl: "space-around" }}
+                alignItems={{ base: "center", sm: "center", md: "center", lg: "center", xl: "center" }}>
                 <Flex
-                    direction="row"
+                    direction={{ base: "column", sm: "column", md: "column", lg: "row", xl: "row" }}
                     w="full"
-                    justifyContent={"center"}
-                    h={"100%"}
-                    maxH={"448px"}
+                    justifyContent={{ base: "flex-start", sm: "flex-start", md: "space-evenly", lg: "space-evenly", xl: "space-evenly" }}
+                    h={{ base: "440px", sm: "440px", md: "446px", lg: "448px", xl: "448px" }}
+                    
                 >
                     <Flex
                         direction="column"
                         justifyContent={"space-around"}
                         alignItems={"center"}
+                        width={{ base: "auto", sm: "auto", md: "auto", lg: "594px" }}
+                        textAlign={"center"}
+                        height={{ base: "250px", sm: "250px", md: "446px", lg: "446px" }}
+                        
                     >
-                        <Text color={"#001664"} fontSize={"64px"} fontWeight={"700"}
+                        <Text
+                            color={"#001664"}
+                            fontSize={{ base: "32px", md: "32px", lg: "64px" }}
+                            fontWeight={"700"}
+                            
                             _hover={{
                                 color: "white"
                             }}
                         >Join the Yubiai community</Text>
-                        <Text color={"#001664"} fontSize={"24px"} fontWeight={"300"}>Learn more about our community, get support and start working with us</Text>
-                        <a
-                            style={{ width: "100%", maxWidth: "288px", height: "100%", maxHeight: "50px", backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px" }}
-                            href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
-                            <Button
-                                color={"#001664"}
-                                fontSize={"25px"}
-                                fontWeight={"700"}
-                                bg="transparent"
-                                h={"100%"}
-                                maxH={"50px"}
-                                w={"100%"}
-                                maxW={"288px"}
-                                _hover={{
-                                    textDecoration: "none",
-                                    backgroundColor: "#001664",
-                                    color: "white"
+                        <Text color={"#001664"} fontSize={{ base: "22px", md: "20px", lg: "33px" }}>Learn more about our community, get support and start working with us</Text>
+                        <Stack
+                           
+                           
+                        
+                        >
+                            <a
+                                style={{
+                                    width: "100%", maxWidth: "288px", height: "100%", maxHeight: "50px",
+                                    backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px"
                                 }}
-                            >LAUNCH APP</Button>
-                        </a>
-                        <a style={{ width: "100%", maxWidth: "288px", height: "100%", maxHeight: "50px", backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px" }} href="mailto: contact@yubiai.market">
-                            <Button
-                                color={"#001664"}
-                                fontSize={"25px"}
-                                fontWeight={"700"}
-                                bg="transparent"
-                                h={"100%"}
-                                maxH={"50px"}
-                                w={"100%"}
-                                maxW={"288px"}
-                                _hover={{
-                                    textDecoration: "none",
-                                    backgroundColor: "#001664",
-                                    color: "white"
-                                }}>CONTACT US</Button>
-                        </a>
+                                href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
+                                <Button
+                                    color={"#001664"}
+                                    fontSize={"25px"}
+                                    fontWeight={"700"}
+                                    size={{ base: "sm", sm: "sm", md: "md", lg: "lg", xl: "xl" }}
+                                    bg="transparent"
+                                    h={"100%"}
+                                    maxH={"50px"}
+                                    w={"100%"}
+                                    maxW={"288px"}
+                                    _hover={{
+                                        textDecoration: "none",
+                                        backgroundColor: "#001664",
+                                        color: "white"
+                                    }}
+                                >LAUNCH APP</Button>
+                            </a>
+                            <a style={{ width: "100%", maxWidth: "288px", height: "100%", maxHeight: "50px", backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px" }} href="mailto: contact@yubiai.market">
+                                <Button
+                                    color={"#001664"}
+                                    fontSize={"25px"}
+                                    fontWeight={"700"}
+                                    size={{ base: "sm", sm: "sm", md: "md" }}
+                                    bg="transparent"
+                                    h={"100%"}
+                                    maxH={"50px"}
+                                    w={"100%"}
+                                    maxW={"288px"}
+                                    _hover={{
+                                        textDecoration: "none",
+                                        backgroundColor: "#001664",
+                                        color: "white"
+                                    }}>CONTACT US</Button>
+                            </a>
+                        </Stack>
                     </Flex>
-                    <Flex direction="column" justifyContent={"space-around"} alignItems={"center"} w={"100%"} maxW={"500px"}>
-                        <Flex direction="row" justifyContent={"space-around"} alignItems={"center"} w={"100%"}>
+                    <Flex
+                        direction="column"
+                        justifyContent={"space-around"}
+                        alignItems={"center"}
+                        w={"100%"} maxW={"500px"}
+                        mt="10px">
+                        <Flex
+                            direction="row"
+                            justifyContent={"space-around"}
+                            alignItems={"center"}
+                            w={{ base: "50%", sm: "60%", md: "100%", lg: "100%", xl: "100%" }}
+                            h={{ base: "50%", sm: "100%", md: "100%", lg: "100%", xl: "100%" }}>
                             <a className="icon" href={"https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"} target="_blank">
                                 <Image
                                     alt={"youtube"}
@@ -288,7 +317,12 @@ const MoreInfo = () => {
                             </a>
 
                         </Flex>
-                        <Flex direction="row" justifyContent={"space-around"} alignItems={"center"} w={"100%"}>
+                        <Flex
+                            direction="row"
+                            justifyContent={"space-around"}
+                            alignItems={"center"}
+                            w={{ base: "50%", sm: "60%", md: "100%", lg: "100%", xl: "100%" }}
+                            h={{ base: "50%", sm: "100%", md: "100%", lg: "100%", xl: "100%" }}>
                             <a className="icon" href={"https://discord.gg/a9CQKJXb8X"} target="_blank">
                                 <Image
                                     alt={"discord"}
