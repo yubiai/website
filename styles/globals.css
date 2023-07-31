@@ -1,6 +1,6 @@
 html,
 body {
-  
+
   background-color: linear(to-b, #00ABD1, #F0F3FF);
   padding: 0;
   margin: 0;
@@ -24,13 +24,13 @@ body {
 }
 
 .parent:hover svg path {
-  fill: black; 
+  fill: black;
 }
 
 .text-container {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .text-container span {
@@ -39,7 +39,7 @@ body {
 }
 
 .text-container:hover span {
-  color: white; 
+  color: white;
 }
 
 .slider {
@@ -118,31 +118,48 @@ body {
   /*animation: scroll 20s linear infinite;*/
   display: flex;
   /*width: calc(296px * 4);*/
-  
+
   height: 437px;
 }
 
 .slide-carousel {
   height: 437px;
   width: 500px;
-  
+
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-250px * 7));
   }
 }
+
 .icon {
- display: flex;
+  display: flex;
+  height: 6.53rem;
 }
+
+@media screen and (max-width: 768px) {
+  .icon {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icon {
+    height: 60px;
+  }
+}
+
 .icon:hover {
   transform: rotate(720deg);
   transition: all 1.25s ease-in-out;
 }
+
 a {
   color: inherit;
   text-decoration: none;

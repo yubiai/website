@@ -211,11 +211,12 @@ const MoreInfo = () => {
                 h="100%"
                 maxH={{ base: "740px", sm: "740px", md: "740px", lg: "448px", xl: "448px" }}
                 justifyContent={{ base: "space-evenly", sm: "space-evenly", md: "space-between", lg: "space-around", xl: "space-around" }}
+                marginBottom={"5em"}
                 alignItems={{ base: "center", sm: "center", md: "center", lg: "center", xl: "center" }}>
                 <Flex
                     direction={{ base: "column", sm: "column", md: "column", lg: "row", xl: "row" }}
                     w="full"
-                    justifyContent={{ base: "flex-start", sm: "flex-start", md: "space-evenly", lg: "space-evenly", xl: "space-evenly" }}
+                    justifyContent={{ base: "flex-start", sm: "flex-start", md: "space-evenly", lg: "center", xl: "center" }}
                     h={{ base: "440px", sm: "440px", md: "446px", lg: "448px", xl: "448px" }}
 
                 >
@@ -232,7 +233,6 @@ const MoreInfo = () => {
                             color={"#001664"}
                             fontSize={{ base: "32px", md: "32px", lg: "64px" }}
                             fontWeight={"700"}
-
                             _hover={{
                                 color: "white"
                             }}
@@ -295,14 +295,15 @@ const MoreInfo = () => {
                         direction="column"
                         justifyContent={"space-around"}
                         alignItems={"center"}
-                        w={"100%"} maxW={"500px"}
+                        w={"100%"} maxW={{base: "auto", sm: "auto", md: "auto", lg: "500px", xl: "500px" }}
+                        h={{base: "196px", md: "203px", lg: "303px"}}
                         mt="10px">
                         <Flex
                             direction="row"
                             justifyContent={"space-around"}
                             alignItems={"center"}
                             w={{ base: "50%", sm: "60%", md: "100%", lg: "100%", xl: "100%" }}
-                            h={{ base: "50%", sm: "100%", md: "100%", lg: "100%", xl: "100%" }}>
+                            h={{ base: "auto", sm: "100%", md: "100%", lg: "100%", xl: "100%" }}>
                             <a className="icon" href={"https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"} target="_blank">
                                 <Image
                                     alt={"youtube"}

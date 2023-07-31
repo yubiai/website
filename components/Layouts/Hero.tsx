@@ -51,7 +51,7 @@ export default function Hero() {
         </Box>
         <Flex
 
-          style={{ display: "flex", justifyContent: "center", margin: "4rem" }}
+          style={{ display: "flex", justifyContent: "center", margin: "1rem" }}
 
         >
           <Text
