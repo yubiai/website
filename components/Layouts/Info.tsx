@@ -60,7 +60,7 @@ const Info = () => {
         height={{ base: "auto", md: "auto", lg: "405px" }}
         style={{ justifyContent: "center", display: "flex", flexDirection: "row" }}
       >
-        <Flex >
+        <Flex marginTop={"1rem"} >
           <Image
             width={"491px"}
             h={{ base: "calc(30vw / 1)", md: "calc(491px / (16/9))", lg: "276px" }}
@@ -79,7 +79,7 @@ const Info = () => {
         >
           <Image
             width={"723px"}
-            h={{ base: "calc(17vw / 1)", md: "calc(17vw / 1)", lg: "132px" }}
+            h={{ base: "calc(17vw / 1)", md: "calc(15vw / 1)", lg: "132px" }}
             alt={"lowFees"}
             src={"/static/featuresIcons/lowFeesIcon.png"}
             fallbackSrc={"/static/featuresIcons/lowFeesIcon"}
@@ -89,7 +89,7 @@ const Info = () => {
           />
           <Image
             width={"723px"}
-            h={{ base: "calc(15vw / 1)", md: "calc(17vw / 1)", lg: "132px" }}
+            h={{ base: "calc(15vw / 1)", md: "calc(14vw / 1)", lg: "132px" }}
             alt={"cryptoPaym"}
             src={"/static/featuresIcons/cryptoPaymIcon.png"}
             fallbackSrc={"/static/featuresIcons/cryptoPaymIcon.png"}
@@ -100,7 +100,7 @@ const Info = () => {
           <Image
             width={"723px"}
             alt={"svcsIcon"}
-            h={{ base: "calc(15vw / 1)", md: "calc(17vw / 1)", lg: "132px" }}
+            h={{ base: "calc(15vw / 1)", md: "calc(16vw / 1)", lg: "132px" }}
             src={"/static/featuresIcons/servicesIcon.png"}
             fallbackSrc={"/static/featuresIcons/servicesIcon.png"}
             _hover={{

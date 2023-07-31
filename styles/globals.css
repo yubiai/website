@@ -143,9 +143,16 @@ body {
   height: 6.53rem;
 }
 
+@media screen and (max-width: 992px) {
+  .icon {
+    height: 80px;
+    margin: 0.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .icon {
     height: 80px;
+    /*margin: 1rem;*/
   }
 }
 
