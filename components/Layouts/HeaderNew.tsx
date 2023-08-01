@@ -62,7 +62,7 @@ export default function WithSubnavigation() {
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
             <Box
-              display={{ base: "none", md: "flex" }}
+              display={{ base: "none", md: "none", lg:"flex", xl: "flex" }}
             >
               <LogoYb />
             </Box>

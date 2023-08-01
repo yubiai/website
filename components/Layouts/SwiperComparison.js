@@ -45,7 +45,8 @@ const SwiperComparison = () => {
               />
             </Flex>
             <Flex
-              mt={"0.78em"}
+              //border={{base: "1px dotted green", sm: "1px dotted blue", md: "1px dotted red"}}
+              mt={{ base: "0.77em", sm: "0.77em", md: "0.78em" }}
               direction={"column"}>
               <Text
                 display={"flex"}
@@ -164,7 +165,10 @@ const SwiperComparison = () => {
 
               />
             </Flex>
-            <Flex mt={"0.78em"} direction={"column"}>
+            <Flex
+              //border={{ base: "1px dotted green", sm: "1px dotted blue", md: "1px dotted red" }}
+              mt={{ base: "0.77em", sm: "0.77em", md: "0.78em" }}
+              direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -190,9 +194,9 @@ const SwiperComparison = () => {
                 justifyContent={"center"}
                 color={"black"}
                 flexWrap={"wrap"}
-                fontSize={"15px"}
+                fontSize={{ base: "12px", sm: "12px", md: "15px" }}
 
-              >Min Payout $100<br /><span style={{ fontSize: "15px" }}>2.75% Fee per Withdrawal</span></Text>
+              >Min Payout $100<br /><span className="swiper-comparison" style={{ fontSize: "12px" }}>2.75% Fee per Withdrawal</span></Text>
               <Flex
                 display={"flex"}
                 h={"50px"}
@@ -315,7 +319,7 @@ const SwiperComparison = () => {
                 flexWrap={"wrap"}
                 fontSize={"15px"}
 
-              >Min Payout $100, <br /><span style={{ fontSize: "15px" }}>5% Fee per Withdrawal</span></Text>
+              >Min Payout $100, <br /><span className="swiper-comparison" >5% Fee per Withdrawal</span></Text>
               <Flex
                 display={"flex"}
                 h={"50px"}
@@ -439,7 +443,9 @@ const SwiperComparison = () => {
                 flexWrap={"wrap"}
                 fontSize={"15px"}
 
-              >Min Payout $100<br /><span style={{ fontSize: "15px" }}>2.75% Fee per Withdrawal</span></Text>
+              >Min Payout $100<br /><span className="swiper-comparison"
+                //style={{ fontSize: "15px" }}
+              >2.75% Fee per Withdrawal</span></Text>
               <Flex
                 display={"flex"}
                 h={"50px"}

@@ -149,6 +149,7 @@ body {
     margin: 0.5rem;
   }
 }
+
 @media screen and (max-width: 768px) {
   .icon {
     height: 80px;
@@ -171,6 +172,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.swiper-comparison {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-comparison {
+    font-size: 11px;
+  }
+}
+
 
 * {
   box-sizing: border-box;

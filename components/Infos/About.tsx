@@ -50,7 +50,7 @@ const About = ({ }) => {
           fontSize={"24px"}
           fontWeight={"normal"}
           fontStyle={"normal"}
-          w={"491px"}
+          w={{base:"auto", md:"auto", lg: "491px"}}
           style={{
             wordWrap: "break-word",
           }}
