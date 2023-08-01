@@ -275,6 +275,7 @@ const SwiperComparison = () => {
           <Spacer
           >
             <Flex
+
               background={"rgba(217, 114, 241, 0.6)"}
               h={"50px"}
               borderRadius={"20px"}
@@ -291,7 +292,8 @@ const SwiperComparison = () => {
 
               />
             </Flex>
-            <Flex mt={"0.78em"} direction={"column"}>
+            <Flex
+              mt={{ base: "0.77em", sm: "0.77em", md: "0.77em" }} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -398,6 +400,7 @@ const SwiperComparison = () => {
           <Spacer
           >
             <Flex
+
               background={"rgba(217, 114, 241, 0.6)"}
               h={"50px"}
               borderRadius={"20px"}
@@ -415,7 +418,8 @@ const SwiperComparison = () => {
 
               />
             </Flex>
-            <Flex mt={"0.78em"} direction={"column"}>
+            <Flex
+              mt={{ base: "0.77em", sm: "0.77em", md: "0.78em" }} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -441,10 +445,10 @@ const SwiperComparison = () => {
                 justifyContent={"center"}
                 color={"black"}
                 flexWrap={"wrap"}
-                fontSize={"15px"}
+                fontSize={"14px"}
 
               >Min Payout $100<br /><span className="swiper-comparison"
-                //style={{ fontSize: "15px" }}
+              //style={{ fontSize: "15px" }}
               >2.75% Fee per Withdrawal</span></Text>
               <Flex
                 display={"flex"}
