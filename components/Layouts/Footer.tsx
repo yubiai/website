@@ -191,7 +191,7 @@ const Footer = () => {
 
                     >
                       <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
-                      textAlign={"center"}>OUR COMMUNITY</Text>
+                        textAlign={"center"}>OUR COMMUNITY</Text>
                       <Container
 
                         display={"flex"}
@@ -383,7 +383,7 @@ const Footer = () => {
 
                     >
                       <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
-                      textAlign={"center"}>OUR COMMUNITY</Text>
+                        textAlign={"center"}>OUR COMMUNITY</Text>
                       <Container
                         display={"flex"}
                         flexDirection={"row"}
@@ -413,7 +413,7 @@ const Footer = () => {
                             label={"Twitter"}
                             href={"https://twitter.com/YubiaiM"}
                           >
-                            <FaYoutube fontSize={45} color={"#0D47A1"} />
+                            <FaTwitter fontSize={45} color={"#0D47A1"} />
                           </SocialButton>
                           <SocialButton
                             label={"YouTube"}

@@ -61,11 +61,13 @@ export default function WithSubnavigation() {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Box display={{ base: "none", md: "flex" }}>
+            <Box
+              display={{ base: "none", md: "flex" }}
+            >
               <LogoYb />
             </Box>
 
-            <Flex display={{ base: 'none', md: 'flex' }} ml={{md:-4}}>
+            <Flex display={{ base: 'none', md: 'flex' }} ml={{ md: -4 }}>
               <DesktopNav />
             </Flex>
           </Flex>
@@ -106,7 +108,7 @@ const DesktopNav = () => {
   const router = useRouter();
 
   return (
-    <Stack direction={'row'} spacing={{md:1, lg: 4, xl:4}} >
+    <Stack direction={'row'} spacing={{ md: 1, lg: 4, xl: 4 }} >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label} >
           <Popover trigger={'hover'} placement={'bottom-start'}>

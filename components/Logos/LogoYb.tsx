@@ -4,12 +4,13 @@ import Link from "next/link";
 const LogoYb = () => {
   return (
     <Button
-    bg="transparent"
-    p="1.5em"
-    _hover={{
-      boxShadow: '2px 2px 5px black'
-    }}
-  >
+      bg="transparent"
+      p="1.5em"
+      w={"200px"}
+      _hover={{
+        boxShadow: '2px 2px 5px black'
+      }}
+    >
       <Link href={"/"}>
         <Image
           w={"100px"}
