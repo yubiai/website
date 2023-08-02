@@ -20,6 +20,7 @@ const HeroFather = ({
   titleFirst: String;
   titleSecond: String;
   description: String;
+ 
 }) => {
   return (
     <>
@@ -29,18 +30,18 @@ const HeroFather = ({
       <main>
         <Box
           w="full"
-          h={{ base: "full", md: "2200px", lg: "2200px" }}
+          h={{ base: "full", md: "4310px", lg: "3610px" }}
           backgroundImage={"/static/images/Artwork.png"}
           backgroundPosition="right"
           backgroundRepeat="no-repeat"
           backgroundSize="auto"
-          style={{ border: "3px solid pink" }}
+          
         >
           <Container maxW={"7xl"}>
             <Stack as={Box} py={{ base: 20, md: "5em" }}>
               <Heading
-                fontWeight={800}
-                fontSize={{ base: "2xl", md: "36px" }}
+                fontWeight={700}
+                fontSize={{ base: "2xl", md: "36px", lg:"64px" }}
                 lineHeight={"normal"}
                 color="white"
               >
