@@ -302,8 +302,8 @@ const MoreInfo = () => {
                             direction="row"
                             justifyContent={"space-around"}
                             alignItems={"center"}
-                            w={{ base: "50%", sm: "60%", md: "60%", lg: "100%", xl: "100%" }}
-                            h={{ base: "auto", sm: "100%", md: "100%", lg: "100%", xl: "100%" }}>
+                            w={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}
+                            h={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}>
                             <a className="icon" href={"https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"} target="_blank">
                                 <Image
                                     alt={"youtube"}
@@ -328,8 +328,8 @@ const MoreInfo = () => {
                             direction="row"
                             justifyContent={"space-around"}
                             alignItems={"center"}
-                            w={{ base: "50%", sm: "60%", md: "60%", lg: "100%", xl: "100%" }}
-                            h={{ base: "50%", sm: "100%", md: "100%", lg: "100%", xl: "100%" }}>
+                            w={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}
+                            h={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}>
                             <a className="icon" href={"https://discord.gg/a9CQKJXb8X"} target="_blank">
                                 <Image
                                     alt={"discord"}

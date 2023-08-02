@@ -36,7 +36,11 @@ const Actions = () => {
         <Box mt={{ base: "0.75em", md: "1.5em", lg: "0" }}>
           <ActionCard item={listActions.search} />
         </Box>
-        <Box mt={{ base: "0.75em", md: "1.5em", lg: "0" }}>
+        <Box
+          height={{ base: "100%", md: "480px", lg: "492px" }}
+          mt={{ base: "0.75em", md: "1.5em", lg: "0" }}
+          
+        >
           <ActionCard item={listActions.connect} />
         </Box>
       </SimpleGrid>
