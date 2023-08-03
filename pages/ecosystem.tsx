@@ -108,13 +108,13 @@ const listEcosystem = {
   joaquin: {
     image: "/static/ecosystem/joaquin.png",
     title: "Joaquin Bravo",
-    info: "Mkter as a prof, crypto as a passion. Helped multiple proj reach its goals from its beginning stages,  in charge of mkting teams that reached high m. caps",
+    info: "Marketer as a profession, crypto as a passion. Helped multiple projects reach its goals from its beginning stages,  in charge of marketing teams that reached high m. caps",
     link: "https://www.linkedin.com/in/joaquin-bravo/"
   },
   ruben: {
     image: "/static/ecosystem/ruben.png",
-    title: "Joaquin Bravo",
-    info: "Mkter as a prof, crypto as a passion. Helped multiple proj reach its goals from its beginning stages,  in charge of mkting teams that reached high m. caps",
+    title: "Ruben Santana",
+    info: "Builder of dapps using Eth SCs. Master in C.Science Eng & Soft Dev. Eth dev cert from B9LabAcademy.Worked as a Sap Abap Dev in Unic-ArcMittal for 2 y & 7ys  as Teacher for UPT Arag.",
     link: "https://www.linkedin.com/in/rubensantana/"
   },
 };
@@ -185,6 +185,7 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.leandro} />
           <EcosystemCard item={listEcosystem.joaquin} />
           <EcosystemCard item={listEcosystem.benjafri} />
+          <EcosystemCard item={listEcosystem.ruben} />
         </SimpleGrid>
       </HeroFather>
     </>
