@@ -55,7 +55,7 @@ const theme = extendTheme({
           bgGradient: "linear(to-b, #00ABD1, #F0F3FF)"
         },
         bgGradient:'linear(to-b, #00ABD1 ,#F0F3FF )',
-        fontFamily: "OpenSans, sans-serif",
+        fontFamily: "Raleway, sans-serif",
       }
     })
   },
@@ -64,10 +64,10 @@ const theme = extendTheme({
   },
   textStyles: {
     body: {
-      fontFamily: "OpenSans, sans-serif",
+      fontFamily: "Raleway, sans-serif",
     },
     test: {
-      fontFamily: "Open Sans"
+      fontFamily: "Raleway"
     }
   },
   colors: {

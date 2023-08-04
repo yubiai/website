@@ -442,7 +442,7 @@ const Footer = () => {
                     <LogoYblue />
                     <Stack direction={"column"} spacing={2}>
                       <Text><span style={{ color: "#0D47A1" }}>Yubiai </span>-  the first decentralized marketplace for secure transactions where you can buy & sell services using crypto.</Text>
-                      <Text color="black">
+                      <Text color="black" fontWeight={"600"}>
                         © {new Date().getFullYear()} Yubiai Marketplace. All rights reserved
                       </Text>
                     </Stack>
