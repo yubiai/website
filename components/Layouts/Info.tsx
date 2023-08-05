@@ -27,7 +27,7 @@ const Info = () => {
         lineHeight={1}
         textAlign={"center"}
         height={{ base: "32px", md: "32px", lg: "64px" }}
-        margin={"10px"}
+        margin={"4rem 0"}
       >
         Why choose Yubiai?
       </Text>
@@ -58,12 +58,13 @@ const Info = () => {
       <Flex
         width="auto"
         height={{ base: "auto", md: "auto", lg: "405px" }}
-        style={{ justifyContent: "center", display: "flex", flexDirection: "row" }}
+        style={{ justifyContent: "center", display: "flex" }}
+        flexDirection={{base:"column", md:"row"}} 
       >
         <Flex marginTop={"1rem"} >
           <Image
             width={"491px"}
-            h={{ base: "calc(30vw / 1)", md: "calc(491px / (16/9))", lg: "276px" }}
+            h={{ base: "calc(391px / (16/9))", md: "calc(491px / (16/9))", lg: "276px" }}
             alt={"logoblue"}
             src={"/static/images/yubiaiblue.png"}
             fallbackSrc={"/static/images/logoyubiai.png"}
@@ -74,7 +75,7 @@ const Info = () => {
         </Flex>
         <Flex
           style={{ display: "flex", flexDirection: "column" }}
-
+          m={{base: "0 3rem", md: "0"}}    
 
         >
           <Image
@@ -117,7 +118,7 @@ const Info = () => {
         <Text
           color={"#001664"}
           fontSize={{ base: "26px", md: "26px", lg: "48px" }}
-          m={{ base: "1rem", md: "1rem", lg: "1rem" }}
+          m={{ base: "1rem", md: "1rem", lg: "2rem 0" }}
           fontWeight={"500"}
           width={"100%"}
           maxWidth={"auto"}
@@ -445,11 +446,11 @@ const Info = () => {
                   display={"flex"}
                   justifyContent={"space-evenly"}>Efficient Escrow</Text>
                 <Spacer
-                  style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
+                  style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "100%", maxWidth: "738px" }} >
                   <Text>Yes</Text>
-                  <Text>No/Partial</Text>
-                  <Text>No/Partial</Text>
-                  <Text>No/Partial</Text>
+                  <Text position={"relative"} left={"1.83rem"}>No/Partial</Text>
+                  <Text position={"relative"} left={"1.83rem"}>No/Partial</Text>
+                  <Text position={"relative"} left={"1.83rem"}>No/Partial</Text>
                 </Spacer>
               </Box>
               <Box

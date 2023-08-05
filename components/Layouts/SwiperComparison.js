@@ -33,11 +33,12 @@ const SwiperComparison = () => {
               h={"50px"}
               borderRadius={"20px"}
               justifyContent={"center"}
+              alignItems={"center"}
             >
               <Image
                 display={"flex"}
-                w={"110px"}
-                h={"46.25px"}
+                w={{base:"93px", md:"110px"}}
+                h={{base:"40px", md:"46.25px"}}
                 alt={"Logo"}
                 src={"/static/images/logoyubiai.png"}
                 fallbackSrc={"/static/images/logoyubiai.png"}

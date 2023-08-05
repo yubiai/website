@@ -141,6 +141,7 @@ const Footer = () => {
 
                     //maxH={"125px"}
                     py={4}
+                    padding={{base:"0 1rem 0 0", md:"0"}}
                     spacing={2}
                     direction={{ base: "column", md: "column", lg: 'column' }}
                     //justify={{ base: "center", md: "space-between", lg: "" }}
@@ -150,7 +151,10 @@ const Footer = () => {
                       display={"flex"}
                       height={"55px"}
                       alignItems={"center"}
-                      color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}>SUPPORT</Text>
+                      color={"#0D47A1"}
+                      fontSize={"18px"}
+                      fontWeight={"700"}
+                     >SUPPORT</Text>
                     <Link href="/faq">FAQ</Link>
                     <Link
                       href="mailto: contact@yubiai.market"
@@ -159,7 +163,7 @@ const Footer = () => {
                     </Link>
                     <Link
                       href={"https://app.yubiai.market/help/terms-and-conditions"}
-
+                      style={{textAlign:"center"}}
                     >
                       Terms of Service
                     </Link>
@@ -255,9 +259,9 @@ const Footer = () => {
                 >
                   <LogoYblue />
                   <Stack direction={"column"} spacing={2}>
-                    <Text><span style={{ color: "#0D47A1" }}>Yubiai </span>-  the first decentralized marketplace for secure transactions where you can buy & sell services,
+                    <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  the first decentralized marketplace for secure transactions where you can buy & sell services,
                       digital products and physical ones using crypto.</Text>
-                    <Text color="black">
+                    <Text color="black" textAlign={"center"}>
                       © {new Date().getFullYear()} Yubiai Marketplace. All rights reserved
                     </Text>
                   </Stack>
@@ -441,8 +445,8 @@ const Footer = () => {
                   >
                     <LogoYblue />
                     <Stack direction={"column"} spacing={2}>
-                      <Text><span style={{ color: "#0D47A1" }}>Yubiai </span>-  the first decentralized marketplace for secure transactions where you can buy & sell services using crypto.</Text>
-                      <Text color="black" fontWeight={"600"}>
+                      <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  the first decentralized marketplace for secure transactions where you can buy & sell services using crypto.</Text>
+                      <Text color="black" fontWeight={"600"} textAlign={"center"}>
                         © {new Date().getFullYear()} Yubiai Marketplace. All rights reserved
                       </Text>
                     </Stack>

@@ -63,8 +63,8 @@ const Community = () => {
     <>
       <HeroFather
         titleHead={"Yubiai Landing - Community"}
-        titleFirst={"Welcome to the Yubiai Community"}
-        titleSecond={"community"}
+        titleFirst={"Welcome to the Yubiai"}
+        titleSecond={"Community"}
         description={
           "The Yubiai community is an ecosystem of real humans interacting between each other on our socials."
         }
@@ -85,7 +85,7 @@ const Community = () => {
             margin={"2em"}
           >
             <Text
-              fontSize={"64px"}
+              fontSize={{base:"32px",md:"32px", lg:"64px"}}
               color={"white"}
             >What’s our vision?</Text>
             <Text
@@ -105,7 +105,7 @@ const Community = () => {
             margin={"2em"}
           >
             <Text
-              fontSize={"64px"}
+              fontSize={{base:"32px",md:"32px", lg:"64px"}}
               color={"white"}>What’s our mission?</Text>
             <Text
               fontSize={"24px"}
@@ -122,7 +122,7 @@ const Community = () => {
             display={"flex"}
             justifyContent={"center"}
             textAlign={"center"}
-            fontSize={"50px"}
+            fontSize={{base:"26px",md:"32px", lg:"50px"}}
             color={"#001664"}
             fontWeight={"800"}
           >Collectively, we are building the future marketplace we need</Text>
@@ -130,7 +130,7 @@ const Community = () => {
             display={"flex"}
             justifyContent={"center"}
             textAlign={"center"}
-            fontSize={"38px"}
+            fontSize={{base:"24px",md:"26px", lg:"38px"}}
             color={"#001664"}
           >Follow us on social media</Text>
         </Box>
@@ -198,14 +198,14 @@ const Community = () => {
               display={"flex"}
               justifyContent={"center"}
               textAlign={"center"}
-              fontSize={"26px"}
+              fontSize={{base:"22px",md:"24px", lg:"26px"}}
               color={"#001664"}
             >Yubiai community members and partners contributes and express themselves on social media.</Text>
             <Text
               display={"flex"}
               justifyContent={"center"}
               textAlign={"center"}
-              fontSize={"36px"}
+              fontSize={{base:"26px",md:"28px", lg:"36px"}}
               color={"#001664"}
             >Follow our latest news on Twitter & Youtube</Text>
           </Box>      

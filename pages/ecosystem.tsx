@@ -1,5 +1,6 @@
-import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { SimpleGrid, Text } from "@chakra-ui/react";
 import EcosystemCard from "../components/Cards/ecosystemCard";
+import TeamCard from "../components/Cards/teamCard";
 import HeroFather from "../components/Layouts/HeroFather";
 
 const listEcosystem = {
@@ -180,12 +181,12 @@ const Ecosystem = () => {
           </Text>
         </div>
         <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 3 }} spacing={5} m="2em">
-          <EcosystemCard item={listEcosystem.ignacio} />
-          <EcosystemCard item={listEcosystem.benjapi} />
-          <EcosystemCard item={listEcosystem.leandro} />
-          <EcosystemCard item={listEcosystem.joaquin} />
-          <EcosystemCard item={listEcosystem.benjafri} />
-          <EcosystemCard item={listEcosystem.ruben} />
+          <TeamCard item={listEcosystem.ignacio} />
+          <TeamCard item={listEcosystem.benjapi} />
+          <TeamCard item={listEcosystem.leandro} />
+          <TeamCard item={listEcosystem.joaquin} />
+          <TeamCard item={listEcosystem.benjafri} />
+          <TeamCard item={listEcosystem.ruben} />
         </SimpleGrid>
       </HeroFather>
     </>

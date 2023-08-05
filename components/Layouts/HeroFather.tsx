@@ -30,7 +30,7 @@ const HeroFather = ({
       <main>
         <Box
           w="full"
-          h={{ base: "full", md: "4310px", lg: "3610px" }}
+          h={{ base: "full", md: "4310px", lg: "3963px" }}
           backgroundImage={"/static/images/Artwork.png"}
           backgroundPosition="right"
           backgroundRepeat="no-repeat"
@@ -41,7 +41,7 @@ const HeroFather = ({
             <Stack as={Box} py={{ base: 20, md: "5em" }}>
               <Heading
                 fontWeight={700}
-                fontSize={{ base: "2xl", md: "36px", lg:"64px" }}
+                fontSize={{ base: "36px", md: "36px", lg:"64px" }}
                 lineHeight={"normal"}
                 color="white"
               >

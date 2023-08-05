@@ -26,7 +26,7 @@ const MoreInfo = () => {
                     fontSize={{ base: "26px", md: "36px", lg: "50px" }}
                     color={"#001664"}
                     fontWeight={"700"}
-
+                    margin={"2rem 0"}
                 >Join Our Thriving Web3 Community</Text>
                 <Text
                     fontSize={{ base: "22px", md: "20px", lg: "36px" }}
@@ -50,7 +50,7 @@ const MoreInfo = () => {
                         flexDirection={"column"}
                         fontWeight={"800"}
                         alignItems={"center"}
-                    >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Sellers</span>
+                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Sellers</span>
                     </Text>
                     <Text
                         fontSize={{ base: "22px", md: "20px", lg: "36px" }}
@@ -59,7 +59,7 @@ const MoreInfo = () => {
                         flexDirection={"column"}
                         fontWeight={"800"}
                         alignItems={"center"}
-                    >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Buyers</span>
+                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Buyers</span>
                     </Text>
                     <Text
                         fontSize={{ base: "22px", md: "20px", lg: "36px" }}
@@ -68,7 +68,7 @@ const MoreInfo = () => {
                         flexDirection={"column"}
                         fontWeight={"800"}
                         alignItems={"center"}
-                    >+{"n"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Transactions</span>
+                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Transactions</span>
                     </Text>
                 </Flex>
                 <Flex
@@ -160,7 +160,7 @@ const MoreInfo = () => {
 
                         >
                             <Image
-                                w={"58px"}
+                                w={"51px"}
                                 h={"43px"}
                                 alt={"pohlogo"}
                                 src={"/static/ecosystem/poh.webp"}
@@ -197,7 +197,10 @@ const MoreInfo = () => {
                 maxH={"1300px"}
                 justifyContent="flex-start"
                 alignItems="center">
-                <Text color={"#001664"} fontSize={{ base: "24px", md: "28px", lg: "56px" }} fontWeight={"700"}>How a transaction works</Text>
+                <Text
+                    color={"#001664"}
+                    fontSize={{ base: "24px", md: "28px", lg: "56px" }} fontWeight={"700"}
+                    margin={"2rem 0 0 0"}>How a transaction works</Text>
                 <Image
                     h={"85%"}
                     w={"75%"}
@@ -239,7 +242,7 @@ const MoreInfo = () => {
                         >Join the Yubiai community</Text>
                         <Text color={"#001664"} fontSize={{ base: "22px", md: "20px", lg: "33px" }}>Learn more about our community, get support and start working with us</Text>
                         <Stack
-
+                            marginTop={"1rem"}
 
 
                         >
@@ -295,8 +298,8 @@ const MoreInfo = () => {
                         direction="column"
                         justifyContent={"space-around"}
                         alignItems={"center"}
-                        w={"100%"} maxW={{base: "auto", sm: "auto", md: "auto", lg: "500px", xl: "500px" }}
-                        h={{base: "196px", md: "203px", lg: "303px"}}
+                        w={"100%"} maxW={{ base: "auto", sm: "auto", md: "auto", lg: "500px", xl: "500px" }}
+                        h={{ base: "196px", md: "203px", lg: "303px" }}
                         mt="10px">
                         <Flex
                             direction="row"

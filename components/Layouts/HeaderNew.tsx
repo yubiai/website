@@ -33,7 +33,6 @@ export default function WithSubnavigation() {
 
   return (
     <Box
-      //border={{ base: "1px dotted red", md: "1px dotted blue", lg: "1px dotted pink" }}
       sx={{ position: "sticky", top: "0", zIndex: "99", background: "rgba(29, 39, 61, 0.9)", backdropFilter: "blur(4px)" }}
     //display={"flex"}
     //w={"100%"}
@@ -60,9 +59,13 @@ export default function WithSubnavigation() {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+          <Flex
+
+            flex={{ base: 1 }}
+            justify={{ base: 'center', md: 'start' }}>
             <Box
-              display={{ base: "none", md: "none", lg:"flex", xl: "flex" }}
+
+              display={{ base: "none", md: "none", lg: "flex", xl: "flex" }}
             >
               <LogoYb />
             </Box>
@@ -71,32 +74,36 @@ export default function WithSubnavigation() {
               <DesktopNav />
             </Flex>
           </Flex>
+          <Collapse in={isOpen} animateOpacity>
+            <MobileNav />
+          </Collapse>
           <LanguageChange />
           <ColorModeToggler />
-          <Stack
-            flex={{ base: 1, md: 1 }}
-            justify={'flex-end'}
-            direction={'row'}
-            spacing={5}>
-            <a href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
-              <Button
-                variant={"solid"}
-                color={"#00BCD4"}
-                bg="white"
-                size={{ base: "sm", sm: "sm", md: "md" }}
-                mr={0}
-              >
-                Launch App
-              </Button>
-            </a>
-          </Stack>
+
+
 
         </Flex>
+        <Stack
+          flex={{ base: 1, md: 1 }}
+          justify={'flex-end'}
+          direction={'row'}
+          align={'center'}
+          spacing={5}>
+          <a href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
+            <Button
+              variant={"solid"}
+              color={"#00BCD4"}
+              bg="white"
+              size={{ base: "sm", sm: "sm", md: "md" }}
+              mr={0}
+            >
+              Launch App
+            </Button>
+          </a>
+        </Stack>
       </Container>
 
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
+
     </Box>
   );
 }
@@ -209,6 +216,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
   return (
     <Stack
+
       bg={useColorModeValue('white', 'gray.800')}
       p={4}
       display={{ md: 'none' }}>
@@ -223,8 +231,12 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Stack spacing={4} onClick={children && onToggle} >
+    <Stack
+
+      spacing={4}
+      onClick={children && onToggle} >
       <Flex
+
         py={2}
         as={Link}
         href={href ?? '#'}
