@@ -38,8 +38,10 @@ export default function WithSubnavigation() {
     //w={"100%"}
     //flexGrow={flexGrowValue}
     >
+
       <Container
         px={4} style={{ display: "flex", justifyContent: "center" }}>
+
         <Flex
           color={'white'}
           minH={'60px'}
@@ -64,7 +66,8 @@ export default function WithSubnavigation() {
             flex={{ base: 1 }}
             justify={{ base: 'center', md: 'start' }}>
             <Box
-
+              width={"137px"}
+              marginRight={"1.2em"}
               display={{ base: "none", md: "none", lg: "flex", xl: "flex" }}
             >
               <LogoYb />
@@ -74,13 +77,9 @@ export default function WithSubnavigation() {
               <DesktopNav />
             </Flex>
           </Flex>
-          <Collapse in={isOpen} animateOpacity>
-            <MobileNav />
-          </Collapse>
+
           <LanguageChange />
           <ColorModeToggler />
-
-
 
         </Flex>
         <Stack
@@ -101,8 +100,11 @@ export default function WithSubnavigation() {
             </Button>
           </a>
         </Stack>
-      </Container>
 
+      </Container>
+      <Collapse in={isOpen} animateOpacity>
+        <MobileNav />
+      </Collapse>
 
     </Box>
   );
@@ -115,7 +117,11 @@ const DesktopNav = () => {
   const router = useRouter();
 
   return (
-    <Stack direction={'row'} spacing={{ md: 1, lg: 4, xl: 4 }} >
+    <Stack
+      direction={'row'}
+      spacing={{ md: 1, lg: 2, xl: 2 }}
+      marginRight={{ base: "0", md: "0", lg: "11px", xl: "11px" }}
+    >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label} >
           <Popover trigger={'hover'} placement={'bottom-start'}>
