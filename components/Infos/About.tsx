@@ -6,12 +6,14 @@ import { useBreakpointValue } from "@chakra-ui/react";
 
 const About = ({ }) => {
   const { t } = useTranslation("home");
+  
   const justifyHeading = useBreakpointValue({
     base:"center",
     sm: "center",
     md: "center",
     lg: "center",
   });
+  
   const widthHeading = useBreakpointValue({
     base:"auto",
     sm: "auto",
@@ -55,8 +57,9 @@ const About = ({ }) => {
             wordWrap: "break-word",
           }}
         >
-          Yubiai stands for <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>You UBI And I.</span><br />
-          It is a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>community-born</span> project initiated by some <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>ProofOfHumanity</span> members. Yubiai is a <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>platform</span> where <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>buyers & sellers</span> meet to exchange in a <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>secure, easy, transparent, and cheap</span> way their services while making <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>social impact</span>.
+          {t("Yubiai stands for")} <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>{t("YouUBIAndI")}</span><br />
+          {t("It is a")} <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>{t("community-born")}</span> {t("project initiated by some")} <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>{t("ProofOfHumanity")}</span> {t("Yubiai is a")} <span style={{ color: "white", fontSize: 24, fontWeight: 500 }}>{t("platform")}</span> {t("where")} <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>{t("buyers & sellers")}</span> {t("meet to exchange in a")} <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>{t("secure, easy, transparent, and cheap")}</span> {t("way their services while making")} <span style={{ color: "white", fontSize: 24, fontWeight: 600 }}>{t("social impact")}</span>.
+
         </Text>
         <Flex
           w={{base:"290px", md:"599px", lg: "599px"}}

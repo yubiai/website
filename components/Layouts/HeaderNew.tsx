@@ -25,18 +25,15 @@ import LanguageChange from "../Buttons/translButton";
 import { ColorModeToggler } from "../Buttons/darkModeButton";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { useBreakpointValue } from "@chakra-ui/react";
+
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
-  //const flexGrowValue = useBreakpointValue({ base: 1, md: 1, lg: 3 });
+  
 
   return (
     <Box
       sx={{ position: "sticky", top: "0", zIndex: "99", background: "rgba(29, 39, 61, 0.9)", backdropFilter: "blur(4px)" }}
-    //display={"flex"}
-    //w={"100%"}
-    //flexGrow={flexGrowValue}
     >
 
       <Container

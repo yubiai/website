@@ -3,12 +3,13 @@ import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
 import MoreInfo from "./MoreInfo";
 import SwiperComparison from "./SwiperComparison";
 import { useBreakpointValue } from "@chakra-ui/react";
-
+import useTranslation from 'next-translate/useTranslation';
 
 
 
 
 const Info = () => {
+  const { t } = useTranslation("home");
   const isBaseOrMd = useBreakpointValue({ base: true, md: true, lg: true, xl: false });
 
   return (
@@ -29,7 +30,7 @@ const Info = () => {
         height={{ base: "32px", md: "32px", lg: "64px" }}
         margin={"4rem 0"}
       >
-        Why choose Yubiai?
+        {t("Why choose Yubiai?")}
       </Text>
       <Flex
         //width="auto"
@@ -51,15 +52,16 @@ const Info = () => {
             fontStyle={"normal"}
             style={{ wordWrap: "break-word" }}
           >
-            Yubiai is an <span >online marketplace</span> where people can buy or sell services using <span >digital money.</span> <br />It is a <span >soon-to-be decentralized governance</span> which means it’s <span >not controlled by one company</span> in particular but <span>by the whole community</span> itself.<br /><br />The platform features key components such as the<span> Proof of Humanity</span> sybil-resistance protocol which is used as a <span>badge to authenticate users and ensure user integrity,</span> rather than a mandatory authentication method. It also uses<span> Kleros</span> when a problem with a purchase occures. Which is one of the <span>most important pillar of our platform</span>, Kleros is a <span>decentralized arbitration service</span> for the disputes. Imagine having a group of judges who help solve disagreements; listens to both sides of the story and looks at the evidence or information provided. Then, it makes a decision based on <span>what is fair and right.<br /></span><br />In the future, Yubiai will have a new feature called <span>Curate</span>. This feature will help make sure that <span>only good and trustworthy things</span> are listed for sale. It will also help <span>answer any questions</span> people have about the things they want to buy.<br />Eventually<span> our mission </span>is to create a <span>marketplace</span> where people can buy and sell everything<span> without any worries.</span>
+            {t("Yubiai is an")} <span>{t("online marketplace")}</span> {t("where people can buy or sell services using")} <span>{t("digital money")}</span> <br />{t("Adopts")} <span>{t("soon-to-be decentralized governance")}</span> {t("which means it’s")} <span>{t("not controlled by one company")}</span> {t("in particular but")} <span> {t("by the whole community")}</span> {t("itself")}<br /><br />{t("The platform features key components such as the")} <span>{t("Proof of Humanity")}</span> {t("sybil-resistance protocol which is used as a")} <span>{t("badge to authenticate users and ensure user integrity,")}</span> {t("rather than a mandatory authentication method")} {t("It also uses")} <span>{t("Kleros")}</span> {t("when a problem")} <span>{t("most important pillar of our platform")}</span>, {t("Kleros is a")} <span>{t("decentralized arbitration service")}</span> {t("for the disputes")} <span>{t("what is fair and right")}<br /></span><br />{t("In the future, Yubiai will have a new feature called")} <span>{t("Curate")}</span>. {t("This feature will help make sure that")} <span>{t("only good and trustworthy things")}</span> {t("are listed for sale It will also help")} <span>{t("answer any questions")}</span> {t("people have about the things they want to buy")}<br />{t("Eventually")} <span>{t("our mission")}</span> {t("is to create a")} <span>{t("marketplace")}</span> {t("where people can buy and sell everything")}<span> {t("without any worries")}</span>
           </Text>
+
         </div>
       </Flex>
       <Flex
         width="auto"
         height={{ base: "auto", md: "auto", lg: "405px" }}
         style={{ justifyContent: "center", display: "flex" }}
-        flexDirection={{base:"column", md:"row"}} 
+        flexDirection={{ base: "column", md: "row" }}
       >
         <Flex marginTop={"1rem"} >
           <Image
@@ -75,7 +77,7 @@ const Info = () => {
         </Flex>
         <Flex
           style={{ display: "flex", flexDirection: "column" }}
-          m={{base: "0 3rem", md: "0"}}    
+          m={{ base: "0 3rem", md: "0" }}
 
         >
           <Image
@@ -125,7 +127,7 @@ const Info = () => {
           justifyContent={"center"}
           textAlign={"center"}
         >
-          In Yubiai we believe in the future of a fair and transparent digital workspace
+          {t("In Yubiai we believe in the future of a fair and transparent digital workspace")}
         </Text>
         <Text
           color={"white"}
@@ -134,7 +136,7 @@ const Info = () => {
           justifyContent={"center"}
           textAlign={"center"}
         >
-          Check some of our key features in comparison to the competition below
+          {t("Check some of our key features in comparison to the competition below")}
         </Text>
         <>
           {isBaseOrMd ? (

@@ -8,9 +8,12 @@ import {
 } from "@chakra-ui/react";
 import About from "../Infos/About";
 import Actions from "./Actions";
+import useTranslation from 'next-translate/useTranslation';
 
 
 export default function Hero() {
+  const { t } = useTranslation("home");
+
   return (
     <Box
       className={"hero-container"}
@@ -62,7 +65,7 @@ export default function Hero() {
             alignSelf={"center"}
             textAlign={"center"}
           >
-            What can you do in Yubiai?
+            {t("What can you do in Yubiai?")}
           </Text>
         </Flex>
         <Flex

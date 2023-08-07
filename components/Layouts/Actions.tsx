@@ -1,25 +1,37 @@
 import { SimpleGrid, Box } from "@chakra-ui/react";
 import ActionCard from "../Cards/actionCard";
+import useTranslation from 'next-translate/useTranslation';
 
 const listActions = {
   upload: {
     image: "/static/featuresIcons/uploadIcon.svg",
-    title: "Upload your work",
-    info: "Is it being an UX/UI designer? Making memes? Working as an Scuba diving professor? We want to know your talent, let us know what you’re best at and wait for future clients to contact you!"
+    title: "uploadTitle",
+    info: "uploadInfo"
   },
   search: {
     image: "/static/featuresIcons/searchIcon.svg",
-    title: "Search your best fit",
-    info: "Whatever you’re looking for, we’re sure you’ll find it in Yubiai - Yubiai is a pioneering Web3 marketplace that connects service providers and clients to conduct secure and efficient transactions."
+    title: "searchTitle",
+    info: "searchInfo"
   },
   connect: {
     image: "/static/featuresIcons/connectIcon.svg",
-    title: "Connect and start working",
-    info: "Yubiai's mission is to empower entrepreneurs and individuals by providing a secure web3 marketplace environment where they can interact, transact, and innovate safely. Once you’ve find what you need, all that rest is start working!"
+    title: "connectTitle",
+    info: "connectInfo"
   }
 };
 
 const Actions = () => {
+  const { t } = useTranslation("home");
+  // Translate the title and info for each card before rendering
+  listActions.upload.title = t("Upload your work");
+  listActions.upload.info = t("Is it being an UX/UI designer");
+
+  listActions.search.title = t("Search your best fit");
+  listActions.search.info = t("Whatever you’re looking for");
+
+  listActions.connect.title = t("Connect and start working");
+  listActions.connect.info = t("Yubiai's mission");
+
   return (
     <>
 
@@ -39,7 +51,7 @@ const Actions = () => {
         <Box
           height={{ base: "100%", md: "480px", lg: "492px" }}
           mt={{ base: "0.75em", md: "1.5em", lg: "0" }}
-          
+
         >
           <ActionCard item={listActions.connect} />
         </Box>
