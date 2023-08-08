@@ -4,7 +4,7 @@ import MoreInfo from "./MoreInfo";
 import SwiperComparison from "./SwiperComparison";
 import { useBreakpointValue } from "@chakra-ui/react";
 import useTranslation from 'next-translate/useTranslation';
-
+//import LogoYblueLarg from "../Logos/LogoYbBlueLarge";
 
 
 
@@ -63,17 +63,44 @@ const Info = () => {
         style={{ justifyContent: "center", display: "flex" }}
         flexDirection={{ base: "column", md: "row" }}
       >
-        <Flex marginTop={"1rem"} >
+        <Flex
+          marginTop={"1rem"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          flexDirection={"column"}
+          _hover={{
+            filter: "brightness(20)"
+          }}
+          width={{ base: "260px", md: "491px", lg: "491px" }}
+          h={{ base: "calc(464px / (16/9))", md: "calc(491px / (16/9))", lg: "341px" }}
+          m={{ base: "0 3rem", md: "0 2rem" }}
+        >
+          <Text
+            fontSize={{base:"30px", md:"35px", lg:"50px"}}
+            fontWeight={"700"}
+            color={"#001664"}
+            textAlign={"center"}
+          >
+            {t("More reasons to work with us")}
+          </Text>
           <Image
-            width={"491px"}
-            h={{ base: "calc(391px / (16/9))", md: "calc(491px / (16/9))", lg: "276px" }}
+            color={"#001664"}
+            width={{ base: "216px", md: "296px", lg: "296px" }}
+            h={{ base: "calc(162px / (16/9))", md: "calc(203px / (16/9))", lg: "106px" }}
+            alt={"Logo"}
+            src={"/static/images/lgybilargblue.png"}
+            fallbackSrc={"/static/images/lgybilargblue.png"}
+        />
+          {/* <Image
+            width={{ base: "412px", md: "491px", lg: "491px" }}
+            h={{ base: "calc(402px / (16/9))", md: "calc(491px / (16/9))", lg: "276px" }}
             alt={"logoblue"}
             src={"/static/images/yubiaiblue.png"}
             fallbackSrc={"/static/images/logoyubiai.png"}
             _hover={{
               filter: "brightness(20)"
             }}
-          />
+          /> */}
         </Flex>
         <Flex
           style={{ display: "flex", flexDirection: "column" }}
