@@ -2,11 +2,11 @@
     "locales": ["en", "es"],
     "defaultLocale": "en",
     "pages": {
-      "*": ["common","navbar", "home", "ecosystem", "community","faq"],
-      "/": ["home"],
-      "/faq": ["faq"],
-      "/ecosystem": ["ecosystem"],
-      "/community": ["community"]
+      "*": ["common","header", "home", "ecosystem", "community","faq", "footer"],
+      "/": ["home","header"],
+      "/faq": ["faq","header"],
+      "/ecosystem": ["ecosystem","header"],
+      "/community": ["community","header"]
      
     }
 }

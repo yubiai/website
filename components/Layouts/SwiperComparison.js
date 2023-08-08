@@ -1,11 +1,11 @@
 import React from "react";
-import { Box, Flex, Image, Text, Spacer } from "@chakra-ui/react";
+import { Flex, Image, Text, Spacer } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
 
-const SwiperComparison = () => {
+const SwiperComparison = ({ t }) => {
 
   return (
     <Swiper
@@ -37,8 +37,8 @@ const SwiperComparison = () => {
             >
               <Image
                 display={"flex"}
-                w={{base:"93px", md:"110px"}}
-                h={{base:"40px", md:"46.25px"}}
+                w={{ base: "93px", md: "110px" }}
+                h={{ base: "40px", md: "46.25px" }}
                 alt={"Logo"}
                 src={"/static/images/logoyubiai.png"}
                 fallbackSrc={"/static/images/logoyubiai.png"}
@@ -72,7 +72,7 @@ const SwiperComparison = () => {
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
-                color={"black"}>Crypto/Instant</Text>
+                color={"black"}>{t("Crypto/Instant")}</Text>
               <Flex
                 display={"flex"}
                 h={"50px"}
@@ -109,7 +109,7 @@ const SwiperComparison = () => {
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
-                Yes
+                {t("Yes")}
               </Text>
               <Flex
                 display={"flex"}
@@ -195,9 +195,9 @@ const SwiperComparison = () => {
                 justifyContent={"center"}
                 color={"black"}
                 flexWrap={"wrap"}
-                fontSize={{ base: "12px", sm: "12px", md: "15px" }}
+                fontSize={{ base: "13px", sm: "13px", md: "15px" }}
 
-              >Min Payout $100<br /><span className="swiper-comparison" style={{ fontSize: "12px" }}>2.75% Fee per Withdrawal</span></Text>
+              >{t("Min Payout $100")} <br /><span className="swiper-comparison" >{t("275% Fee per Withdrawal")}</span></Text>
               <Flex
                 display={"flex"}
                 h={"50px"}
@@ -236,7 +236,7 @@ const SwiperComparison = () => {
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
-                No/Partial
+                {t("No/Partial")}
               </Text>
               <Flex
                 display={"flex"}
@@ -320,9 +320,9 @@ const SwiperComparison = () => {
                 justifyContent={"center"}
                 color={"black"}
                 flexWrap={"wrap"}
-                fontSize={"15px"}
-
-              >Min Payout $100, <br /><span className="swiper-comparison" >5% Fee per Withdrawal</span></Text>
+                fontSize={{ base: "12px", sm: "12px", md: "15px" }}
+                
+              >{t("Min Payout $100")}<br /> <span className="swiper-comparison" >{t("5% Fee per Withdrawal")}</span></Text>
               <Flex
                 display={"flex"}
                 h={"50px"}
@@ -361,7 +361,7 @@ const SwiperComparison = () => {
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
-                No/Partial
+                {t("No/Partial")}
               </Text>
               <Flex
                 display={"flex"}
@@ -446,11 +446,11 @@ const SwiperComparison = () => {
                 justifyContent={"center"}
                 color={"black"}
                 flexWrap={"wrap"}
-                fontSize={"14px"}
+                fontSize={{ base: "13px", sm: "13px", md: "15px" }}
 
-              >Min Payout $100<br /><span className="swiper-comparison"
+              >{t("Min Payout $100")} <br /><span className="swiper-comparison"
               //style={{ fontSize: "15px" }}
-              >2.75% Fee per Withdrawal</span></Text>
+              >{t("275% Fee per Withdrawal")}</span></Text>
               <Flex
                 display={"flex"}
                 h={"50px"}
@@ -489,7 +489,7 @@ const SwiperComparison = () => {
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
-                No/Partial
+                {t("No/Partial")}
               </Text>
               <Flex
                 display={"flex"}

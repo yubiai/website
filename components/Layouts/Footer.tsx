@@ -14,6 +14,7 @@ import LogoYblue from "../Logos/LogoYbBlue";
 import Link from "next/link";
 import { useBreakpointValue } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
+import useTranslation from 'next-translate/useTranslation';
 
 const SocialButton = ({
   children,
@@ -51,6 +52,8 @@ const SocialButton = ({
 
 const Footer = () => {
   const isBaseOrMd = useBreakpointValue({ base: true, md: true, lg: true, xl: false });
+  const { t } = useTranslation("footer");
+
   return (
     <>
 
@@ -86,9 +89,9 @@ const Footer = () => {
 
                       direction={"column"} alignItems={"center"}>
                       <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
-                        textAlign="center">ABOUT YUBIAI</Text>
-                      <Link href="/">About Us</Link>
-                      <Link href="/ecosystem">Team</Link>
+                        textAlign="center">{t("ABOUT YUBIAI")}</Text>
+                      <Link href="/">{t("About Us")}</Link>
+                      <Link href="/ecosystem">{t("Team")}</Link>
                       <Link href="https://medium.com/@yubiai.blog" target={"_blank"}>Blog</Link>
                     </Stack>
                   </Flex>
@@ -141,7 +144,7 @@ const Footer = () => {
 
                     //maxH={"125px"}
                     py={4}
-                    padding={{base:"0 1rem 0 0", md:"0"}}
+                    padding={{ base: "0 1rem 0 0", md: "0" }}
                     spacing={2}
                     direction={{ base: "column", md: "column", lg: 'column' }}
                     //justify={{ base: "center", md: "space-between", lg: "" }}
@@ -154,24 +157,24 @@ const Footer = () => {
                       color={"#0D47A1"}
                       fontSize={"18px"}
                       fontWeight={"700"}
-                     >SUPPORT</Text>
+                    >SUPPORT</Text>
                     <Link href="/faq">FAQ</Link>
                     <Link
                       href="mailto: contact@yubiai.market"
                     >
-                      Contact Us
+                      {t("Contact Us")}
                     </Link>
                     <Link
                       href={"https://app.yubiai.market/help/terms-and-conditions"}
-                      style={{textAlign:"center"}}
+                      style={{ textAlign: "center" }}
                     >
-                      Terms of Service
+                      {t("Terms of Service")}
                     </Link>
                     <Link
                       href={"/privacypolicy"}
 
                     >
-                      Privacy Policy
+                      {t("Privacy Policy")}
                     </Link>
                   </Flex>
                 </Flex>
@@ -195,7 +198,7 @@ const Footer = () => {
 
                     >
                       <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
-                        textAlign={"center"}>OUR COMMUNITY</Text>
+                        textAlign={"center"}>{t("OUR COMMUNITY")}</Text>
                       <Container
 
                         display={"flex"}
@@ -259,10 +262,12 @@ const Footer = () => {
                 >
                   <LogoYblue />
                   <Stack direction={"column"} spacing={2}>
-                    <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  the first decentralized marketplace for secure transactions where you can buy & sell services,
-                      digital products and physical ones using crypto.</Text>
-                    <Text color="black" textAlign={"center"}>
-                      © {new Date().getFullYear()} Yubiai Marketplace. All rights reserved
+                    <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  {t("the first")}.</Text>
+                    <Text
+                      color="black"
+                      fontWeight={"600"}
+                      textAlign={"center"}>
+                      © {new Date().getFullYear()} Yubiai Marketplace. {t("All rights reserved")}
                     </Text>
                   </Stack>
                 </Flex>
@@ -300,9 +305,9 @@ const Footer = () => {
                         color={"#0D47A1"}
                         fontSize={"18px"}
                         fontWeight={"700"}
-                        textAlign="center">ABOUT YUBIAI</Text>
-                      <Link href="/">About Us</Link>
-                      <Link href="/ecosystem">Team</Link>
+                        textAlign="center">{t("ABOUT YUBIAI")}</Text>
+                      <Link href="/">{t("About Us")}</Link>
+                      <Link href="/ecosystem">{t("Team")}</Link>
                       <Link href="https://medium.com/@yubiai.blog" target={"_blank"}>Blog</Link>
                     </Stack>
                   </Flex>
@@ -357,7 +362,7 @@ const Footer = () => {
                     <Link
                       href="mailto: contact@yubiai.market"
                     >
-                      Contact Us
+                      {t("Contact Us")}
                     </Link>
                     <Link
                       href={"https://app.yubiai.market/help/terms-and-conditions"}
@@ -387,7 +392,7 @@ const Footer = () => {
 
                     >
                       <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
-                        textAlign={"center"}>OUR COMMUNITY</Text>
+                        textAlign={"center"}>{t("OUR COMMUNITY")}</Text>
                       <Container
                         display={"flex"}
                         flexDirection={"row"}
@@ -445,9 +450,9 @@ const Footer = () => {
                   >
                     <LogoYblue />
                     <Stack direction={"column"} spacing={2}>
-                      <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  the first decentralized marketplace for secure transactions where you can buy & sell services using crypto.</Text>
+                      <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  {t("the first")}.</Text>
                       <Text color="black" fontWeight={"600"} textAlign={"center"}>
-                        © {new Date().getFullYear()} Yubiai Marketplace. All rights reserved
+                        © {new Date().getFullYear()} Yubiai Marketplace. {t("All rights reserved")}
                       </Text>
                     </Stack>
                   </Flex>

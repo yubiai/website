@@ -4,7 +4,7 @@ import MoreInfo from "./MoreInfo";
 import SwiperComparison from "./SwiperComparison";
 import { useBreakpointValue } from "@chakra-ui/react";
 import useTranslation from 'next-translate/useTranslation';
-//import LogoYblueLarg from "../Logos/LogoYbBlueLarge";
+
 
 
 
@@ -76,7 +76,7 @@ const Info = () => {
           m={{ base: "0 3rem", md: "0 2rem" }}
         >
           <Text
-            fontSize={{base:"30px", md:"35px", lg:"50px"}}
+            fontSize={{ base: "30px", md: "35px", lg: "50px" }}
             fontWeight={"700"}
             color={"#001664"}
             textAlign={"center"}
@@ -90,17 +90,8 @@ const Info = () => {
             alt={"Logo"}
             src={"/static/images/lgybilargblue.png"}
             fallbackSrc={"/static/images/lgybilargblue.png"}
-        />
-          {/* <Image
-            width={{ base: "412px", md: "491px", lg: "491px" }}
-            h={{ base: "calc(402px / (16/9))", md: "calc(491px / (16/9))", lg: "276px" }}
-            alt={"logoblue"}
-            src={"/static/images/yubiaiblue.png"}
-            fallbackSrc={"/static/images/logoyubiai.png"}
-            _hover={{
-              filter: "brightness(20)"
-            }}
-          /> */}
+          />
+
         </Flex>
         <Flex
           style={{ display: "flex", flexDirection: "column" }}
@@ -176,78 +167,34 @@ const Info = () => {
                 <Flex p={"3.9rem 0 0 0 "} direction={"column"}
                   //border={{ base: "1px dotted red", sm: "1px dotted blue", md: "1px dotted green", lg: "1px dotted pink" }}
                   width={{ base: "250px", sm: "250px", md: "250px", lg: "310px" }}>
-                  <Text
-                    display={"flex"}
-                    h={"50px"}
-                    backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >Client Fee</Text>
-                  <Text display={"flex"}
-                    h={"50px"}
-                    //backgroundColor={"rgba(217, 114, 241, 0.6)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >Freelance Fee</Text>
-                  <Text
-                    display={"flex"}
-                    h={"50px"}
-                    backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >Withdrawal Fee</Text>
-                  <Text display={"flex"}
-                    h={"50px"}
-                    //backgroundColor={"rgba(217, 114, 241, 0.6)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >Decentralized</Text>
-                  <Text
-                    display={"flex"}
-                    h={"50px"}
-                    backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >Content Ownership</Text>
-                  <Text display={"flex"}
-                    h={"50px"}
-                    //backgroundColor={"rgba(217, 114, 241, 0.6)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >Efficient Escrow</Text>
-                  <Text
-                    display={"flex"}
-                    h={"50px"}
-                    backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >No Limit on Task Size</Text>
-                  <Text display={"flex"}
-                    h={"50px"}
-                    //backgroundColor={"rgba(217, 114, 241, 0.6)"}
-                    borderRadius={"20px 0 0 20px"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    color={"black"}
-                  >Scalable Dispute System</Text>
+                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("Client Fee")}
+                  </Text>
+                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("Freelance Fee")}
+                  </Text>
+                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("Withdrawal Fee")}
+                  </Text>
+                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("Decentralized")}
+                  </Text>
+                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("Content Ownership")}
+                  </Text>
+                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("Efficient Escrow")}
+                  </Text>
+                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("No Limit on Task Size")}
+                  </Text>
+                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                    {t("Scalable Dispute System")}
+                  </Text>
                 </Flex>
 
               </Flex>
-              <SwiperComparison />
+              <SwiperComparison t={t} />
             </Flex>
           ) : (
             <>
@@ -303,7 +250,7 @@ const Info = () => {
                   width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}> Client Fee</Text>
+                  justifyContent={"space-evenly"}>{t("Client Fee")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
                   <Text>0% *</Text>
@@ -327,7 +274,7 @@ const Info = () => {
                   width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}> Freelancer Fee</Text>
+                  justifyContent={"space-evenly"}> {t("Freelancer Fee")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
                   <Text>0%</Text>
@@ -350,27 +297,27 @@ const Info = () => {
                 <Text width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}>Withdrawal Fee</Text>
+                  justifyContent={"space-evenly"}>{t("Withdrawal Fee")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
-                  <Text>Crypto/Instant</Text>
+                  <Text>{t("Crypto/Instant")}</Text>
                   <Text
                     display={"flex"}
                     flexWrap={"wrap"}
                     fontSize={"20px"}
                     justifyContent={"center"}
-                  >Min Payout $100<br /><span style={{ fontSize: "15px" }}>2.75% Fee per Withdrawal</span></Text>
+                  >{t("Min Payout $100")}<br /><span style={{ fontSize: "15px" }}>{t("275% Fee per Withdrawal")}</span></Text>
                   <Text
                     display={"flex"}
                     flexWrap={"wrap"}
                     fontSize={"20px"}
                     justifyContent={"center"}
-                  >Min Payout $100<br /><span style={{ fontSize: "15px" }}>5% Fee per Withdrawal</span></Text><Text
+                  >{t("Min Payout $100")}<br /><span style={{ fontSize: "15px" }}>{t("5% Fee per Withdrawal")}</span></Text><Text
                     display={"flex"}
                     flexWrap={"wrap"}
                     fontSize={"20px"}
                     justifyContent={"center"}
-                  >Min Payout $100<br /><span style={{ fontSize: "15px" }}>5% Fee per Withdrawal</span></Text>
+                  >{t("Min Payout $100")}<br /><span style={{ fontSize: "15px" }}>{t("5% Fee per Withdrawal")}</span></Text>
                 </Spacer>
               </Box>
               <Box
@@ -387,7 +334,7 @@ const Info = () => {
                 <Text width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}>Decentralized</Text>
+                  justifyContent={"space-evenly"}>{t("Decentralized")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
                   <CheckIcon
@@ -430,7 +377,7 @@ const Info = () => {
                 <Text width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}>Content Ownership</Text>
+                  justifyContent={"space-evenly"}>{t("Content Ownership")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
                   <CheckIcon
@@ -473,13 +420,13 @@ const Info = () => {
                 <Text width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}>Efficient Escrow</Text>
+                  justifyContent={"space-evenly"}>{t("Efficient Escrow")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "100%", maxWidth: "738px" }} >
-                  <Text>Yes</Text>
-                  <Text position={"relative"} left={"1.83rem"}>No/Partial</Text>
-                  <Text position={"relative"} left={"1.83rem"}>No/Partial</Text>
-                  <Text position={"relative"} left={"1.83rem"}>No/Partial</Text>
+                  <Text>{t("Yes")}</Text>
+                  <Text position={"relative"} left={"1.83rem"}>{t("No/Partial")}</Text>
+                  <Text position={"relative"} left={"1.83rem"}>{t("No/Partial")}</Text>
+                  <Text position={"relative"} left={"1.83rem"}>{t("No/Partial")}</Text>
                 </Spacer>
               </Box>
               <Box
@@ -496,7 +443,7 @@ const Info = () => {
                 <Text width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}>No Limit on Task Size</Text>
+                  justifyContent={"space-evenly"}>{t("No Limit on Task Size")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
                   <CheckIcon
@@ -539,7 +486,7 @@ const Info = () => {
                 <Text width={"100%"}
                   maxWidth={"455px"}
                   display={"flex"}
-                  justifyContent={"space-evenly"}> Scalable Dispute System</Text>
+                  justifyContent={"space-evenly"}> {t("Scalable Dispute System")}</Text>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%", maxWidth: "738px" }} >
                   <CheckIcon
@@ -575,10 +522,10 @@ const Info = () => {
           color={"black"}
           m={"0 1em"}
         >
-          *0% equivalent for the first year, after first year only 0.3% for PREMIUM clients with higher visualization impact for a low subscription cost<br />** The fee goes directly to the liquidity of the $YBI token</Text>
+          {t("equivalent")}<br />{t("** The fee goes directly to the liquidity of the $YBI token")}</Text>
       </Flex>
 
-      <MoreInfo />
+      <MoreInfo t={t} />
     </Box >
   );
 };

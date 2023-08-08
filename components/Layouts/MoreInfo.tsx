@@ -1,7 +1,10 @@
 import { Text, Flex, Image, Button, Stack, Link } from "@chakra-ui/react"
 
+interface MoreInfoProps {
+    t: (key: string) => string; 
+  }
 
-const MoreInfo = () => {
+const MoreInfo: React.FC<MoreInfoProps> = ({ t }) => {
 
     return (
         <Flex
@@ -27,7 +30,7 @@ const MoreInfo = () => {
                     color={"#001664"}
                     fontWeight={"700"}
                     margin={"2rem 0"}
-                >Join Our Thriving Web3 Community</Text>
+                >{t("Join Our Thriving Web3 Community")}</Text>
                 <Text
                     fontSize={{ base: "22px", md: "20px", lg: "36px" }}
                     color={"#F0F3FF"}
@@ -35,7 +38,7 @@ const MoreInfo = () => {
                     width={"auto"}
                     maxWidth={"1212px"}
                     textAlign={"center"}
-                >Our community is the driving force behind Yubiai, promoting collaboration and the exchange of ideas. Together, we shape an extraordinary future</Text>
+                >{t("Our community")}</Text>
                 <Flex
                     direction="row"
                     justifyContent={"space-evenly"}
@@ -50,7 +53,7 @@ const MoreInfo = () => {
                         flexDirection={"column"}
                         fontWeight={"800"}
                         alignItems={"center"}
-                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Sellers</span>
+                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Sellers")}</span>
                     </Text>
                     <Text
                         fontSize={{ base: "22px", md: "20px", lg: "36px" }}
@@ -59,7 +62,7 @@ const MoreInfo = () => {
                         flexDirection={"column"}
                         fontWeight={"800"}
                         alignItems={"center"}
-                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Buyers</span>
+                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Buyers")}</span>
                     </Text>
                     <Text
                         fontSize={{ base: "22px", md: "20px", lg: "36px" }}
@@ -68,7 +71,7 @@ const MoreInfo = () => {
                         flexDirection={"column"}
                         fontWeight={"800"}
                         alignItems={"center"}
-                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>Transactions</span>
+                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Transactions")}</span>
                     </Text>
                 </Flex>
                 <Flex
@@ -200,7 +203,7 @@ const MoreInfo = () => {
                 <Text
                     color={"#001664"}
                     fontSize={{ base: "24px", md: "28px", lg: "56px" }} fontWeight={"700"}
-                    margin={"2rem 0 0 0"}>How a transaction works</Text>
+                    margin={"2rem 0 0 0"}>{t("How a transaction works")}</Text>
                 <Image
                     h={"85%"}
                     w={"75%"}
@@ -239,8 +242,8 @@ const MoreInfo = () => {
                             _hover={{
                                 color: "white"
                             }}
-                        >Join the Yubiai community</Text>
-                        <Text color={"#001664"} fontSize={{ base: "22px", md: "20px", lg: "33px" }}>Learn more about our community, get support and start working with us</Text>
+                        >{t("Join the Yubiai community")}</Text>
+                        <Text color={"#001664"} fontSize={{ base: "22px", md: "20px", lg: "33px" }}>{t("Learn more about our community, get support and start working with us")}</Text>
                         <Stack
                             marginTop={"1rem"}
 
@@ -270,7 +273,7 @@ const MoreInfo = () => {
                                         backgroundColor: "#001664",
                                         color: "white"
                                     }}
-                                >LAUNCH APP</Button>
+                                >{t("LAUNCH APP")}</Button>
                             </Link>
                             <Link
                                 width={{ base: "175px", sm: "175px", md: "175px", lg: "288px", xl: "288px" }}
@@ -290,7 +293,7 @@ const MoreInfo = () => {
                                         textDecoration: "none",
                                         backgroundColor: "#001664",
                                         color: "white"
-                                    }}>CONTACT US</Button>
+                                    }}>{t("CONTACT US")}</Button>
                             </Link>
                         </Stack>
                     </Flex>

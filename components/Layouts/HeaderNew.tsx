@@ -25,11 +25,52 @@ import LanguageChange from "../Buttons/translButton";
 import { ColorModeToggler } from "../Buttons/darkModeButton";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import useTranslation from 'next-translate/useTranslation';
 
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
-  
+  const { t } = useTranslation("header");
+
+  const NAV_ITEMS: Array<NavItem> = [
+
+    {
+      label: t('Home'),
+      href: '/',
+    },
+    {
+      label: t('Ecosystem'),
+      href: '/ecosystem',
+    },
+    {
+      label: t("Community"),
+      href: "/community"
+    },
+    {
+      label: 'Docs',
+      children: [
+        {
+          label: 'White Paper',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vST-lArWWV8urj3phEiWmzPZ3fnySB6EqW3IRyr2rrf7MakpfsmLhpvlOn9nLUvp-IZ98JlnfJJmR5i/pub',
+        },
+        {
+          label: 'Yellow Paper',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vR0KPcbPuv9edabvnBQT2n38xtDLSvF7WdaOMBheZOS6j-KnsVE1pgTtuHzCfWwQRZOaWSzZjLa5pcY/pub',
+        },
+        {
+          label: 'One Pager',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
+        },
+      ],
+    },
+    {
+      label: "FAQ",
+      href: "/faq"
+    }
+  ];
 
   return (
     <Box
@@ -93,7 +134,7 @@ export default function WithSubnavigation() {
               size={{ base: "sm", sm: "sm", md: "md" }}
               mr={0}
             >
-              Launch App
+              {t("Launch App")}
             </Button>
           </a>
         </Stack>
@@ -112,6 +153,47 @@ const DesktopNav = () => {
   const linkHoverColor = 'blue.400';
   const popoverContentBgColor = 'black';
   const router = useRouter();
+  const { t } = useTranslation("header");
+
+  const NAV_ITEMS: Array<NavItem> = [
+
+    {
+      label: t('Home'),
+      href: '/',
+    },
+    {
+      label: t('Ecosystem'),
+      href: '/ecosystem',
+    },
+    {
+      label: t("Community"),
+      href: "/community"
+    },
+    {
+      label: 'Docs',
+      children: [
+        {
+          label: 'White Paper',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vST-lArWWV8urj3phEiWmzPZ3fnySB6EqW3IRyr2rrf7MakpfsmLhpvlOn9nLUvp-IZ98JlnfJJmR5i/pub',
+        },
+        {
+          label: 'Yellow Paper',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vR0KPcbPuv9edabvnBQT2n38xtDLSvF7WdaOMBheZOS6j-KnsVE1pgTtuHzCfWwQRZOaWSzZjLa5pcY/pub',
+        },
+        {
+          label: 'One Pager',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
+        },
+      ],
+    },
+    {
+      label: "FAQ",
+      href: "/faq"
+    }
+  ];
 
   return (
     <Stack
@@ -167,7 +249,7 @@ const DesktopNav = () => {
                 minW={'sm'}>
                 <Stack>
                   {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
+                    <DesktopSubNav key={child.label} {...child}/>
                   ))}
                 </Stack>
               </PopoverContent>
@@ -180,6 +262,7 @@ const DesktopNav = () => {
 };
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+  
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <Box
@@ -196,7 +279,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
               transition={'all .3s ease'}
               _groupHover={{ color: '#dd6a6a' }}
               fontWeight={500}>
-              {label}
+               {label}
             </Text>
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
@@ -217,6 +300,48 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 };
 
 const MobileNav = () => {
+  const { t } = useTranslation("header");
+
+  const NAV_ITEMS: Array<NavItem> = [
+
+    {
+      label: t('Home'),
+      href: '/',
+    },
+    {
+      label: t('Ecosystem'),
+      href: '/ecosystem',
+    },
+    {
+      label: t("Community"),
+      href: "/community"
+    },
+    {
+      label: 'Docs',
+      children: [
+        {
+          label: 'White Paper',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vST-lArWWV8urj3phEiWmzPZ3fnySB6EqW3IRyr2rrf7MakpfsmLhpvlOn9nLUvp-IZ98JlnfJJmR5i/pub',
+        },
+        {
+          label: 'Yellow Paper',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vR0KPcbPuv9edabvnBQT2n38xtDLSvF7WdaOMBheZOS6j-KnsVE1pgTtuHzCfWwQRZOaWSzZjLa5pcY/pub',
+        },
+        {
+          label: 'One Pager',
+          subLabel: 'View the document',
+          href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
+        },
+      ],
+    },
+    {
+      label: "FAQ",
+      href: "/faq"
+    }
+  ];
+  
   return (
     <Stack
 
@@ -232,6 +357,7 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
+  
 
   return (
     <Stack
@@ -293,6 +419,7 @@ interface NavItem {
   subLabel?: string;
   children?: Array<NavItem>;
   href?: string;
+  
 }
 
 const NAV_ITEMS: Array<NavItem> = [
