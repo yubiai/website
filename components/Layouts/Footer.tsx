@@ -368,13 +368,13 @@ const Footer = () => {
                       href={"https://app.yubiai.market/help/terms-and-conditions"}
 
                     >
-                      Terms of Service
+                      {t("Terms of Service")}
                     </Link>
                     <Link
                       href={"/privacypolicy"}
 
                     >
-                      Privacy Policy
+                      {t("Privacy Policy")}
                     </Link>
                   </Flex>
                   <Box
