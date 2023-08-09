@@ -1,12 +1,22 @@
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
 
-const BuyerFaqCard = () => {
+interface BuyerFaqCardProps {
+  t: (key: string) => string;
+  lng: string; 
+}
+
+const BuyerFaqCard: React.FC<BuyerFaqCardProps> = ({ t, lng }) => {
+  const isSpanish = lng === "es";
+  //console.log("idioma es: " + lng);
+  const height = isSpanish
+    ? { base: "970px", md: "940px" }
+    : { base: "890px", md: "840px" };
   return (
     <Box
       id="buyerSection"
       width={{ base: "100%", md: "50%" }}
       position={"relative"}
-      height={{ base: "890px", md: "840px" }}
+      height={height}
       padding={"1.5em"}
       borderRadius={"30px"}
       boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
@@ -15,26 +25,26 @@ const BuyerFaqCard = () => {
     >
       <Center>
         <Heading fontSize={"3xl"}>
-          If you are a buyer
+          {t("If you are a buyer")}
         </Heading>
       </Center>
       <Heading fontSize={"2xl"} mt="1em">
-        <Text>How do I start buying?</Text>
+        <Text>{t("How do I start buying?")}</Text>
       </Heading>
       <Text mt={"1em"}>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>1. Explore listings:</a> Once you&apos;re logged in, browse through the available listings to find the services you&apos;re interested in. You can search for specific categories to refine your search.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>1. {t("Explore listings")}:</a> {t("Once you")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>2. View listing details:</a> Click on a listing to view more information about the service, including the description, price, and any additional details provided by the seller. Take your time to review the details and ensure it meets your requirements.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>2. {t("View listing details")}:</a> {t("Click on")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>3. Contact the seller:</a> If you have any questions or need more information, you can use the platform chat to communicate directly with the seller. This will help you clarify any doubts and discuss the service in more detail as well as secure evidence in case of dispute.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>3. {t("Contact the seller")}:</a> {t("If you have")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>4. Make a purchase:</a> When you&apos;re ready to proceed, you can initiate the purchase by following the seller&apos;s instructions. Yubiai currently uses xDAI(1xDAI = 1USD)cryptocurrency for transactions, so ensure you have sufficient xDAI in your Metamask wallet to complete the payment.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>4. {t("Make a purchase")}:</a> {t("When you")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>5. Confirm the transaction:</a> To protect both buyers and sellers, the payment will be held in escrow until the transaction is completed successfully. Follow the instructions provided in the platform to confirm and finalize the transaction.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>5. {t("Confirm the transaction")}:</a> {t("To protect")}.
       </Text>
       {/* <Heading fontSize={"2xl"} mt="1em">
         <Text>What is `UBI Burning Amount`?</Text>

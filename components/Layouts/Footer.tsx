@@ -172,7 +172,7 @@ const Footer = () => {
                     </Link>
                     <Link
                       href={"/privacypolicy"}
-
+                      style={{ textAlign: "center" }}
                     >
                       {t("Privacy Policy")}
                     </Link>
@@ -372,7 +372,7 @@ const Footer = () => {
                     </Link>
                     <Link
                       href={"/privacypolicy"}
-
+                      style={{ textAlign: "center" }}
                     >
                       {t("Privacy Policy")}
                     </Link>

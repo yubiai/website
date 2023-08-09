@@ -6,12 +6,12 @@ import {
   Link,
   Flex
 } from "@chakra-ui/react";
-import NetworkSocialCard from "../components/Cards/nworkSocialCard";
 import HeroFather from "../components/Layouts/HeroFather";
 import { Timeline } from "react-twitter-widgets";
-
+import useTranslation from "next-translate/useTranslation";
 
 const Community = () => {
+  const { t } = useTranslation("community");
   const listNetworkSocial = [
     {
       image: "/static/networksocial/linktreelogo.png",
@@ -63,11 +63,9 @@ const Community = () => {
     <>
       <HeroFather
         titleHead={"Yubiai Landing - Community"}
-        titleFirst={"Welcome to the Yubiai"}
-        titleSecond={"Community"}
-        description={
-          "The Yubiai community is an ecosystem of real humans interacting between each other on our socials."
-        }
+        titleFirst={t("Welcome to the Yubiai")}
+        titleSecond={t("Community")}
+        description={t("The Yubiai community is an ecosystem of real humans interacting between each other on our socials")}
       >
         <Box
           display="flex"
@@ -85,13 +83,13 @@ const Community = () => {
             margin={"2em"}
           >
             <Text
-              fontSize={{base:"32px",md:"32px", lg:"64px"}}
+              fontSize={{ base: "32px", md: "32px", lg: "64px" }}
               color={"white"}
-            >What’s our vision?</Text>
+            >{t("What’s our vision?")}</Text>
             <Text
               fontSize={"24px"}
               color={"white"}
-            >To become a leading decentralized marketplace that offers secure and cost-effective transactions for service providers, product sellers, NFT creators, and clients globally. We see an internet of value that enables frictionless transactions between individuals, regardless of geographical boundaries and time zones.</Text>
+            >{t("To become")}</Text>
           </Box>
         </Box>
         <Box
@@ -105,11 +103,11 @@ const Community = () => {
             margin={"2em"}
           >
             <Text
-              fontSize={{base:"32px",md:"32px", lg:"64px"}}
-              color={"white"}>What’s our mission?</Text>
+              fontSize={{ base: "32px", md: "32px", lg: "64px" }}
+              color={"white"}>{t("What’s our mission?")}</Text>
             <Text
               fontSize={"24px"}
-              color={"white"}>To empower entrepreneurs and individuals by providing a secure web3 marketplace environment where they can interact, transact, and innovate safely. We aim to leverage blockchain technology to enhance trust between humanity service labour, one of the protocols we rely on is Proof of Humanity as badges and Kleros Escrow Smart contract with his built-in dispute resolution so that users can have peace of mind when conducting business on the platform. Additionally, we are committed to provide an engaging user experience with continuous development of features that make our platform attractive for both buyers and sellers.</Text>
+              color={"white"}>{t("To empower")}</Text>
           </Box>
           <Image
             alt={"Mission"}
@@ -122,23 +120,19 @@ const Community = () => {
             display={"flex"}
             justifyContent={"center"}
             textAlign={"center"}
-            fontSize={{base:"26px",md:"32px", lg:"50px"}}
+            fontSize={{ base: "26px", md: "32px", lg: "50px" }}
             color={"#001664"}
             fontWeight={"800"}
-          >Collectively, we are building the future marketplace we need</Text>
+          >{t("Collectively, we are building the future marketplace we need")}</Text>
           <Text
             display={"flex"}
             justifyContent={"center"}
             textAlign={"center"}
-            fontSize={{base:"24px",md:"26px", lg:"38px"}}
+            fontSize={{ base: "24px", md: "26px", lg: "38px" }}
             color={"#001664"}
-          >Follow us on social media</Text>
+          >{t("Follow us on social media")}</Text>
         </Box>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={3} mt="3em">
-          {/*{listNetworkSocial &&
-            listNetworkSocial.map((item, i) => (
-              <NetworkSocialCard key={i} item={item} />
-            ))}*/}
           <Link href={"https://t.me/yubiai"} target={"_blank"}>
             <Image
               alt={"Telegram"}
@@ -194,23 +188,23 @@ const Community = () => {
           />
         </SimpleGrid>
         <Box display={"flex"} flexDirection={"column"} mt={"2em"}>
-            <Text
-              display={"flex"}
-              justifyContent={"center"}
-              textAlign={"center"}
-              fontSize={{base:"22px",md:"24px", lg:"26px"}}
-              color={"#001664"}
-            >Yubiai community members and partners contributes and express themselves on social media.</Text>
-            <Text
-              display={"flex"}
-              justifyContent={"center"}
-              textAlign={"center"}
-              fontSize={{base:"26px",md:"28px", lg:"36px"}}
-              color={"#001664"}
-            >Follow our latest news on Twitter & Youtube</Text>
-          </Box>      
+          <Text
+            display={"flex"}
+            justifyContent={"center"}
+            textAlign={"center"}
+            fontSize={{ base: "22px", md: "24px", lg: "26px" }}
+            color={"#001664"}
+          >{t("Yubiai community")}</Text>
+          <Text
+            display={"flex"}
+            justifyContent={"center"}
+            textAlign={"center"}
+            fontSize={{ base: "26px", md: "28px", lg: "36px" }}
+            color={"#001664"}
+          >{t("Follow our latest news on Twitter & Youtube")}</Text>
+        </Box>
         <Box display={"flex"} flexDirection={{ base: "column", sm: "column", md: "column", lg: "row" }} >
-          
+
           <Box
             w={"50%"}
             h={"auto"}

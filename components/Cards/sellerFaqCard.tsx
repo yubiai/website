@@ -1,12 +1,23 @@
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
 
-const SellerFaqCard = () => {
+
+interface SellerFaqCardProps {
+  t: (key: string) => string;
+  lng: string; 
+}
+
+const SellerFaqCard: React.FC<SellerFaqCardProps> = ({ t, lng }) => {
+  const isSpanish = lng === "es";
+  //console.log("idioma es: " + lng);
+  const height = isSpanish
+    ? { base: "1850px", md: "1730px", lg: "1736px" }
+    : { base: "1550px", md: "1520px", lg: "1490px" };
   return (
     <Box
       id="sellerSection"
       width={{ base: "100%", md: "50%" }}
       position={"relative"}
-      height={{ base: "1550px", md: "1520px", lg:"1490px" }}
+      height={height}
       padding={"1.5em"}
       borderRadius={"30px"}
       boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
@@ -15,35 +26,35 @@ const SellerFaqCard = () => {
     >
       <Center>
         <Heading fontSize={"3xl"}>
-          <Text>If you are a seller</Text>
+          <Text>{t("If you are a seller")}</Text>
         </Heading>
       </Center>
       <Heading fontSize={"2xl"} mt="1em">
-        <Text >How do I start selling?</Text>
+        <Text >{t("How do I start selling?")}</Text>
       </Heading>
       <Text mt="1em">
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>1. Create a service listing:</a> Once logged in, and with your profile information filled, click on the Sell button below the search field on the navigation bar. Provide a clear and detailed description of the service you want to offer, including pricing, delivery timeframe, and any other relevant information. This will help potential buyers understand what you&apos;re offering.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>1. {t("Create a service listing")}:</a> {t("Once logged")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>2. Manage your listings:</a> You can view and manage your listings by clicking on the Profile Icon and Listings. Here, you can edit & send for review your listings or pause it by selecting Unpublish as needed.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>2. {t("Manage your listings")}:</a> {t("You can view")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>3. Respond to buyer inquiries:</a> As potential buyers have questions or require more information, you&apos;ll receive notifications through the platform. Make sure to respond promptly and provide helpful answers to their queries. This will help build trust and facilitate the buying process
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>3. {t("Respond to buyer inquiries")}:</a> {t("As potential")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>4. Receive purchase requests:</a> When a buyer is interested to hire you, they can start a chat within the listing they are on, and a chat will open up between both parties to settle the specific requirements of the serivce. Be prepared to receive purchase requests and communicate with buyers to finalize the transaction.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>4. {t("Receive purchase requests")}:</a> {t("When a buyer")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>5. Complete the service:</a> Once the buyer has confirmed the transaction and send the payment to the escrow, you can proceed with providing the service as agreed upon. Communicate effectively with the buyer, deliver the service within the specified timeframe, and address any additional requirements or questions they may have.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>5. {t("Complete the service")}:</a> {t("Once the buyer")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>6. Confirm transaction completion:</a> After the service has been successfully delivered, follow the instructions provided by the platform to confirm the completion of the transaction. This will release the payment from escrow and ensure a smooth and secure transaction for both parties.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>6. {t("Confirm transaction completion")}:</a> {t("After the service")}.
       </Text>
       <Text>
-        <a style={{ fontWeight: "700", fontStyle: "italic" }}>7. Receive feedback:</a> After the transaction is completed, the buyer will have the option to leave feedback for your service. Feedback plays an important role in building trust and credibility on the platform. Provide excellent service to encourage positive feedback from buyers.
+        <a style={{ fontWeight: "700", fontStyle: "italic" }}>7. {t("Receive feedback")}:</a> {t("After the transaction")}.
       </Text>
       <Text>
-        By following these steps as a Seller on Yubiai, you can showcase your services, communicate with potential buyers, complete transactions securely, and receive feedback to enhance your reputation within the Yubiai community.
+        {t("By following")}.
       </Text>
       {/* <Heading fontSize={"2xl"} mt="1em">
         <Text>What is `UBI Burning Amount`?</Text>
