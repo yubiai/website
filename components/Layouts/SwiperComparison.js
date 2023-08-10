@@ -76,7 +76,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt2}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -104,8 +104,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -128,6 +128,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}><CheckIcon
@@ -179,7 +181,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt2}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -199,8 +201,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -229,6 +231,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -251,8 +255,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}><CloseIcon
@@ -302,7 +306,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt2}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -322,8 +326,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -352,8 +356,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -376,8 +380,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}><CloseIcon
@@ -428,7 +432,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt2}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -450,8 +454,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -480,8 +484,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -504,6 +508,8 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
+                backgroundColor={bgColorFt2}
+                borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}><CloseIcon

@@ -4,8 +4,7 @@ import {
   Container,
   Stack,
   Text,
-  useColorModeValue,
-  VisuallyHidden, Flex
+  VisuallyHidden, Flex, useColorMode
 } from "@chakra-ui/react";
 import { FaDiscord, FaTelegramPlane, FaTwitter, FaYoutube, FaGithub } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
@@ -53,6 +52,9 @@ const SocialButton = ({
 const Footer = () => {
   const isBaseOrMd = useBreakpointValue({ base: true, md: true, lg: true, xl: false });
   const { t } = useTranslation("footer");
+  const { colorMode } = useColorMode();
+  const txtColorLaCo = colorMode === "light" ? "#0D47A1" : "#00BCD4";
+ 
 
   return (
     <>
@@ -88,9 +90,9 @@ const Footer = () => {
                     <Stack
 
                       direction={"column"} alignItems={"center"}>
-                      <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
+                      <Text color={txtColorLaCo} fontSize={"18px"} fontWeight={"700"}
                         textAlign="center">{t("ABOUT YUBIAI")}</Text>
-                      <Link href="/" style={{textAlign:"center"}}>{t("About Us")}</Link>
+                      <Link href="/" style={{ textAlign: "center" }}>{t("About Us")}</Link>
                       <Link href="/ecosystem">{t("Team")}</Link>
                       <Link href="https://medium.com/@yubiai.blog" target={"_blank"}>Blog</Link>
                     </Stack>
@@ -113,7 +115,7 @@ const Footer = () => {
                         display={"flex"}
                         height={"55px"}
                         alignItems={"center"}
-                        color={"#0D47A1"}
+                        color={txtColorLaCo}
                         fontSize={"18px"}
                         fontWeight={"700"}>RESOURCES</Text>
                       <Link
@@ -154,7 +156,7 @@ const Footer = () => {
                       display={"flex"}
                       height={"55px"}
                       alignItems={"center"}
-                      color={"#0D47A1"}
+                      color={txtColorLaCo}
                       fontSize={"18px"}
                       fontWeight={"700"}
                     >SUPPORT</Text>
@@ -197,7 +199,7 @@ const Footer = () => {
                       align={{ base: "center", md: "center" }}
 
                     >
-                      <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
+                      <Text color={txtColorLaCo} fontSize={"18px"} fontWeight={"700"}
                         textAlign={"center"}>{t("OUR COMMUNITY")}</Text>
                       <Container
 
@@ -209,16 +211,16 @@ const Footer = () => {
                           spacing={3}
                           mr={"1em"}>
                           <SocialButton label={"Telegram"} href={"https://t.me/yubiai"}>
-                            <FaTelegramPlane fontSize={45} color={"#0D47A1"} />
+                            <FaTelegramPlane fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton label={"Linktree"} href={"https://linktr.ee/Yubiai"}>
-                            <SiLinktree fontSize={45} color={"#0D47A1"} />
+                            <SiLinktree fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"Github"}
                             href={"https://github.com/yubiai"}
                           >
-                            <FaGithub fontSize={45} color={"#0D47A1"} />
+                            <FaGithub fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                         </Stack>
                         <Stack direction={"row"} spacing={3}>
@@ -226,19 +228,19 @@ const Footer = () => {
                             label={"Discord"}
                             href={"https://discord.gg/a9CQKJXb8X"}
                           >
-                            <FaDiscord fontSize={45} color={"#0D47A1"} />
+                            <FaDiscord fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"Twitter"}
                             href={"https://twitter.com/YubiaiM"}
                           >
-                            <FaTwitter fontSize={45} color={"#0D47A1"} />
+                            <FaTwitter fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"YouTube"}
                             href={"https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"}
                           >
-                            <FaYoutube fontSize={45} color={"#0D47A1"} />
+                            <FaYoutube fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                         </Stack>
                       </Container>
@@ -302,11 +304,11 @@ const Footer = () => {
                       direction={"column"} alignItems={"center"}>
 
                       <Text
-                        color={"#0D47A1"}
+                        color={txtColorLaCo}
                         fontSize={"18px"}
                         fontWeight={"700"}
                         textAlign="center">{t("ABOUT YUBIAI")}</Text>
-                      <Link href="/" style={{textAlign:"center"}}>{t("About Us")}</Link>
+                      <Link href="/" style={{ textAlign: "center" }}>{t("About Us")}</Link>
                       <Link href="/ecosystem">{t("Team")}</Link>
                       <Link href="https://medium.com/@yubiai.blog" target={"_blank"}>Blog</Link>
                     </Stack>
@@ -325,7 +327,7 @@ const Footer = () => {
                       //justify={{ base: "center", md: "space-between" }}
                       align={{ base: "center", md: "center" }}
                     >
-                      <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}>RESOURCES</Text>
+                      <Text color={txtColorLaCo} fontSize={"18px"} fontWeight={"700"}>RESOURCES</Text>
                       <Link
                         href={"/static/yubiai_whitepaper.pdf"}
                         passHref legacyBehavior
@@ -357,7 +359,7 @@ const Footer = () => {
                     //justify={{ base: "center", md: "space-between", lg: "" }}
                     align={{ base: "center", md: "center" }}
                   >
-                    <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}>SUPPORT</Text>
+                    <Text color={txtColorLaCo} fontSize={"18px"} fontWeight={"700"}>SUPPORT</Text>
                     <Link href="/faq">FAQ</Link>
                     <Link
                       href="mailto: contact@yubiai.market"
@@ -391,7 +393,7 @@ const Footer = () => {
                       align={{ base: "center", md: "center" }}
 
                     >
-                      <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
+                      <Text color={txtColorLaCo} fontSize={"18px"} fontWeight={"700"}
                         textAlign={"center"}>{t("OUR COMMUNITY")}</Text>
                       <Container
                         display={"flex"}
@@ -399,16 +401,16 @@ const Footer = () => {
                         justifyContent={"space-between"}>
                         <Stack direction={"column"} spacing={2}>
                           <SocialButton label={"Telegram"} href={"https://t.me/yubiai"}>
-                            <FaTelegramPlane fontSize={45} color={"#0D47A1"} />
+                            <FaTelegramPlane fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton label={"Linktree"} href={"https://linktr.ee/Yubiai"}>
-                            <SiLinktree fontSize={45} color={"#0D47A1"} />
+                            <SiLinktree fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"Twitter"}
                             href={"https://github.com/yubiai"}
                           >
-                            <FaGithub fontSize={45} color={"#0D47A1"} />
+                            <FaGithub fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                         </Stack>
                         <Stack direction={"column"} spacing={2}>
@@ -416,19 +418,19 @@ const Footer = () => {
                             label={"Discord"}
                             href={"https://discord.gg/a9CQKJXb8X"}
                           >
-                            <FaDiscord fontSize={45} color={"#0D47A1"} />
+                            <FaDiscord fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"Twitter"}
                             href={"https://twitter.com/YubiaiM"}
                           >
-                            <FaTwitter fontSize={45} color={"#0D47A1"} />
+                            <FaTwitter fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"YouTube"}
                             href={"https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"}
                           >
-                            <FaYoutube fontSize={45} color={"#0D47A1"} />
+                            <FaYoutube fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                         </Stack>
                       </Container>
@@ -450,7 +452,7 @@ const Footer = () => {
                   >
                     <LogoYblue />
                     <Stack direction={"column"} spacing={2}>
-                      <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  {t("the first")}.</Text>
+                      <Text textAlign={"center"}><span style={{ color: txtColorLaCo }}>Yubiai </span>-  {t("the first")}.</Text>
                       <Text color="black" fontWeight={"600"} textAlign={"center"}>
                         © {new Date().getFullYear()} Yubiai Marketplace. {t("All rights reserved")}
                       </Text>

@@ -1,7 +1,14 @@
-import { Button, Image } from "@chakra-ui/react";
+import { Button, Image, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
 
 const LogoYblue = () => {
+
+  const { colorMode } = useColorMode();
+  let filterStyleSocial = "";
+  if (colorMode === "dark") {
+    filterStyleSocial = "invert(53%) sepia(62%) saturate(2222%) hue-rotate(148deg) brightness(98%) contrast(101%)";
+  }
+
   return (
     <Button
     bg="transparent"
@@ -12,6 +19,7 @@ const LogoYblue = () => {
   >
       <Link href={"/"}>
         <Image
+          style={{filter:filterStyleSocial}}
           w={"100px"}
           h={"39.16px"}
           alt={"Logo"}

@@ -1,20 +1,33 @@
-import { Text, Flex, Image, Button, Stack, Link } from "@chakra-ui/react"
+import { Text, Flex, Image, Button, Stack, Link, useBreakpointValue } from "@chakra-ui/react"
+import { FaDiscord, FaTelegramPlane, FaTwitter, FaYoutube, FaGithub } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
+
 
 interface MoreInfoProps {
     t: (key: string) => string;
     textColor: string;
     textColorDesc: string;
     lng: string;
+    filterStyle: string;
+    txtColorLaCo: string;
+    bgColorOnHover: string;
+    
 }
 
-const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng }) => {
+const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, filterStyle, txtColorLaCo, bgColorOnHover }) => {
     const marginLeft = (lng === "es")
         ? { lg: "1em" }
         : { lg: "0" };
     const marginRight = (lng === "es")
         ? { lg: "1em" }
         : { lg: "0" };
-
+    const breakpointSize = useBreakpointValue({
+        base: "40px",
+        sm: "40px",
+        md: "60px",
+        lg: "80px",
+        xl: "80px",
+    });
 
     return (
         <Flex
@@ -262,13 +275,14 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
                 justifyContent="flex-start"
                 alignItems="center">
                 <Text
-                    color={"#001664"}
+                    color={textColor}
                     fontSize={{ base: "24px", md: "28px", lg: "56px" }} fontWeight={"700"}
                     margin={"2rem 0 0 0"}>{t("How a transaction works")}</Text>
                 <Image
                     h={"85%"}
                     w={"75%"}
                     alt={"howitworks"}
+                    style={{ filter: filterStyle }}
                     src={"/static/featuresIcons/howitworks.png"}
                     fallbackSrc={"/static/featuresIcons/howitworks.png"} />
             </Flex>
@@ -297,14 +311,14 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
 
                     >
                         <Text
-                            color={"#001664"}
+                            color={textColor}
                             fontSize={{ base: "32px", md: "32px", lg: "64px" }}
                             fontWeight={"700"}
                             _hover={{
                                 color: "white"
                             }}
                         >{t("Join the Yubiai community")}</Text>
-                        <Text color={"#001664"} fontSize={{ base: "22px", md: "20px", lg: "33px" }}>{t("Learn more about our community, get support and start working with us")}</Text>
+                        <Text color={textColor} fontSize={{ base: "22px", md: "20px", lg: "33px" }}>{t("Learn more about our community, get support and start working with us")}</Text>
                         <Stack
                             marginTop={"1rem"}
 
@@ -320,7 +334,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
                                 }}
                                 href={"https://app.yubiai.market"} target="_blank" rel="noopener noreferrer">
                                 <Button
-                                    color={"#001664"}
+                                    color={txtColorLaCo}
                                     fontSize={"25px"}
                                     fontWeight={"700"}
                                     size={{ base: "sm", sm: "sm", md: "md", lg: "lg", xl: "xl" }}
@@ -329,11 +343,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
                                     maxH={"50px"}
                                     w={"100%"}
                                     maxW={"288px"}
-                                    _hover={{
-                                        textDecoration: "none",
-                                        backgroundColor: "#001664",
-                                        color: "white"
-                                    }}
+                                    _hover={{ backgroundColor: bgColorOnHover, color:"white" }}
                                 >{t("LAUNCH APP")}</Button>
                             </Link>
                             <Link
@@ -341,7 +351,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
                                 height={{ base: "auto", sm: "auto", md: "auto", lg: "50px", xl: "50px" }}
                                 _hover={{ textDecoration: "none" }} style={{ backgroundColor: "white", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "10px" }} href="mailto: contact@yubiai.market">
                                 <Button
-                                    color={"#001664"}
+                                    color={txtColorLaCo}
                                     fontSize={"25px"}
                                     fontWeight={"700"}
                                     size={{ base: "sm", sm: "sm", md: "md", lg: "lg", xl: "xl" }}
@@ -350,11 +360,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
                                     maxH={"50px"}
                                     w={"100%"}
                                     maxW={"288px"}
-                                    _hover={{
-                                        textDecoration: "none",
-                                        backgroundColor: "#001664",
-                                        color: "white"
-                                    }}>{t("CONTACT US")}</Button>
+                                    _hover={{ backgroundColor: bgColorOnHover, color:"white" }}>{t("CONTACT US")}</Button>
                             </Link>
                         </Stack>
                     </Flex>
@@ -371,24 +377,35 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
                             alignItems={"center"}
                             w={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}
                             h={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}>
-                            <a className="icon" href={"https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"} target="_blank">
-                                <Image
-                                    alt={"youtube"}
-                                    src={"/static/networksocial/youtube.png"}
-                                    fallbackSrc={"/static/networksocial/youtube.png"} />
-                            </a>
-                            <a className="icon" href={"https://twitter.com/YubiaiM"} target="_blank">
-                                <Image
-                                    alt={"twitter"}
-                                    src={"/static/networksocial/Twitter.png"}
-                                    fallbackSrc={"/static/networksocial/Twitter.png"} />
-                            </a>
-                            <a className="icon" href={"https://linktr.ee/Yubiai"} target="_blank">
-                                <Image
-                                    alt={"linktree"}
-                                    src={"/static/networksocial/Linktree.png"}
-                                    fallbackSrc={"/static/networksocial/Linktree.png"} />
-                            </a>
+                            <Link
+                                backgroundColor={txtColorLaCo} borderRadius={"50px"}
+                                height={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                width={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                justifyContent={"center"}
+                                alignItems={"center"}
+                                className="icon"
+                                href={"https://www.youtube.com/channel/UCbxVCRRIO3xGnZuPywJ_0TA"}
+                                target="_blank">
+                                <FaYoutube size={breakpointSize} color={"white"} />
+                            </Link>
+                            <Link
+                                backgroundColor={txtColorLaCo} borderRadius={"50px"}
+                                height={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                width={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                justifyContent={"center"}
+                                alignItems={"center"}
+                                className="icon" href={"https://twitter.com/YubiaiM"} target="_blank">
+                                <FaTwitter size={breakpointSize} color={"white"} />
+                            </Link>
+                            <Link
+                                backgroundColor={txtColorLaCo} borderRadius={"50px"}
+                                height={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                width={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                justifyContent={"center"}
+                                alignItems={"center"}
+                                className="icon" href={"https://linktr.ee/Yubiai"} target="_blank">
+                                <SiLinktree size={breakpointSize} color={"white"} />
+                            </Link>
 
                         </Flex>
                         <Flex
@@ -397,24 +414,33 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng })
                             alignItems={"center"}
                             w={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}
                             h={{ base: "auto", sm: "auto", md: "auto", lg: "100%", xl: "100%" }}>
-                            <a className="icon" href={"https://discord.gg/a9CQKJXb8X"} target="_blank">
-                                <Image
-                                    alt={"discord"}
-                                    src={"/static/networksocial/Discord.png"}
-                                    fallbackSrc={"/static/networksocial/Discord.png"} />
-                            </a>
-                            <a className="icon" href={"https://t.me/yubiai"} target="_blank">
-                                <Image
-                                    alt={"telegram"}
-                                    src={"/static/networksocial/Telegram.png"}
-                                    fallbackSrc={"/static/networksocial/Telegram.png"} />
-                            </a>
-                            <a className="icon" href={"https://github.com/yubiai"} target="_blank">
-                                <Image
-                                    alt={"github"}
-                                    src={"/static/networksocial/Github.png"}
-                                    fallbackSrc={"/static/networksocial/Github.png"} />
-                            </a>
+                            <Link
+                                backgroundColor={txtColorLaCo} borderRadius={"50px"}
+                                height={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                width={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                justifyContent={"center"}
+                                alignItems={"center"}
+                                className="icon" href={"https://discord.gg/a9CQKJXb8X"} target="_blank">
+                                <FaDiscord size={breakpointSize} color={"white"} />
+                            </Link>
+                            <Link
+                                backgroundColor={txtColorLaCo} borderRadius={"50px"}
+                                height={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                width={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                justifyContent={"center"}
+                                alignItems={"center"}
+                                className="icon" href={"https://t.me/yubiai"} target="_blank">
+                                <FaTelegramPlane size={breakpointSize} color={"white"} />
+                            </Link>
+                            <Link
+                                backgroundColor={txtColorLaCo} borderRadius={"50px"}
+                                height={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                width={{ base: "60px", sm: "60px", md: "80px", lg: "104px", xl: "104px" }}
+                                justifyContent={"center"}
+                                alignItems={"center"}
+                                className="icon" href={"https://github.com/yubiai"} target="_blank">
+                                <FaGithub size={breakpointSize} color={"white"} />
+                            </Link>
                         </Flex>
                     </Flex>
                 </Flex>

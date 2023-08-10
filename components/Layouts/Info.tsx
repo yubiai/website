@@ -15,11 +15,13 @@ const Info = () => {
   const { colorMode } = useColorMode();
   const textColor = colorMode === "light" ? "#001664" : "white";
   const textColorDesc = colorMode === "light" ? "white" : "#00BCD4";
+  const txtColorLaCo = colorMode === "light" ? "#001664" : "#00BCD4";
   const textColorEq = colorMode === "light" ? "black" : "white";
   const bgColor = colorMode === "light" ? "#d972f199" : "#EB71FF";
   const bgColorFt1 = colorMode === "light" ? "#0016644d" : "#9746FF";
   const bgColorFt2 = colorMode === "light" ? "#00bcd44d" : "#00BCD4";
   const textColorOnHover = colorMode === "light" ? "#001664" : "#00BCD4";
+  const bgColorOnHover = colorMode === "dark" ? "#00BCD4" : "#001664";
   let filterStyle = "";
   if (colorMode === "dark") {
     filterStyle = "invert(100%) sepia(9%) saturate(7470%) hue-rotate(184deg) brightness(114%) contrast(100%)";
@@ -28,6 +30,8 @@ const Info = () => {
     filter: colorMode === "dark" ? "brightness(2)" : "brightness(20)",
     transition: "filter 0.3s"
   };
+
+
   return (
     <Box
       className={"info-container"}
@@ -183,28 +187,28 @@ const Info = () => {
                 <Flex p={"3.9rem 0 0 0 "} direction={"column"}
                   //border={{ base: "1px dotted red", sm: "1px dotted blue", md: "1px dotted green", lg: "1px dotted pink" }}
                   width={{ base: "250px", sm: "250px", md: "250px", lg: "310px" }}>
-                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} h={"50px"} backgroundColor={bgColorFt1} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Client Fee")}
                   </Text>
                   <Text display={"flex"} backgroundColor={bgColorFt2} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Freelance Fee")}
                   </Text>
-                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} h={"50px"} backgroundColor={bgColorFt1} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Withdrawal Fee")}
                   </Text>
-                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} h={"50px"} backgroundColor={bgColorFt2} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Decentralized")}
                   </Text>
-                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} h={"50px"} backgroundColor={bgColorFt1} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Content Ownership")}
                   </Text>
-                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} h={"50px"} backgroundColor={bgColorFt2} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Efficient Escrow")}
                   </Text>
-                  <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} h={"50px"} backgroundColor={bgColorFt1} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("No Limit on Task Size")}
                   </Text>
-                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} h={"50px"} backgroundColor={bgColorFt2} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Scalable Dispute System")}
                   </Text>
                 </Flex>
@@ -555,7 +559,11 @@ const Info = () => {
         t={t}
         textColor={textColor}
         textColorDesc={textColorDesc}
-        lng={lang} />
+        lng={lang}
+        filterStyle={filterStyle}
+        txtColorLaCo={txtColorLaCo}
+        bgColorOnHover={bgColorOnHover}
+      />
     </Box >
   );
 };
