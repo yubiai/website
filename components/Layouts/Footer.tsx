@@ -90,7 +90,7 @@ const Footer = () => {
                       direction={"column"} alignItems={"center"}>
                       <Text color={"#0D47A1"} fontSize={"18px"} fontWeight={"700"}
                         textAlign="center">{t("ABOUT YUBIAI")}</Text>
-                      <Link href="/">{t("About Us")}</Link>
+                      <Link href="/" style={{textAlign:"center"}}>{t("About Us")}</Link>
                       <Link href="/ecosystem">{t("Team")}</Link>
                       <Link href="https://medium.com/@yubiai.blog" target={"_blank"}>Blog</Link>
                     </Stack>
@@ -306,7 +306,7 @@ const Footer = () => {
                         fontSize={"18px"}
                         fontWeight={"700"}
                         textAlign="center">{t("ABOUT YUBIAI")}</Text>
-                      <Link href="/">{t("About Us")}</Link>
+                      <Link href="/" style={{textAlign:"center"}}>{t("About Us")}</Link>
                       <Link href="/ecosystem">{t("Team")}</Link>
                       <Link href="https://medium.com/@yubiai.blog" target={"_blank"}>Blog</Link>
                     </Stack>

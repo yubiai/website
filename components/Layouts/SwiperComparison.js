@@ -5,7 +5,7 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
 
-const SwiperComparison = ({ t }) => {
+const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
 
   return (
     <Swiper
@@ -29,7 +29,7 @@ const SwiperComparison = ({ t }) => {
           <Spacer
           >
             <Flex
-              background={"rgba(217, 114, 241, 0.6)"}
+              background={bgColor}
               h={"50px"}
               borderRadius={"20px"}
               justifyContent={"center"}
@@ -52,7 +52,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -60,7 +60,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt2}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -68,7 +68,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -90,7 +90,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -114,7 +114,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -128,8 +128,6 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}><CheckIcon
@@ -149,7 +147,7 @@ const SwiperComparison = ({ t }) => {
           <Spacer
           >
             <Flex
-              background={"rgba(217, 114, 241, 0.6)"}
+              background={bgColor}
               h={"50px"}
               borderRadius={"20px"}
               justifyContent={"center"}
@@ -173,7 +171,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -189,7 +187,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -216,7 +214,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -231,8 +229,6 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}>
@@ -241,7 +237,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -277,7 +273,7 @@ const SwiperComparison = ({ t }) => {
           >
             <Flex
 
-              background={"rgba(217, 114, 241, 0.6)"}
+              background={bgColor}
               h={"50px"}
               borderRadius={"20px"}
               justifyContent={"center"}
@@ -298,7 +294,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -314,14 +310,14 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}
                 flexWrap={"wrap"}
                 fontSize={{ base: "12px", sm: "12px", md: "15px" }}
-                
+
               >{t("Min Payout $100")}<br /> <span className="swiper-comparison" >{t("5% Fee per Withdrawal")}</span></Text>
               <Flex
                 display={"flex"}
@@ -341,7 +337,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -366,7 +362,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -402,7 +398,7 @@ const SwiperComparison = ({ t }) => {
           >
             <Flex
 
-              background={"rgba(217, 114, 241, 0.6)"}
+              background={bgColor}
               h={"50px"}
               borderRadius={"20px"}
               justifyContent={"center"}
@@ -424,7 +420,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -440,7 +436,7 @@ const SwiperComparison = ({ t }) => {
               <Text
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -469,7 +465,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -494,7 +490,7 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                backgroundColor={"rgba(0, 22, 100, 0.30)"}
+                backgroundColor={bgColorFt1}
                 borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
@@ -508,8 +504,6 @@ const SwiperComparison = ({ t }) => {
               <Flex
                 display={"flex"}
                 h={"50px"}
-                //backgroundColor={"rgba(0, 22, 100, 0.30)"}
-                //borderRadius={"0 20px 20px 0"}
                 alignItems={"center"}
                 justifyContent={"center"}
                 color={"black"}><CloseIcon

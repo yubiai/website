@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Image, Spacer } from "@chakra-ui/react";
+import { Box, Text, Flex, Image, Spacer, useColorMode } from "@chakra-ui/react";
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
 import MoreInfo from "./MoreInfo";
 import SwiperComparison from "./SwiperComparison";
@@ -11,7 +11,23 @@ import useTranslation from 'next-translate/useTranslation';
 const Info = () => {
   const { t } = useTranslation("home");
   const isBaseOrMd = useBreakpointValue({ base: true, md: true, lg: true, xl: false });
-
+  const { lang } = useTranslation('common');
+  const { colorMode } = useColorMode();
+  const textColor = colorMode === "light" ? "#001664" : "white";
+  const textColorDesc = colorMode === "light" ? "white" : "#00BCD4";
+  const textColorEq = colorMode === "light" ? "black" : "white";
+  const bgColor = colorMode === "light" ? "#d972f199" : "#EB71FF";
+  const bgColorFt1 = colorMode === "light" ? "#0016644d" : "#9746FF";
+  const bgColorFt2 = colorMode === "light" ? "#00bcd44d" : "#00BCD4";
+  const textColorOnHover = colorMode === "light" ? "#001664" : "#00BCD4";
+  let filterStyle = "";
+  if (colorMode === "dark") {
+    filterStyle = "invert(100%) sepia(9%) saturate(7470%) hue-rotate(184deg) brightness(114%) contrast(100%)";
+  }
+  const hoverStyle = {
+    filter: colorMode === "dark" ? "brightness(2)" : "brightness(20)",
+    transition: "filter 0.3s"
+  };
   return (
     <Box
       className={"info-container"}
@@ -22,7 +38,7 @@ const Info = () => {
     //style={{ border: "1px dotted black" }}
     >
       <Text
-        color="#001664"
+        color={textColor}
         fontSize={{ base: "32px", md: "32px", lg: "64px" }}
         fontWeight="700"
         lineHeight={1}
@@ -41,9 +57,10 @@ const Info = () => {
         justifyContent={{ base: "space-around", md: "space-around", lg: "space-around" }}
 
       >
-        <div className="text-container">
+        <div className="text-container" >
           <Text
-            color={"#001664"}
+            color={textColor}
+            _hover={{ color: textColorOnHover }}
             width={{ base: "auto", md: "auto", lg: "100%" }}
             fontSize={"24px"}
             p={{ base: "1rem 1rem", md: "2", lg: "0 9rem 2rem" }}
@@ -68,9 +85,8 @@ const Info = () => {
           justifyContent={"center"}
           alignItems={"center"}
           flexDirection={"column"}
-          _hover={{
-            filter: "brightness(20)"
-          }}
+          _hover={hoverStyle}
+
           width={{ base: "260px", md: "491px", lg: "491px" }}
           h={{ base: "calc(464px / (16/9))", md: "calc(491px / (16/9))", lg: "341px" }}
           m={{ base: "0 3rem", md: "0 2rem" }}
@@ -78,7 +94,7 @@ const Info = () => {
           <Text
             fontSize={{ base: "30px", md: "35px", lg: "50px" }}
             fontWeight={"700"}
-            color={"#001664"}
+            color={textColor}
             textAlign={"center"}
           >
             {t("More reasons to work with us")}
@@ -90,6 +106,8 @@ const Info = () => {
             alt={"Logo"}
             src={"/static/images/lgybilargblue.png"}
             fallbackSrc={"/static/images/lgybilargblue.png"}
+            style={{ filter: filterStyle }}
+            _hover={hoverStyle}
           />
 
         </Flex>
@@ -98,15 +116,15 @@ const Info = () => {
           m={{ base: "0 3rem", md: "0" }}
 
         >
+
           <Image
             width={"723px"}
             h={{ base: "calc(17vw / 1)", md: "calc(15vw / 1)", lg: "132px" }}
             alt={"lowFees"}
             src={"/static/featuresIcons/lowFeesIcon.png"}
             fallbackSrc={"/static/featuresIcons/lowFeesIcon"}
-            _hover={{
-              filter: "brightness(20)"
-            }}
+            style={{ filter: filterStyle }}
+            _hover={hoverStyle}
           />
           <Image
             width={"723px"}
@@ -114,9 +132,8 @@ const Info = () => {
             alt={"cryptoPaym"}
             src={"/static/featuresIcons/cryptoPaymIcon.png"}
             fallbackSrc={"/static/featuresIcons/cryptoPaymIcon.png"}
-            _hover={{
-              filter: "brightness(20)"
-            }}
+            style={{ filter: filterStyle }}
+            _hover={hoverStyle}
           />
           <Image
             width={"723px"}
@@ -124,9 +141,8 @@ const Info = () => {
             h={{ base: "calc(15vw / 1)", md: "calc(16vw / 1)", lg: "132px" }}
             src={"/static/featuresIcons/servicesIcon.png"}
             fallbackSrc={"/static/featuresIcons/servicesIcon.png"}
-            _hover={{
-              filter: "brightness(20)"
-            }}
+            style={{ filter: filterStyle }}
+            _hover={hoverStyle}
           />
         </Flex>
       </Flex>
@@ -136,7 +152,7 @@ const Info = () => {
         style={{ justifyContent: "flex-start", flexDirection: "column", alignItems: "center", display: "flex" }}
       >
         <Text
-          color={"#001664"}
+          color={textColor}
           fontSize={{ base: "26px", md: "26px", lg: "48px" }}
           m={{ base: "1rem", md: "1rem", lg: "2rem 0" }}
           fontWeight={"500"}
@@ -170,7 +186,7 @@ const Info = () => {
                   <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Client Fee")}
                   </Text>
-                  <Text display={"flex"} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
+                  <Text display={"flex"} backgroundColor={bgColorFt2} h={"50px"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
                     {t("Freelance Fee")}
                   </Text>
                   <Text display={"flex"} h={"50px"} backgroundColor={"rgba(0, 22, 100, 0.30)"} borderRadius={"20px 0 0 20px"} alignItems={"center"} justifyContent={"center"} color={"black"}>
@@ -194,7 +210,12 @@ const Info = () => {
                 </Flex>
 
               </Flex>
-              <SwiperComparison t={t} />
+              <SwiperComparison
+                t={t}
+                bgColor={bgColor}
+                bgColorFt1={bgColorFt1}
+                bgColorFt2={bgColorFt2}
+              />
             </Flex>
           ) : (
             <>
@@ -205,7 +226,8 @@ const Info = () => {
                 margin={"0.5rem"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(217, 114, 241, 0.6)", alignItems: "center" }}>
+                background={bgColor}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", alignItems: "center" }}>
                 <Spacer
                   style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly", alignItems: "center", width: "100%", maxWidth: "738px" }}
                 >
@@ -215,8 +237,9 @@ const Info = () => {
                     alt={"Logo"}
                     src={"/static/images/logoyubiai.png"}
                     fallbackSrc={"/static/images/logoyubiai.png"}
-                    filter={"drop-shadow(2px 4px 6px black)"}
-                    background={"rgba(0, 148.40, 212, 0.15)"}
+                  //filter={"drop-shadow(2px 4px 6px black)"}
+                  //background={bgColor}
+
                   />
                   <Image
                     alt={"freelancerIcon"}
@@ -241,7 +264,8 @@ const Info = () => {
                 margin={"0.5rem"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 22, 100, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                backgroundColor={bgColorFt1}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -265,7 +289,8 @@ const Info = () => {
                 height={"60px"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 188, 212, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                backgroundColor={bgColorFt2}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -289,7 +314,7 @@ const Info = () => {
                 margin={"0.5rem"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 22, 100, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: bgColorFt1, alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -326,7 +351,7 @@ const Info = () => {
                 height={"60px"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 188, 212, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: bgColorFt2, alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -369,7 +394,7 @@ const Info = () => {
                 margin={"0.5rem"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 22, 100, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: bgColorFt1, alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -412,7 +437,7 @@ const Info = () => {
                 height={"60px"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 188, 212, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: bgColorFt2, alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -435,7 +460,7 @@ const Info = () => {
                 margin={"0.5rem"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 22, 100, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: bgColorFt1, alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -478,7 +503,7 @@ const Info = () => {
                 height={"60px"}
                 boxShadow={"0px 5px 16px 3px rgba(0, 0, 0, 0.15)"}
                 borderRadius={"20px"}
-                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: "rgba(0, 188, 212, 0.30)", alignItems: "center", fontSize: "24px", fontWeight: "400" }}
+                style={{ justifyContent: "flex-end", display: "flex", flexDirection: "row", backgroundColor: bgColorFt2, alignItems: "center", fontSize: "24px", fontWeight: "400" }}
                 color={"black"}
                 _hover={{
                   color: "#FFFFFF"
@@ -519,13 +544,18 @@ const Info = () => {
           )}
         </>
         <Text
-          color={"black"}
+          color={textColorEq}
           m={"0 1em"}
+
         >
           {t("equivalent")}<br />{t("** The fee goes directly to the liquidity of the $YBI token")}</Text>
       </Flex>
 
-      <MoreInfo t={t} />
+      <MoreInfo
+        t={t}
+        textColor={textColor}
+        textColorDesc={textColorDesc}
+        lng={lang} />
     </Box >
   );
 };

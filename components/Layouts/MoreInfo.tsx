@@ -1,10 +1,20 @@
 import { Text, Flex, Image, Button, Stack, Link } from "@chakra-ui/react"
 
 interface MoreInfoProps {
-    t: (key: string) => string; 
-  }
+    t: (key: string) => string;
+    textColor: string;
+    textColorDesc: string;
+    lng: string;
+}
 
-const MoreInfo: React.FC<MoreInfoProps> = ({ t }) => {
+const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng }) => {
+    const marginLeft = (lng === "es")
+        ? { lg: "1em" }
+        : { lg: "0" };
+    const marginRight = (lng === "es")
+        ? { lg: "1em" }
+        : { lg: "0" };
+
 
     return (
         <Flex
@@ -27,53 +37,104 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t }) => {
                 <Text
                     textAlign={"center"}
                     fontSize={{ base: "26px", md: "36px", lg: "50px" }}
-                    color={"#001664"}
+                    color={textColor}
                     fontWeight={"700"}
                     margin={"2rem 0"}
                 >{t("Join Our Thriving Web3 Community")}</Text>
                 <Text
                     fontSize={{ base: "22px", md: "20px", lg: "36px" }}
-                    color={"#F0F3FF"}
+                    color={textColorDesc}
                     fontWeight={"700"}
                     width={"auto"}
                     maxWidth={"1212px"}
                     textAlign={"center"}
                 >{t("Our community")}</Text>
-                <Flex
-                    direction="row"
-                    justifyContent={"space-evenly"}
-                    alignItems={"center"}
-                    width={"100%"}
-                    maxWidth={"700px"}
-                >
-                    <Text
-                        fontSize={{ base: "22px", md: "20px", lg: "36px" }}
-                        color={"#001664"}
-                        display={"flex"}
-                        flexDirection={"column"}
-                        fontWeight={"800"}
-                        alignItems={"center"}
-                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Sellers")}</span>
-                    </Text>
-                    <Text
-                        fontSize={{ base: "22px", md: "20px", lg: "36px" }}
-                        color={"#001664"}
-                        display={"flex"}
-                        flexDirection={"column"}
-                        fontWeight={"800"}
-                        alignItems={"center"}
-                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Buyers")}</span>
-                    </Text>
-                    <Text
-                        fontSize={{ base: "22px", md: "20px", lg: "36px" }}
-                        color={"#001664"}
-                        display={"flex"}
-                        flexDirection={"column"}
-                        fontWeight={"800"}
-                        alignItems={"center"}
-                    >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Transactions")}</span>
-                    </Text>
-                </Flex>
+                <> {(lng === "es") ? (
+                    <>
+                        <Flex
+                            direction={{ base: "column", md: "row", lg: "row" }}
+                            justifyContent={"space-evenly"}
+                            alignItems={"center"}
+                            width={"100%"}
+                            maxWidth={"700px"}
+
+                        >
+                            <Text
+                                fontSize={{ base: "22px", md: "20px", lg: "36px" }}
+                                color={textColorDesc}
+                                display={"flex"}
+                                flexDirection={"column"}
+                                fontWeight={"800"}
+                                alignItems={"center"}
+                                marginRight={marginRight}
+                            >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Sellers")}</span>
+                            </Text>
+                            <Text
+                                fontSize={{ base: "22px", md: "20px", lg: "36px" }}
+                                color={textColorDesc}
+                                display={"flex"}
+                                flexDirection={"column"}
+                                fontWeight={"800"}
+                                alignItems={"center"}
+
+                            >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Buyers")}</span>
+                            </Text>
+                            <Text
+                                fontSize={{ base: "22px", md: "20px", lg: "36px" }}
+                                color={textColorDesc}
+                                display={"flex"}
+                                flexDirection={"column"}
+                                fontWeight={"800"}
+                                alignItems={"center"}
+                                marginLeft={marginLeft}
+                            >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Transactions")}</span>
+                            </Text>
+                        </Flex>
+                    </>
+                ) : (
+                    <>
+                        <Flex
+                            direction={{ base: "row" }}
+                            justifyContent={"space-evenly"}
+                            alignItems={"center"}
+                            width={"100%"}
+                            maxWidth={"700px"}
+
+                        >
+                            <Text
+                                fontSize={{ base: "22px", md: "20px", lg: "36px" }}
+                                color={textColorDesc}
+                                display={"flex"}
+                                flexDirection={"column"}
+                                fontWeight={"800"}
+                                alignItems={"center"}
+                                marginRight={marginRight}
+                            >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Sellers")}</span>
+                            </Text>
+                            <Text
+                                fontSize={{ base: "22px", md: "20px", lg: "36px" }}
+                                color={textColorDesc}
+                                display={"flex"}
+                                flexDirection={"column"}
+                                fontWeight={"800"}
+                                alignItems={"center"}
+
+                            >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Buyers")}</span>
+                            </Text>
+                            <Text
+                                fontSize={{ base: "22px", md: "20px", lg: "36px" }}
+                                color={textColorDesc}
+                                display={"flex"}
+                                flexDirection={"column"}
+                                fontWeight={"800"}
+                                alignItems={"center"}
+                                marginLeft={marginLeft}
+                            >+{"99"}<span style={{ color: "white", textShadow: "1px 1px #161414" }}>{t("Transactions")}</span>
+                            </Text>
+                        </Flex>
+                    </>
+                )}
+                </>
                 <Flex
                     direction={"row"}
                     className={"slider"}
