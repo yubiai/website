@@ -264,7 +264,7 @@ const Footer = () => {
                 >
                   <LogoYblue />
                   <Stack direction={"column"} spacing={2}>
-                    <Text textAlign={"center"}><span style={{ color: "#0D47A1" }}>Yubiai </span>-  {t("the first")}.</Text>
+                    <Text textAlign={"center"}><span style={{ color: txtColorLaCo }}>Yubiai </span>-  {t("the first")}.</Text>
                     <Text
                       color="black"
                       fontWeight={"600"}
