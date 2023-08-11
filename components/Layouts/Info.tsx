@@ -30,7 +30,69 @@ const Info = () => {
     filter: colorMode === "dark" ? "brightness(2)" : "brightness(20)",
     transition: "filter 0.3s"
   };
-
+  const cryptoPayS = lang === "es" ? (
+    <Image
+      width={"723px"}
+      h={{ base: "calc(15vw / 1)", md: "calc(14vw / 1)", lg: "132px" }}
+      alt={"cryptoPaym"}
+      src={"/static/featuresIcons/cryptoPaymDarkEs.png"}
+      fallbackSrc={"/static/featuresIcons/cryptoPaymIconEs.png"}
+      style={{ filter: filterStyle }}
+      _hover={hoverStyle}
+    />
+  ) : (
+    <Image
+      width={"723px"}
+      h={{ base: "calc(15vw / 1)", md: "calc(14vw / 1)", lg: "132px" }}
+      alt={"cryptoPaym"}
+      src={"/static/featuresIcons/cryptoPaymIcon.png"}
+      fallbackSrc={"/static/featuresIcons/cryptoPaymIcon.png"}
+      style={{ filter: filterStyle }}
+      _hover={hoverStyle}
+    />
+  );
+  const lowFees = lang === "es" ? (
+    <Image
+      width={"723px"}
+      h={{ base: "calc(17vw / 1)", md: "calc(15vw / 1)", lg: "132px" }}
+      alt={"lowFees"}
+      src={"/static/featuresIcons/lowFeesIconQEs.png"}
+      fallbackSrc={"/static/featuresIcons/lowFeesIconQEs.png"}
+      style={{ filter: filterStyle }}
+      _hover={hoverStyle}
+    />
+  ) : (
+    <Image
+      width={"723px"}
+      h={{ base: "calc(17vw / 1)", md: "calc(15vw / 1)", lg: "132px" }}
+      alt={"lowFees"}
+      src={"/static/featuresIcons/lowFeesIcon.png"}
+      fallbackSrc={"/static/featuresIcons/lowFeesIcon"}
+      style={{ filter: filterStyle }}
+      _hover={hoverStyle}
+    />
+  );
+  const varietyServices = lang === "es" ? (
+    <Image
+      width={"723px"}
+      alt={"svcsIcon"}
+      h={{ base: "calc(15vw / 1)", md: "calc(16vw / 1)", lg: "132px" }}
+      src={"/static/featuresIcons/servicesIconEs.png"}
+      fallbackSrc={"/static/featuresIcons/servicesIconEs.png"}
+      style={{ filter: filterStyle }}
+      _hover={hoverStyle}
+    />
+  ) : (
+    <Image
+      width={"723px"}
+      alt={"svcsIcon"}
+      h={{ base: "calc(15vw / 1)", md: "calc(16vw / 1)", lg: "132px" }}
+      src={"/static/featuresIcons/servicesIcon.png"}
+      fallbackSrc={"/static/featuresIcons/servicesIcon.png"}
+      style={{ filter: filterStyle }}
+      _hover={hoverStyle}
+    />
+  );
 
   return (
     <Box
@@ -121,33 +183,9 @@ const Info = () => {
 
         >
 
-          <Image
-            width={"723px"}
-            h={{ base: "calc(17vw / 1)", md: "calc(15vw / 1)", lg: "132px" }}
-            alt={"lowFees"}
-            src={"/static/featuresIcons/lowFeesIcon.png"}
-            fallbackSrc={"/static/featuresIcons/lowFeesIcon"}
-            style={{ filter: filterStyle }}
-            _hover={hoverStyle}
-          />
-          <Image
-            width={"723px"}
-            h={{ base: "calc(15vw / 1)", md: "calc(14vw / 1)", lg: "132px" }}
-            alt={"cryptoPaym"}
-            src={"/static/featuresIcons/cryptoPaymIcon.png"}
-            fallbackSrc={"/static/featuresIcons/cryptoPaymIcon.png"}
-            style={{ filter: filterStyle }}
-            _hover={hoverStyle}
-          />
-          <Image
-            width={"723px"}
-            alt={"svcsIcon"}
-            h={{ base: "calc(15vw / 1)", md: "calc(16vw / 1)", lg: "132px" }}
-            src={"/static/featuresIcons/servicesIcon.png"}
-            fallbackSrc={"/static/featuresIcons/servicesIcon.png"}
-            style={{ filter: filterStyle }}
-            _hover={hoverStyle}
-          />
+          {lowFees}
+          {cryptoPayS}
+          {varietyServices}
         </Flex>
       </Flex>
       <Flex

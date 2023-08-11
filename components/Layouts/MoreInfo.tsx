@@ -11,7 +11,7 @@ interface MoreInfoProps {
     filterStyle: string;
     txtColorLaCo: string;
     bgColorOnHover: string;
-    
+
 }
 
 const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, filterStyle, txtColorLaCo, bgColorOnHover }) => {
@@ -21,6 +21,25 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
     const marginRight = (lng === "es")
         ? { lg: "1em" }
         : { lg: "0" };
+    const imageWorks = lng === "es" ? (
+        <Image
+            h={"85%"}
+            w={"75%"}
+            alt={"howitworks"}
+            style={{ filter: filterStyle }}
+            src={"/static/featuresIcons/comofunc.png"}
+            fallbackSrc={"/static/featuresIcons/comofunc.png"}
+        />
+    ) : (
+        <Image
+            h={"85%"}
+            w={"75%"}
+            alt={"howitworks"}
+            style={{ filter: filterStyle }}
+            src={"/static/featuresIcons/howitworks.png"}
+            fallbackSrc={"/static/featuresIcons/howitworks.png"}
+        />
+    );
     const breakpointSize = useBreakpointValue({
         base: "40px",
         sm: "40px",
@@ -278,13 +297,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
                     color={textColor}
                     fontSize={{ base: "24px", md: "28px", lg: "56px" }} fontWeight={"700"}
                     margin={"2rem 0 0 0"}>{t("How a transaction works")}</Text>
-                <Image
-                    h={"85%"}
-                    w={"75%"}
-                    alt={"howitworks"}
-                    style={{ filter: filterStyle }}
-                    src={"/static/featuresIcons/howitworks.png"}
-                    fallbackSrc={"/static/featuresIcons/howitworks.png"} />
+                {imageWorks}
             </Flex>
             <Flex
                 direction={"column"}
@@ -343,7 +356,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
                                     maxH={"50px"}
                                     w={"100%"}
                                     maxW={"288px"}
-                                    _hover={{ backgroundColor: bgColorOnHover, color:"white" }}
+                                    _hover={{ backgroundColor: bgColorOnHover, color: "white" }}
                                 >{t("LAUNCH APP")}</Button>
                             </Link>
                             <Link
@@ -360,7 +373,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
                                     maxH={"50px"}
                                     w={"100%"}
                                     maxW={"288px"}
-                                    _hover={{ backgroundColor: bgColorOnHover, color:"white" }}>{t("CONTACT US")}</Button>
+                                    _hover={{ backgroundColor: bgColorOnHover, color: "white" }}>{t("CONTACT US")}</Button>
                             </Link>
                         </Stack>
                     </Flex>
