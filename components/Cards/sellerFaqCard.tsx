@@ -3,10 +3,12 @@ import { Box, Center, Heading, Text } from "@chakra-ui/react";
 
 interface SellerFaqCardProps {
   t: (key: string) => string;
-  lng: string; 
+  lng: string;
+  bgColorFaq: string;
+  bgColorOnHover: string;
 }
 
-const SellerFaqCard: React.FC<SellerFaqCardProps> = ({ t, lng }) => {
+const SellerFaqCard: React.FC<SellerFaqCardProps> = ({ t, lng, bgColorFaq, bgColorOnHover }) => {
   const isSpanish = lng === "es";
   //console.log("idioma es: " + lng);
   const height = isSpanish
@@ -21,8 +23,9 @@ const SellerFaqCard: React.FC<SellerFaqCardProps> = ({ t, lng }) => {
       padding={"1.5em"}
       borderRadius={"30px"}
       boxShadow={"0 4px 4px 0 rgba(0, 0, 0, 0.25)"}
-      backgroundColor={" rgba(0, 22, 100, 0.55)"}
+      backgroundColor={bgColorFaq}
       color="white"
+      _hover={{ backgroundColor: "white", color: bgColorOnHover }}
     >
       <Center>
         <Heading fontSize={"3xl"}>

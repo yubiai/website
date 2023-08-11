@@ -1,4 +1,4 @@
-import { SimpleGrid, Text } from "@chakra-ui/react";
+import { SimpleGrid, Text, useColorMode } from "@chakra-ui/react";
 import EcosystemCard from "../components/Cards/ecosystemCard";
 import TeamCard from "../components/Cards/teamCard";
 import HeroFather from "../components/Layouts/HeroFather";
@@ -8,7 +8,9 @@ import useTranslation from "next-translate/useTranslation";
 
 const Ecosystem = () => {
   const { t } = useTranslation("ecosystem");
-
+  const { colorMode } = useColorMode();
+  const textColor = colorMode === "light" ? "#001664" : "white";
+  const txtColorLaCo = colorMode === "light" ? "#001664" : "#00BCD4";
   const listEcosystem = {
     eth: {
       image: "/static/ecosystem/etherlogo.png",
@@ -168,12 +170,12 @@ const Ecosystem = () => {
           display={"flex"}
           justifyContent={"center"}
           textAlign={"center"}
-          color={"#001664"}
+          color={textColor}
         >{t("The Team")}</Text>
 
         <div className="text-container">
           <Text
-            color={"#001664"}
+            color={txtColorLaCo}
             width={{ base: "auto", md: "auto", lg: "100%" }}
             fontSize={"24px"}
             p={{ base: "1rem 1rem", md: "2", lg: "0 9rem 2rem" }}

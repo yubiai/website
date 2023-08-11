@@ -4,7 +4,7 @@ import {
   Text,
   Image,
   Link,
-  Flex
+  useColorMode
 } from "@chakra-ui/react";
 import HeroFather from "../components/Layouts/HeroFather";
 import { Timeline } from "react-twitter-widgets";
@@ -12,6 +12,8 @@ import useTranslation from "next-translate/useTranslation";
 
 const Community = () => {
   const { t } = useTranslation("community");
+  const { colorMode } = useColorMode();
+  const textColor = colorMode === "light" ? "#001664" : "white";
   const listNetworkSocial = [
     {
       image: "/static/networksocial/linktreelogo.png",
@@ -121,7 +123,7 @@ const Community = () => {
             justifyContent={"center"}
             textAlign={"center"}
             fontSize={{ base: "26px", md: "32px", lg: "50px" }}
-            color={"#001664"}
+            color={textColor}
             fontWeight={"800"}
           >{t("Collectively, we are building the future marketplace we need")}</Text>
           <Text
@@ -129,7 +131,7 @@ const Community = () => {
             justifyContent={"center"}
             textAlign={"center"}
             fontSize={{ base: "24px", md: "26px", lg: "38px" }}
-            color={"#001664"}
+            color={textColor}
           >{t("Follow us on social media")}</Text>
         </Box>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={3} mt="3em">
@@ -193,14 +195,14 @@ const Community = () => {
             justifyContent={"center"}
             textAlign={"center"}
             fontSize={{ base: "22px", md: "24px", lg: "26px" }}
-            color={"#001664"}
+            color={textColor}
           >{t("Yubiai community")}</Text>
           <Text
             display={"flex"}
             justifyContent={"center"}
             textAlign={"center"}
             fontSize={{ base: "26px", md: "28px", lg: "36px" }}
-            color={"#001664"}
+            color={textColor}
           >{t("Follow our latest news on Twitter & Youtube")}</Text>
         </Box>
         <Box display={"flex"} flexDirection={{ base: "column", sm: "column", md: "column", lg: "row" }} >
