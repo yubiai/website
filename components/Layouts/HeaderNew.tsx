@@ -74,6 +74,7 @@ export default function WithSubnavigation() {
 
   return (
     <Box
+
       sx={{ position: "sticky", top: "0", zIndex: "99", background: "rgba(29, 39, 61, 0.9)", backdropFilter: "blur(4px)" }}
     >
 
@@ -89,6 +90,7 @@ export default function WithSubnavigation() {
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
+            marginTop={"0.3em"}
             display={{ base: 'flex', md: 'none' }}>
             <IconButton
               onClick={onToggle}
@@ -111,7 +113,7 @@ export default function WithSubnavigation() {
               <LogoYb />
             </Box>
 
-            <Flex display={{ base: 'none', md: 'flex' }} ml={{ md: -4 }}>
+            <Flex display={{ base: 'none', md: 'flex' }} ml={{ md: -4 }} marginTop={"0.3em"}>
               <DesktopNav />
             </Flex>
           </Flex>
@@ -249,7 +251,7 @@ const DesktopNav = () => {
                 minW={'sm'}>
                 <Stack>
                   {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child}/>
+                    <DesktopSubNav key={child.label} {...child} />
                   ))}
                 </Stack>
               </PopoverContent>
@@ -262,7 +264,7 @@ const DesktopNav = () => {
 };
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
-  
+
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <Box
@@ -279,7 +281,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
               transition={'all .3s ease'}
               _groupHover={{ color: '#dd6a6a' }}
               fontWeight={500}>
-               {label}
+              {label}
             </Text>
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
@@ -341,7 +343,7 @@ const MobileNav = () => {
       href: "/faq"
     }
   ];
-  
+
   return (
     <Stack
 
@@ -357,7 +359,7 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
-  
+
 
   return (
     <Stack
@@ -419,7 +421,7 @@ interface NavItem {
   subLabel?: string;
   children?: Array<NavItem>;
   href?: string;
-  
+
 }
 
 const NAV_ITEMS: Array<NavItem> = [

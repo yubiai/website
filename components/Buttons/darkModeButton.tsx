@@ -13,7 +13,7 @@ export const ColorModeToggler = () => {
         <Button
           onClick={toggleColorMode}
           width="40px"
-          margin={"0 0.5em"}
+          margin={"0.3em 0.5em"}
           backgroundColor="transparent"
         >
           {/* Apply the custom styles to the span */}
@@ -23,7 +23,7 @@ export const ColorModeToggler = () => {
         </Button>
       ) : (
         <Button
-          onClick={toggleColorMode} width={'40px'} margin={"0 0.5em"} backgroundColor={"#00BCD4"}>
+          onClick={toggleColorMode} width={'40px'} margin={"0.3em 0.5em"} backgroundColor={"#00BCD4"}>
           <span >
             <SunIcon />
           </span>

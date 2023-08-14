@@ -24,7 +24,9 @@ const LanguageChange: React.FC = () => {
   return (
     <Menu >
       <MenuButton
+        marginTop={"0.35rem"}
         marginRight={{ base: "0", md: "10px" }}
+        marginLeft={{ base: "5px", md: "0" }}
         style={{ border: "1px solid white", height: "40px" }}
         as={Button}
         aria-label="language"
