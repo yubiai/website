@@ -23,8 +23,8 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
         : { lg: "0" };
     const imageWorks = lng === "es" ? (
         <Image
-            h={"85%"}
-            w={"75%"}
+            h={"100%"}
+            w={"100%"}
             alt={"howitworks"}
             style={{ filter: filterStyle }}
             src={"/static/featuresIcons/comofunc.png"}
@@ -32,8 +32,8 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
         />
     ) : (
         <Image
-            h={"85%"}
-            w={"75%"}
+            h={{base:"273px", md: "85%"}}
+            w={{base:"100%", md: "75%"}}
             alt={"howitworks"}
             style={{ filter: filterStyle }}
             src={"/static/featuresIcons/howitworks.png"}
