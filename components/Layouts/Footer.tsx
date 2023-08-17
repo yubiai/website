@@ -54,7 +54,7 @@ const Footer = () => {
   const { t } = useTranslation("footer");
   const { colorMode } = useColorMode();
   const txtColorLaCo = colorMode === "light" ? "#0D47A1" : "#00BCD4";
- 
+
 
   return (
     <>
@@ -129,6 +129,12 @@ const Footer = () => {
                         passHref legacyBehavior
                       >
                         Yellow Paper
+                      </Link>
+                      <Link
+                        href={"/static/yubiai_deck.pdf"}
+                        passHref legacyBehavior
+                      >
+                        Deck
                       </Link>
                       <Link
                         href={"https://github.com/yubiai"}
@@ -339,6 +345,12 @@ const Footer = () => {
                         passHref legacyBehavior
                       >
                         Yellow Paper
+                      </Link>
+                      <Link
+                        href={"/static/yubiai_deck.pdf"}
+                        passHref legacyBehavior
+                      >
+                        Deck
                       </Link>
                       <Link
                         href={"https://github.com/yubiai"}

@@ -64,6 +64,11 @@ export default function WithSubnavigation() {
           subLabel: 'View the document',
           href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
         },
+        {
+          label: 'Deck',
+          subLabel: 'View the document',
+          href: '/static/yubiai_deck.pdf',
+        },
       ],
     },
     {
@@ -188,6 +193,11 @@ const DesktopNav = () => {
           label: 'One Pager',
           subLabel: 'View the document',
           href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
+        },
+        {
+          label: 'Deck',
+          subLabel: 'View the document',
+          href: '/static/yubiai_deck.pdf',
         },
       ],
     },
@@ -455,6 +465,11 @@ const NAV_ITEMS: Array<NavItem> = [
         label: 'One Pager',
         subLabel: 'View the document',
         href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
+      },
+      {
+        label: 'Deck',
+        subLabel: 'View the document',
+        href: '/static/yubiai_deck.pdf',
       },
     ],
   },
