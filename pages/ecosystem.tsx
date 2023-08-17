@@ -153,7 +153,7 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.push} />
         </SimpleGrid>
         <Text
-          fontSize={"64px"}
+          fontSize={{ base: "28px", md: "38px", lg: "56px" }}
           display={"flex"}
           justifyContent={"center"}
           textAlign={"center"}
@@ -166,7 +166,7 @@ const Ecosystem = () => {
           <EcosystemCard item={listEcosystem.talentLayer} />
         </SimpleGrid>
         <Text
-          fontSize={"64px"}
+          fontSize={{ base: "28px", md: "38px", lg: "56px" }}
           display={"flex"}
           justifyContent={"center"}
           textAlign={"center"}
@@ -177,7 +177,7 @@ const Ecosystem = () => {
           <Text
             color={txtColorLaCo}
             width={{ base: "auto", md: "auto", lg: "100%" }}
-            fontSize={"24px"}
+            fontSize={{ base: "20px", md: "22px", lg: "24px" }}
             p={{ base: "1rem 1rem", md: "2", lg: "0 9rem 2rem" }}
             fontWeight={"normal"}
             lineHeight={1.2}
