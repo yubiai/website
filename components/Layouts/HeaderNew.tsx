@@ -67,7 +67,7 @@ export default function WithSubnavigation() {
         {
           label: 'Deck',
           subLabel: 'View the document',
-          href: '/static/yubiai_deck.pdf',
+          href: 'https://drive.google.com/file/d/1bvU15nX1AjB0Y1zqL2zv84lJzZxZhcs0/view?usp=drive_link',
         },
       ],
     },
@@ -197,7 +197,7 @@ const DesktopNav = () => {
         {
           label: 'Deck',
           subLabel: 'View the document',
-          href: '/static/yubiai_deck.pdf',
+          href: 'https://drive.google.com/file/d/1bvU15nX1AjB0Y1zqL2zv84lJzZxZhcs0/view?usp=drive_link',
         },
       ],
     },
@@ -346,6 +346,11 @@ const MobileNav = () => {
           subLabel: 'View the document',
           href: 'https://docs.google.com/document/d/e/2PACX-1vRnA85e-7FNmOqShC-dInQd6kSNupYsLHR4-F3gUby5YAdNxGovGzvGwd0Ka1xCFfkZm2qdHW_6v9Sj/pub',
         },
+        {
+          label: 'Deck',
+          subLabel: 'View the document',
+          href: 'https://drive.google.com/file/d/1bvU15nX1AjB0Y1zqL2zv84lJzZxZhcs0/view?usp=drive_link',
+        },
       ],
     },
     {
@@ -469,7 +474,7 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Deck',
         subLabel: 'View the document',
-        href: '/static/yubiai_deck.pdf',
+        href: 'https://drive.google.com/file/d/1bvU15nX1AjB0Y1zqL2zv84lJzZxZhcs0/view?usp=drive_link',
       },
     ],
   },

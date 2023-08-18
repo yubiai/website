@@ -334,30 +334,30 @@ const Footer = () => {
                       align={{ base: "center", md: "center" }}
                     >
                       <Text color={txtColorLaCo} fontSize={"18px"} fontWeight={"700"}>RESOURCES</Text>
-                      <Link
-                        href={"/static/yubiai_whitepaper.pdf"}
-                        passHref legacyBehavior
+                      <a
+                        href={"https://docs.google.com/document/d/e/2PACX-1vST-lArWWV8urj3phEiWmzPZ3fnySB6EqW3IRyr2rrf7MakpfsmLhpvlOn9nLUvp-IZ98JlnfJJmR5i/pub"}
+                        target={"_blank"}
                       >
                         White Paper
-                      </Link>
-                      <Link
-                        href={"/static/yubiai_whitepaper.pdf"}
-                        passHref legacyBehavior
+                      </a>
+                      <a
+                        href={"https://docs.google.com/document/d/e/2PACX-1vR0KPcbPuv9edabvnBQT2n38xtDLSvF7WdaOMBheZOS6j-KnsVE1pgTtuHzCfWwQRZOaWSzZjLa5pcY/pub"}
+                        target={"_blank"}
                       >
                         Yellow Paper
-                      </Link>
-                      <Link
-                        href={"/static/yubiai_deck.pdf"}
-                        passHref legacyBehavior
+                      </a>
+                      <a
+                        href={"https://drive.google.com/file/d/1bvU15nX1AjB0Y1zqL2zv84lJzZxZhcs0/view?usp=drive_link"}
+                        target={"_blank"}
                       >
                         Deck
-                      </Link>
-                      <Link
+                      </a>
+                      <a
                         href={"https://github.com/yubiai"}
                         target={"_blank"}
                       >
                         GitHub
-                      </Link>
+                      </a>
                     </Container>
                   </Box>
                   <Flex
