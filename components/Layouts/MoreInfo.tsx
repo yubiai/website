@@ -23,7 +23,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
         : { lg: "0" };
     const imageWorks = lng === "es" ? (
         <Image
-            h={{ base: "500px", md: "85%" }}
+            h={{ base: "550px", md: "85%" }}
             w={{ base: "100%", md: "75%" }}
             alt={"howitworks"}
             style={{ filter: filterStyle }}
@@ -32,7 +32,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
         />
     ) : (
         <Image
-            h={{ base: "500px", md: "85%" }}
+            h={{ base: "550px", md: "85%" }}
             w={{ base: "100%", md: "75%" }}
             alt={"howitworks"}
             style={{ filter: filterStyle }}
