@@ -349,8 +349,7 @@ const MobileNav = () => {
         {
           label: 'Deck',
           subLabel: 'View the document',
-          href: 'https://drive.google.com/file/d/1RZ2dNxxy82vX9iYdoy4pqaLfiW7uMLUi/view?usp=sharing',
-          target: '_blank',
+          href: 'https://drive.google.com/file/d/1RZ2dNxxy82vX9iYdoy4pqaLfiW7uMLUi/view?usp=sharing'
         },
       ],
     },
