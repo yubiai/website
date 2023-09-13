@@ -1,5 +1,6 @@
 import { Text, Flex, Image, Button, Stack, Link, useBreakpointValue } from "@chakra-ui/react"
-import { FaDiscord, FaTelegramPlane, FaTwitter, FaYoutube, FaGithub } from "react-icons/fa";
+import { FaDiscord, FaTelegram, FaYoutube, FaGithub, FaXTwitter } from "react-icons/fa6";
+
 import { SiLinktree } from "react-icons/si";
 
 
@@ -408,7 +409,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
                                 justifyContent={"center"}
                                 alignItems={"center"}
                                 className="icon" href={"https://twitter.com/YubiaiM"} target="_blank">
-                                <FaTwitter size={breakpointSize} color={"white"} />
+                                <FaXTwitter size={breakpointSize} color={"white"} />
                             </Link>
                             <Link
                                 backgroundColor={txtColorLaCo} borderRadius={"50px"}
@@ -443,7 +444,7 @@ const MoreInfo: React.FC<MoreInfoProps> = ({ t, textColor, textColorDesc, lng, f
                                 justifyContent={"center"}
                                 alignItems={"center"}
                                 className="icon" href={"https://t.me/yubiai"} target="_blank">
-                                <FaTelegramPlane size={breakpointSize} color={"white"} />
+                                <FaTelegram size={breakpointSize} color={"white"} />
                             </Link>
                             <Link
                                 backgroundColor={txtColorLaCo} borderRadius={"50px"}
