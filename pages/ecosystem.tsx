@@ -121,7 +121,7 @@ const Ecosystem = () => {
       link: "https://www.linkedin.com/in/joaquin-bravo/"
     },
     ruben: {
-      image: "/static/ecosystem/ruben.png",
+      image: "/static/ecosystem/rubennueva.png",
       title: "Ruben Santana",
       info: t("Builder"),
       link: "https://www.linkedin.com/in/rubensantana/"

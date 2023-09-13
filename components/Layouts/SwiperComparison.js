@@ -47,7 +47,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
             </Flex>
             <Flex
               //border={{base: "1px dotted green", sm: "1px dotted blue", md: "1px dotted red"}}
-              mt={{ base: "0.77em", sm: "0.77em", md: "0.78em" }}
+              mt={{ base: "0.78em", sm: "0.78em", md: "0.78em" }}
               direction={"column"}>
               <Text
                 display={"flex"}
@@ -168,7 +168,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
             </Flex>
             <Flex
               //border={{ base: "1px dotted green", sm: "1px dotted blue", md: "1px dotted red" }}
-              mt={{ base: "0.77em", sm: "0.77em", md: "0.78em" }}
+              mt={{ base: "0.78em", sm: "0.78em", md: "0.78em" }}
               direction={"column"}>
               <Text
                 display={"flex"}
@@ -294,7 +294,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               />
             </Flex>
             <Flex
-              mt={{ base: "0.77em", sm: "0.77em", md: "0.77em" }} direction={"column"}>
+              mt={{ base: "0.78em", sm: "0.78em", md: "0.78em" }} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
@@ -420,7 +420,7 @@ const SwiperComparison = ({ t, bgColor, bgColorFt1, bgColorFt2 }) => {
               />
             </Flex>
             <Flex
-              mt={{ base: "0.77em", sm: "0.77em", md: "0.78em" }} direction={"column"}>
+              mt={{ base: "0.78em", sm: "0.78em", md: "0.78em" }} direction={"column"}>
               <Text
                 display={"flex"}
                 h={"50px"}
