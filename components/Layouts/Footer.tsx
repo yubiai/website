@@ -6,7 +6,7 @@ import {
   Text,
   VisuallyHidden, Flex, useColorMode
 } from "@chakra-ui/react";
-import { FaDiscord, FaTelegramPlane, FaTwitter, FaYoutube, FaGithub } from "react-icons/fa";
+import { FaDiscord, FaTelegram, FaYoutube, FaGithub, FaXTwitter } from "react-icons/fa6";
 import { SiLinktree } from "react-icons/si";
 import { ReactNode } from "react";
 import LogoYblue from "../Logos/LogoYbBlue";
@@ -217,7 +217,7 @@ const Footer = () => {
                           spacing={3}
                           mr={"1em"}>
                           <SocialButton label={"Telegram"} href={"https://t.me/yubiai"}>
-                            <FaTelegramPlane fontSize={45} color={txtColorLaCo} />
+                            <FaTelegram fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton label={"Linktree"} href={"https://linktr.ee/Yubiai"}>
                             <SiLinktree fontSize={45} color={txtColorLaCo} />
@@ -240,7 +240,7 @@ const Footer = () => {
                             label={"Twitter"}
                             href={"https://twitter.com/YubiaiM"}
                           >
-                            <FaTwitter fontSize={45} color={txtColorLaCo} />
+                            <FaXTwitter fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"YouTube"}
@@ -413,7 +413,7 @@ const Footer = () => {
                         justifyContent={"space-between"}>
                         <Stack direction={"column"} spacing={2}>
                           <SocialButton label={"Telegram"} href={"https://t.me/yubiai"}>
-                            <FaTelegramPlane fontSize={45} color={txtColorLaCo} />
+                            <FaTelegram fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton label={"Linktree"} href={"https://linktr.ee/Yubiai"}>
                             <SiLinktree fontSize={45} color={txtColorLaCo} />
@@ -436,7 +436,7 @@ const Footer = () => {
                             label={"Twitter"}
                             href={"https://twitter.com/YubiaiM"}
                           >
-                            <FaTwitter fontSize={45} color={txtColorLaCo} />
+                            <FaXTwitter fontSize={45} color={txtColorLaCo} />
                           </SocialButton>
                           <SocialButton
                             label={"YouTube"}
