@@ -67,7 +67,7 @@ export default function WithSubnavigation() {
         {
           label: 'Deck',
           subLabel: 'View the document',
-          href: 'https://drive.google.com/file/d/1RZ2dNxxy82vX9iYdoy4pqaLfiW7uMLUi/view?usp=sharing',
+          href: 'https://drive.google.com/file/d/14HqSZp3G7oimmIfX_JmxKdrBOLpd2hg4/view?usp=drive_link',
         },
       ],
     },
@@ -197,7 +197,7 @@ const DesktopNav = () => {
         {
           label: 'Deck',
           subLabel: 'View the document',
-          href: 'https://drive.google.com/file/d/1RZ2dNxxy82vX9iYdoy4pqaLfiW7uMLUi/view?usp=sharing',
+          href: 'https://drive.google.com/file/d/14HqSZp3G7oimmIfX_JmxKdrBOLpd2hg4/view?usp=drive_link',
         },
       ],
     },
@@ -349,7 +349,7 @@ const MobileNav = () => {
         {
           label: 'Deck',
           subLabel: 'View the document',
-          href: 'https://drive.google.com/file/d/1RZ2dNxxy82vX9iYdoy4pqaLfiW7uMLUi/view?usp=sharing'
+          href: 'https://drive.google.com/file/d/14HqSZp3G7oimmIfX_JmxKdrBOLpd2hg4/view?usp=drive_link'
         },
       ],
     },
@@ -474,7 +474,7 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Deck',
         subLabel: 'View the document',
-        href: 'https://drive.google.com/file/d/1RZ2dNxxy82vX9iYdoy4pqaLfiW7uMLUi/view?usp=sharing',
+        href: 'https://drive.google.com/file/d/14HqSZp3G7oimmIfX_JmxKdrBOLpd2hg4/view?usp=drive_link',
       },
     ],
   },
